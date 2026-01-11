@@ -1,4 +1,4 @@
-import { SelectHTMLAttributes, forwardRef } from 'react'
+import { SelectHTMLAttributes, forwardRef, useId } from 'react'
 import { AlertCircle } from 'lucide-react'
 
 interface SelectOption {
@@ -45,7 +45,8 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(({
   required,
   ...props
 }, ref) => {
-  const selectId = id || `select-${Math.random().toString(36).substr(2, 9)}`
+  const generatedId = useId()
+  const selectId = id || `select-${generatedId}`
   const errorId = `${selectId}-error`
   const helperId = `${selectId}-helper`
   

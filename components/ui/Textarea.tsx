@@ -1,4 +1,4 @@
-import { TextareaHTMLAttributes, forwardRef } from 'react'
+import { TextareaHTMLAttributes, forwardRef, useId } from 'react'
 import { AlertCircle } from 'lucide-react'
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -28,7 +28,8 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(({
   rows = 4,
   ...props
 }, ref) => {
-  const textareaId = id || `textarea-${Math.random().toString(36).substr(2, 9)}`
+  const generatedId = useId()
+  const textareaId = id || `textarea-${generatedId}`
   const errorId = `${textareaId}-error`
   const helperId = `${textareaId}-helper`
   
