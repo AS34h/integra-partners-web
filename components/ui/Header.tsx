@@ -133,7 +133,14 @@ export function Header({
                       transition-colors
                       hover:text-navy
                     "
-                Languages & CTA */}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            
+            {/* Languages & CTA */}
             <div className="hidden lg:flex items-center gap-6">
               {/* Languages */}
               <div className="flex items-center gap-3">
