@@ -134,14 +134,8 @@ export function Card({
   
   // Article Card
   if (variant === 'article') {
-    const WrapperTag = href ? Link : 'article'
-    const wrapperProps = href ? { href } : {}
-    
-    return (
-      <WrapperTag 
-        className={`${baseClasses} overflow-hidden group block ${className}`.replace(/\s+/g, ' ').trim()}
-        {...wrapperProps}
-      >
+    const content = (
+      <>
         {image && (
           <div className="aspect-video bg-gray-200 overflow-hidden">
             <img
@@ -156,19 +150,19 @@ export function Card({
           </div>
         )}
         
-        <div className="p-6">
+        <div className="p-8">
           {meta && (
-            <div className="mb-3 flex items-center gap-3 text-caption text-gray-600">
-              {meta.category && <span className="text-label uppercase">{meta.category}</span>}
+            <div className="flex items-center gap-2 mb-4 text-caption text-gray-600">
+              {meta.category && <span>{meta.category}</span>}
               {meta.date && (
                 <>
-                  <span aria-hidden="true">·</span>
-                  <time dateTime={meta.date}>{meta.date}</time>
+                  <span>•</span>
+                  <span>{meta.date}</span>
                 </>
               )}
               {meta.readTime && (
                 <>
-                  <span aria-hidden="true">·</span>
+                  <span>•</span>
                   <span>{meta.readTime}</span>
                 </>
               )}
@@ -176,25 +170,46 @@ export function Card({
           )}
           
           {title && (
-            <h3 className="
-              mb-3
-              font-heading text-h4 text-navy
-              group-hover:text-anthracite
-              transition-colors
-            ">
+            <h3 className="font-heading text-h4 text-navy mb-3">
               {title}
             </h3>
           )}
           
           {description && (
-            <p className="text-body-m text-gray-700 line-clamp-3">
+            <p className="text-body-m text-gray-700 mb-4">
               {description}
             </p>
           )}
           
-          {children}
+          {href && (
+            <div className="
+              inline-flex items-center gap-2 
+              text-body-m text-navy font-medium
+              group-hover:gap-3 transition-all
+            ">
+              <span>{ctaLabel}</span>
+              <ArrowRight className="w-5 h-5" />
+            </div>
+          )}
         </div>
-      </WrapperTag>
+      </>
+    )
+    
+    if (href) {
+      return (
+        <Link 
+          href={href}
+          className={`${baseClasses} overflow-hidden group block ${className}`.replace(/\s+/g, ' ').trim()}
+        >
+          {content}
+        </Link>
+      )
+    }
+    
+    return (
+      <article className={`${baseClasses} overflow-hidden ${className}`.replace(/\s+/g, ' ').trim()}>
+        {content}
+      </article>
     )
   }
   

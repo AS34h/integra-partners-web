@@ -130,9 +130,11 @@ export function Header({
             
             {/* CTA */}
             <div className="hidden lg:block">
-              <Button variant="primary" size="md" href={ctaHref}>
-                {ctaText}
-              </Button>
+              <Link href={ctaHref}>
+                <Button variant="primary" size="md">
+                  {ctaText}
+                </Button>
+              </Link>
             </div>
             
             {/* Mobile Menu Toggle */}
@@ -202,14 +204,15 @@ export function Header({
           
           {/* CTA Mobile */}
           <div className="mt-8">
-            <Button 
-              variant="primary" 
-              size="lg" 
-              href={ctaHref}
-              className="w-full"
-            >
-              {ctaText}
-            </Button>
+            <Link href={ctaHref} className="block">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="w-full"
+              >
+                {ctaText}
+              </Button>
+            </Link>
           </div>
         </nav>
       </div>

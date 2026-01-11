@@ -9,7 +9,7 @@ import { Card } from '@/components/ui/Card'
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.5, ease: "easeOut" },
+  transition: { duration: 0.5 },
   viewport: { once: true }
 }
 
@@ -161,7 +161,6 @@ export default function Home() {
                 <Card 
                   key={index}
                   variant="custom"
-                  hover="lift"
                   className="p-8 group"
                 >
                   <div className="flex items-start gap-6">
@@ -254,6 +253,4 @@ export default function Home() {
       </section>
     </div>
   )
-}
-  );
 }
