@@ -1,0 +1,915 @@
+{
+  "colors": {
+    "primary": {
+      "navy": {
+        "value": "#0A1628",
+        "usage": "Titres H1-H2, CTA primaires, liens",
+        "contrast": "7.2:1 (WCAG AAA)",
+        "tailwind": "text-navy bg-navy border-navy"
+      },
+      "anthracite": {
+        "value": "#2D3748",
+        "usage": "Titres H3-H4, texte secondaire, CTA secondary",
+        "contrast": "6.1:1 (WCAG AA Large)",
+        "tailwind": "text-anthracite bg-anthracite border-anthracite"
+      },
+      "gold": {
+        "value": "#B8860B",
+        "usage": "Accents rares (<5%), badges, quotes",
+        "contrast": "5.2:1 (WCAG AA)",
+        "tailwind": "text-gold bg-gold border-gold"
+      }
+    },
+    "gray": {
+      "950": "#0F172A",
+      "900": "#1E293B",
+      "800": "#334155",
+      "700": "#475569",
+      "600": "#64748B",
+      "500": "#94A3B8",
+      "400": "#CBD5E1",
+      "300": "#E2E8F0",
+      "200": "#F1F5F9",
+      "100": "#F8FAFC"
+    },
+    "semantic": {
+      "success": {
+        "value": "#059669",
+        "usage": "Messages de succès, validation",
+        "tailwind": "text-green-600 bg-green-50"
+      },
+      "error": {
+        "value": "#DC2626",
+        "usage": "Erreurs, validation échouée",
+        "tailwind": "text-red-600 bg-red-50"
+      },
+      "warning": {
+        "value": "#D97706",
+        "usage": "Avertissements, attention",
+        "tailwind": "text-amber-600 bg-amber-50"
+      },
+      "info": {
+        "value": "#0284C7",
+        "usage": "Informations, callouts",
+        "tailwind": "text-sky-600 bg-sky-50"
+      }
+    },
+    "rules": [
+      "90%+ de la surface en grayscale",
+      "Navy uniquement pour titres + CTA primaires",
+      "Gold < 5% de la surface visible",
+      "1 seul CTA primary (Navy) par écran",
+      "Contraste WCAG AAA (7:1) pour texte courant",
+      "Imprimable en noir & blanc sans perte d'info"
+    ]
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": {
+        "value": "Tiempos Headline, Georgia, serif",
+        "description": "Autorité intellectuelle",
+        "weights": [400, 500]
+      },
+      "body": {
+        "value": "Inter, system-ui, -apple-system, sans-serif",
+        "description": "Lisibilité institutionnelle",
+        "weights": [400, 500, 600]
+      }
+    },
+    "fontSize": {
+      "h1": {
+        "size": "48px",
+        "lineHeight": "120%",
+        "letterSpacing": "-0.02em",
+        "weight": 500,
+        "tailwind": "text-5xl md:text-6xl"
+      },
+      "h2": {
+        "size": "36px",
+        "lineHeight": "125%",
+        "letterSpacing": "-0.01em",
+        "weight": 500,
+        "tailwind": "text-4xl md:text-5xl"
+      },
+      "h3": {
+        "size": "28px",
+        "lineHeight": "130%",
+        "letterSpacing": "0",
+        "weight": 500,
+        "tailwind": "text-3xl md:text-4xl"
+      },
+      "h4": {
+        "size": "20px",
+        "lineHeight": "140%",
+        "letterSpacing": "0",
+        "weight": 600,
+        "tailwind": "text-xl md:text-2xl"
+      },
+      "body-l": {
+        "size": "18px",
+        "lineHeight": "160%",
+        "weight": 400,
+        "tailwind": "text-lg"
+      },
+      "body-m": {
+        "size": "16px",
+        "lineHeight": "160%",
+        "weight": 400,
+        "tailwind": "text-base"
+      },
+      "body-s": {
+        "size": "14px",
+        "lineHeight": "150%",
+        "weight": 400,
+        "tailwind": "text-sm"
+      }
+    },
+    "rules": [
+      "1 seul H1 par page",
+      "Progression H1 > H2 > H3 > H4 (jamais de saut)",
+      "Line-height minimum 160% pour body",
+      "Max 75 caractères par ligne (max-w-prose)",
+      "Contraste 7:1 minimum (WCAG AAA)"
+    ]
+  },
+  "spacing": {
+    "scale": {
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "6": "24px",
+      "8": "32px",
+      "12": "48px",
+      "16": "64px",
+      "24": "96px",
+      "32": "128px"
+    },
+    "usage": {
+      "component-padding": "space-4 to space-6",
+      "section-spacing": "space-12 to space-24",
+      "container-padding": "space-4 (mobile) to space-8 (desktop)",
+      "element-gap": "space-2 to space-4"
+    },
+    "rules": [
+      "Base 4px pour cohérence",
+      "Espacement généreux = autorité",
+      "Respiration entre sections (48-96px)",
+      "Éviter les valeurs arbitraires"
+    ]
+  },
+  "grid": {
+    "container": {
+      "maxWidth": "1280px",
+      "padding": "px-4 md:px-8",
+      "margin": "mx-auto"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    },
+    "columns": {
+      "mobile": 4,
+      "tablet": 8,
+      "desktop": 12
+    },
+    "gap": "space-4 md:space-6"
+  },
+  "buttons": {
+    "description": "Système de boutons institutionnel",
+    "variants": {
+      "primary": {
+        "usage": "Action principale unique par écran",
+        "default": {
+          "background": "navy",
+          "text": "white",
+          "border": "none"
+        },
+        "hover": {
+          "background": "navy-700"
+        },
+        "active": {
+          "background": "navy-800"
+        },
+        "disabled": {
+          "background": "gray-400",
+          "cursor": "not-allowed"
+        }
+      },
+      "secondary": {
+        "usage": "Actions secondaires, alternatives",
+        "default": {
+          "background": "transparent",
+          "text": "navy",
+          "border": "navy"
+        },
+        "hover": {
+          "background": "navy",
+          "text": "white"
+        },
+        "active": {
+          "background": "navy-700",
+          "text": "white"
+        }
+      },
+      "ghost": {
+        "usage": "Actions tertiaires, navigation secondaire",
+        "default": {
+          "background": "transparent",
+          "text": "navy",
+          "border": "none",
+          "decoration": "underline transparent"
+        },
+        "hover": {
+          "decoration": "underline navy"
+        }
+      }
+    },
+    "sizes": {
+      "sm": {
+        "padding": "px-4 py-2",
+        "fontSize": "text-sm",
+        "minHeight": "32px"
+      },
+      "md": {
+        "padding": "px-8 py-4",
+        "fontSize": "text-body-m",
+        "minHeight": "48px"
+      },
+      "lg": {
+        "padding": "px-10 py-5",
+        "fontSize": "text-lg",
+        "minHeight": "56px"
+      }
+    },
+    "rules": [
+      "1 seul bouton primary par écran",
+      "Touch target minimum: 44x44px",
+      "JAMAIS de couleur GOLD sur boutons",
+      "Transitions: duration-200",
+      "Labels clairs et actionnables"
+    ]
+  },
+  "links": {
+    "description": "Système de liens institutionnel",
+    "variants": {
+      "inline": {
+        "usage": "Liens dans le corps de texte",
+        "default": {
+          "color": "navy",
+          "decoration": "underline",
+          "underlineOffset": "2px",
+          "decorationThickness": "1px"
+        },
+        "hover": {
+          "color": "anthracite"
+        }
+      },
+      "standalone": {
+        "usage": "Liens hors texte, navigation avec icône",
+        "default": {
+          "color": "navy",
+          "fontWeight": "medium",
+          "display": "inline-flex",
+          "gap": "8px"
+        },
+        "hover": {
+          "color": "anthracite",
+          "iconTransform": "translateX(4px)"
+        }
+      },
+      "navigation": {
+        "usage": "Header, footer, menus",
+        "default": {
+          "color": "gray-700",
+          "fontWeight": "medium"
+        },
+        "hover": {
+          "color": "navy"
+        },
+        "active": {
+          "color": "navy",
+          "fontWeight": "semibold"
+        }
+      }
+    },
+    "rules": [
+      "Toujours underline pour inline links",
+      "Transitions: duration-150",
+      "Icône flèche pour standalone",
+      "Labels descriptifs et contextuels",
+      "Liens externes avec target='_blank' rel='noopener noreferrer'",
+      "Focus visible (ring-2)"
+    ]
+  },
+  "forms": {
+    "description": "Système de formulaires institutionnel",
+    "fields": {
+      "label": {
+        "fontSize": "text-label",
+        "color": "gray-700",
+        "fontWeight": "medium",
+        "display": "block"
+      },
+      "input": {
+        "height": "48px",
+        "padding": "0 16px",
+        "background": "white",
+        "border": "2px solid gray-400",
+        "borderRadius": "rounded",
+        "fontSize": "text-body-m",
+        "color": "gray-900",
+        "placeholder": "gray-500"
+      },
+      "textarea": {
+        "padding": "12px 16px",
+        "background": "white",
+        "border": "2px solid gray-400",
+        "borderRadius": "rounded",
+        "fontSize": "text-body-m",
+        "color": "gray-900",
+        "resize": "none"
+      },
+      "select": {
+        "height": "48px",
+        "padding": "0 16px",
+        "background": "white",
+        "border": "2px solid gray-400",
+        "borderRadius": "rounded",
+        "fontSize": "text-body-m",
+        "color": "gray-900",
+        "cursor": "pointer"
+      },
+      "checkbox": {
+        "size": "20px",
+        "border": "2px solid gray-400",
+        "borderRadius": "rounded",
+        "color": "navy"
+      }
+    },
+    "states": {
+      "default": {
+        "border": "gray-400"
+      },
+      "focus": {
+        "border": "navy",
+        "ring": "1px navy",
+        "outline": "none"
+      },
+      "error": {
+        "border": "error",
+        "ring": "1px error"
+      },
+      "success": {
+        "border": "success",
+        "ring": "1px success"
+      },
+      "disabled": {
+        "background": "gray-100",
+        "cursor": "not-allowed",
+        "opacity": "0.5"
+      }
+    },
+    "rules": [
+      "Labels visibles et descriptifs",
+      "Required fields avec astérisque (*)",
+      "Placeholders comme exemples uniquement",
+      "Messages d'erreur clairs et actionnables",
+      "Focus visible sur tous les champs",
+      "Height minimum: 44px (touch targets)",
+      "Transitions: duration-150",
+      "Validation côté client ET serveur"
+    ]
+  },
+  "cards": {
+    "description": "Système de cards institutionnel",
+    "variants": {
+      "service": {
+        "usage": "Services, domaines d'expertise",
+        "padding": "p-8",
+        "icon": {
+          "size": "48px",
+          "background": "gray-100",
+          "color": "navy"
+        },
+        "title": {
+          "fontFamily": "heading",
+          "fontSize": "text-h4",
+          "color": "navy"
+        },
+        "description": {
+          "fontSize": "text-body-m",
+          "color": "gray-700"
+        },
+        "cta": {
+          "color": "navy",
+          "fontWeight": "medium",
+          "icon": "ArrowRight"
+        }
+      },
+      "article": {
+        "usage": "Articles, actualités, ressources",
+        "padding": "p-6",
+        "image": {
+          "aspectRatio": "aspect-video",
+          "hoverScale": "scale-105"
+        },
+        "meta": {
+          "fontSize": "text-caption",
+          "color": "gray-600"
+        },
+        "title": {
+          "fontFamily": "heading",
+          "fontSize": "text-h4",
+          "color": "navy",
+          "hoverColor": "anthracite"
+        },
+        "description": {
+          "fontSize": "text-body-m",
+          "color": "gray-700",
+          "lineClamp": "3"
+        }
+      },
+      "stat": {
+        "usage": "Chiffres clés, KPIs",
+        "padding": "p-8",
+        "textAlign": "center",
+        "number": {
+          "fontFamily": "heading",
+          "fontSize": "text-5xl",
+          "color": "navy"
+        },
+        "label": {
+          "fontSize": "text-body-l",
+          "fontWeight": "medium",
+          "color": "anthracite"
+        }
+      },
+      "quote": {
+        "usage": "Témoignages, citations",
+        "padding": "p-8",
+        "borderLeft": "4px solid gold",
+        "quote": {
+          "fontFamily": "heading",
+          "fontSize": "text-h4",
+          "color": "anthracite"
+        }
+      }
+    },
+    "base": {
+      "background": "white",
+      "border": "1px solid gray-300",
+      "borderRadius": "rounded",
+      "transition": "all duration-200"
+    },
+    "hover": {
+      "border": "anthracite",
+      "shadow": "shadow-sm"
+    },
+    "rules": [
+      "Border subtile par défaut (gray-300)",
+      "Hover: border-anthracite + shadow-sm",
+      "Transitions smooth (duration-200)",
+      "Padding cohérent (p-6 ou p-8)",
+      "Images avec alt text obligatoire",
+      "CTAs avec labels clairs",
+      "Line-clamp sur descriptions longues",
+      "Pas de couleur GOLD sauf quote cards"
+    ]
+  },
+  "tables": {
+    "description": "Système de tables institutionnel",
+    "base": {
+      "width": "w-full",
+      "borderCollapse": "border-collapse",
+      "wrapper": "overflow-x-auto"
+    },
+    "header": {
+      "background": "gray-100",
+      "border": "border-b border-gray-300",
+      "padding": {
+        "sm": "px-4 py-2",
+        "md": "px-6 py-4",
+        "lg": "px-8 py-5"
+      },
+      "text": {
+        "size": "text-label",
+        "color": "gray-700",
+        "weight": "font-semibold",
+        "transform": "uppercase"
+      },
+      "alignment": "text-left"
+    },
+    "body": {
+      "border": "border-b border-gray-200",
+      "hover": "hover:bg-gray-50",
+      "padding": {
+        "sm": "px-4 py-2",
+        "md": "px-6 py-4",
+        "lg": "px-8 py-5"
+      },
+      "text": {
+        "size": "text-body-m",
+        "color": "gray-700"
+      },
+      "firstColumn": {
+        "color": "gray-900",
+        "weight": "font-medium"
+      }
+    },
+    "zebra": {
+      "evenRow": "bg-gray-50",
+      "hover": "hover:bg-gray-100"
+    },
+    "clickable": {
+      "cursor": "cursor-pointer",
+      "hover": "hover:bg-gray-100",
+      "focus": "focus:outline-none focus:ring-2 focus:ring-navy focus:ring-inset"
+    },
+    "rules": [
+      "Caption obligatoire (visible ou sr-only)",
+      "Headers avec scope='col'",
+      "Première colonne en th scope='row' + font-medium",
+      "Hover state sur toutes les lignes",
+      "Responsive avec overflow-x-auto",
+      "Alignement cohérent header/body",
+      "Padding cohérent (px-6 py-4 par défaut)",
+      "Borders subtiles (gray-200, gray-300)",
+      "Empty state géré",
+      "Keyboard navigation si clickable"
+    ]
+  },
+  "quotes": {
+    "description": "Système de citations institutionnelles",
+    "standard": {
+      "border": "border-l-2 border-gold",
+      "background": "bg-gray-50",
+      "padding": "py-6 pl-6 pr-6",
+      "margin": "my-8",
+      "text": {
+        "quote": "font-heading text-h4 text-anthracite italic",
+        "author": "text-body-m font-medium text-gray-900",
+        "authorTitle": "text-label text-gray-600"
+      }
+    },
+    "pull": {
+      "text": "font-heading text-h3 text-anthracite italic leading-relaxed",
+      "alignment": "text-center",
+      "margin": "my-12",
+      "figcaption": "mt-6 text-label text-gray-600"
+    },
+    "inline": {
+      "text": "font-heading italic text-anthracite"
+    },
+    "rules": [
+      "Bordure GOLD uniquement pour quotes",
+      "Font heading + italic obligatoire",
+      "Background gray-50 pour lisibilité",
+      "Utiliser <cite> pour l'auteur",
+      "not-italic sur <cite>",
+      "Attribut not-italic sur cite pour reset"
+    ]
+  },
+  "callouts": {
+    "description": "Système de callouts/notes importantes",
+    "base": {
+      "padding": "p-6",
+      "border": "border-l-4",
+      "borderRadius": "rounded-r",
+      "margin": "my-6",
+      "layout": "flex gap-4",
+      "icon": "w-5 h-5 flex-shrink-0 mt-0.5",
+      "title": "text-h4 font-semibold mb-2",
+      "text": "text-body-m"
+    },
+    "variants": {
+      "info": {
+        "container": "bg-blue-50 border-blue-500",
+        "title": "text-blue-900",
+        "text": "text-blue-800",
+        "icon": "text-blue-500"
+      },
+      "warning": {
+        "container": "bg-warning-light border-warning",
+        "title": "text-warning-dark",
+        "text": "text-gray-900",
+        "icon": "text-warning"
+      },
+      "success": {
+        "container": "bg-success-light border-success",
+        "title": "text-success-dark",
+        "text": "text-gray-900",
+        "icon": "text-success"
+      },
+      "error": {
+        "container": "bg-error-light border-error",
+        "title": "text-error-dark",
+        "text": "text-gray-900",
+        "icon": "text-error"
+      },
+      "neutral": {
+        "container": "bg-gray-100 border-navy",
+        "title": "text-navy",
+        "text": "text-gray-700",
+        "icon": "text-navy"
+      }
+    },
+    "rules": [
+      "Maximum 3-4 callouts par page",
+      "Icône obligatoire sauf showIcon=false",
+      "Border-l-4 pour impact visuel",
+      "Rounded-r pour finition professionnelle",
+      "Role ARIA approprié (note, alert)",
+      "Couleur de variant cohérente (container + title + icon)"
+    ]
+  },
+  "header": {
+    "description": "Header sticky institutionnel",
+    "base": {
+      "position": "sticky top-0 z-50",
+      "background": "bg-white",
+      "border": "border-b border-gray-200",
+      "transition": "transition-shadow duration-200",
+      "shadow": "shadow-sm (on scroll)"
+    },
+    "nav": {
+      "height": "h-20",
+      "layout": "flex items-center justify-between"
+    },
+    "logo": {
+      "text": "font-heading text-h3 text-navy",
+      "tracking": "tracking-tight"
+    },
+    "links": {
+      "desktop": "hidden lg:flex items-center gap-8",
+      "text": "text-body-m text-gray-700 font-medium",
+      "hover": "hover:text-navy",
+      "transition": "transition-colors"
+    },
+    "mobileMenu": {
+      "overlay": "fixed inset-0 z-50 bg-white lg:hidden",
+      "animation": "transition-transform duration-300",
+      "closed": "translate-x-full",
+      "open": "translate-x-0",
+      "header": "h-20 px-6 border-b border-gray-200",
+      "nav": "p-6 space-y-4",
+      "link": "block py-3 px-4 text-h4 text-gray-900 font-medium rounded hover:bg-gray-100"
+    },
+    "rules": [
+      "Sticky top-0 avec z-50",
+      "Shadow on scroll (shadow-sm)",
+      "Height h-20 fixe",
+      "Logo en font-heading text-h3 text-navy",
+      "Navigation desktop hidden lg:flex",
+      "Mobile menu fixed overlay avec animation slide",
+      "Body scroll lock quand mobile menu ouvert",
+      "Aria-label sur nav",
+      "Aria-expanded sur mobile toggle"
+    ]
+  },
+  "footer": {
+    "description": "Footer institutionnel",
+    "base": {
+      "background": "bg-gray-950",
+      "text": "text-gray-400",
+      "padding": "py-16"
+    },
+    "grid": {
+      "columns": "grid-cols-1 md:grid-cols-4",
+      "gap": "gap-12"
+    },
+    "titles": {
+      "main": "font-heading text-h4 text-white",
+      "section": "text-label uppercase text-white"
+    },
+    "links": {
+      "text": "text-body-m",
+      "hover": "hover:text-white",
+      "transition": "transition-colors"
+    },
+    "bottom": {
+      "padding": "pt-8",
+      "border": "border-t border-gray-800",
+      "layout": "flex justify-between items-center",
+      "copyright": "text-caption",
+      "language": "text-caption hover:text-white"
+    },
+    "rules": [
+      "Background bg-gray-950 obligatoire",
+      "Text gray-400 pour body, white pour titres",
+      "Grid 4 colonnes sur desktop",
+      "Première colonne en font-heading text-h4",
+      "Headers en text-label uppercase",
+      "Border-t border-gray-800 pour bottom",
+      "Language switcher avec hrefLang",
+      "Responsive stack sur mobile"
+    ]
+  },
+  "icons": {
+    "description": "Système d'icônes Lucide React",
+    "library": "lucide-react",
+    "strokeWidth": 1.5,
+    "sizes": {
+      "sm": "w-5 h-5 (20px)",
+      "md": "w-6 h-6 (24px)",
+      "lg": "w-8 h-8 (32px)",
+      "xl": "w-12 h-12 (48px)"
+    },
+    "usage": {
+      "inline": "w-5 h-5 - Dans le texte, avec liens",
+      "standard": "w-6 h-6 - UI général, boutons",
+      "feature": "w-8 h-8 - Service cards, headers",
+      "hero": "w-12 h-12 - Hero sections, grandes features"
+    },
+    "containers": {
+      "circle": "w-12 h-12 bg-navy-light rounded-full",
+      "square": "w-12 h-12 bg-navy-light rounded",
+      "border": "w-12 h-12 border-2 border-navy rounded-full"
+    },
+    "rules": [
+      "StrokeWidth 1.5 obligatoire",
+      "Tailles standardisées uniquement (w-5, w-6, w-8, w-12)",
+      "Aria-hidden si décoratif (avec texte)",
+      "Aria-label si icône seule",
+      "Flex-shrink-0 dans les listes",
+      "Inline-flex pour alignement avec texte",
+      "Transition pour hover effects",
+      "Couleurs cohérentes avec contexte (success, error, navy)"
+    ]
+  },
+  "animations": {
+    "description": "Système d'animations et transitions",
+    "duration": {
+      "fast": "150ms (duration-150)",
+      "base": "200ms (duration-200)",
+      "slow": "300ms (duration-300)"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+      "tailwind": "ease-in-out"
+    },
+    "usage": {
+      "fast": "Micro-interactions (hover, focus)",
+      "base": "Standard transitions (cards, inputs)",
+      "slow": "Modal, drawer, mobile menu"
+    },
+    "properties": {
+      "colors": "transition-colors duration-150",
+      "transform": "transition-transform duration-200",
+      "shadow": "transition-shadow duration-200",
+      "opacity": "transition-opacity duration-200",
+      "all": "transition-all duration-200"
+    },
+    "rules": [
+      "Duration standardisée uniquement (150ms, 200ms, 300ms)",
+      "Fast (150ms) pour micro-interactions",
+      "Base (200ms) pour transitions standard",
+      "Slow (300ms) pour modal/drawer",
+      "Toujours ajouter motion-reduce:transition-none",
+      "Préférer transition-colors/transform à transition-all",
+      "GPU-accelerated properties (transform, opacity)",
+      "Easing cohérent (ease-in-out)",
+      "Animation doit avoir un purpose (feedback utilisateur)",
+      "Max 300ms, jamais plus lent"
+    ]
+  },
+  "grid": {
+    "description": "Système de grille responsive",
+    "breakpoints": {
+      "sm": {
+        "value": "640px",
+        "description": "Mobile large / Tablet portrait"
+      },
+      "md": {
+        "value": "768px",
+        "description": "Tablet landscape"
+      },
+      "lg": {
+        "value": "1024px",
+        "description": "Desktop"
+      },
+      "xl": {
+        "value": "1280px",
+        "description": "Desktop large"
+      },
+      "2xl": {
+        "value": "1536px",
+        "description": "Desktop XL"
+      }
+    },
+    "container": {
+      "center": true,
+      "maxWidth": "1280px",
+      "padding": {
+        "mobile": "24px",
+        "tablet": "48px",
+        "desktop": "64px"
+      }
+    }
+  },
+  "spacing": {
+    "description": "Échelle d'espacement basée sur 4px",
+    "base": "4px",
+    "scale": {
+      "1": {
+        "value": "4px",
+        "usage": "Espacement minimal, padding serré"
+      },
+      "2": {
+        "value": "8px",
+        "usage": "Espacement tight, gap entre éléments proches"
+      },
+      "4": {
+        "value": "16px",
+        "usage": "Espacement standard, padding par défaut"
+      },
+      "6": {
+        "value": "24px",
+        "usage": "Espacement comfortable, sections liées"
+      },
+      "8": {
+        "value": "32px",
+        "usage": "Espacement large, séparation visuelle"
+      },
+      "12": {
+        "value": "48px",
+        "usage": "Espacement sections principales"
+      },
+      "16": {
+        "value": "64px",
+        "usage": "Espacement inter-sections"
+      },
+      "24": {
+        "value": "96px",
+        "usage": "Espacement majeur, hero sections"
+      },
+      "32": {
+  "animations": {
+    "duration": {
+      "fast": {
+        "value": "150ms",
+        "tailwind": "duration-150",
+        "usage": "Micro-interactions (icon shift, link underline)"
+      },
+      "base": {
+        "value": "200ms",
+        "tailwind": "duration-200",
+        "usage": "Standard transitions (button hover, colors)"
+      },
+      "slow": {
+        "value": "300ms",
+        "tailwind": "duration-300",
+        "usage": "Modal, drawer, complex animations"
+      }
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+      "tailwind": "ease-in-out"
+    },
+    "properties": {
+      "colors": "transition-colors",
+      "transform": "transition-transform",
+      "shadow": "transition-shadow",
+      "opacity": "transition-opacity",
+      "all": "transition-all"
+    },
+    "rules": [
+      "Duration max: 300ms (sauf exceptions)",
+      "Toujours avec prefers-reduced-motion",
+      "GPU-accelerated properties only (transform, opacity)",
+      "Animations subtiles uniquement",
+      "Jamais d'autoplay",
+      "Jamais de bounce/rotate/slide agressif",
+      "Purpose-driven: chaque animation sert une fonction",
+      "Test accessibility: motion-reduce",
+      "Hover states: 150-200ms",
+      "Scroll animations: use Framer Motion sparingly"
+    ]
+  },
+  "icons": {
+    "library": "Lucide React",
+    "sizes": {
+      "sm": "w-4 h-4 (16px)",
+      "md": "w-5 h-5 (20px)",
+      "lg": "w-6 h-6 (24px)",
+      "xl": "w-8 h-8 (32px)"
+    },
+    "strokeWidth": 1.5,
+    "usage": {
+      "navigation": "ChevronRight, ArrowRight",
+      "actions": "Mail, Phone, Download",
+      "status": "CheckCircle, AlertTriangle, Info",
+      "interface": "Menu, X, Search"
+    },
+    "rules": [
+      "Toujours avec aria-hidden='true' si décoratif",
+      "Taille cohérente avec texte adjacent",
+      "StrokeWidth 1.5 pour équilibre institutionnel",
+      "Préférer outlined vs filled",
+      "Color: currentColor pour flexibilité"
+    ]
+  }
+}
