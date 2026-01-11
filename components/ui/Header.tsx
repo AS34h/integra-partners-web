@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Button } from './Button'
+import { LanguageSwitch } from './LanguageSwitch'
 
 interface NavLink {
   label: string
@@ -128,8 +129,9 @@ export function Header({
               ))}
             </ul>
             
-            {/* CTA */}
-            <div className="hidden lg:block">
+            {/* Language + CTA */}
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSwitch />
               <Link href={ctaHref}>
                 <Button variant="primary" size="md">
                   {ctaText}
@@ -202,8 +204,16 @@ export function Header({
             ))}
           </ul>
           
+          {/* Language Selector Mobile */}
+          <div className="mt-8 pb-6 border-b border-gray-200">
+            <div className="text-caption text-gray-600 mb-3 px-4">
+              Langue / Language
+            </div>
+            <LanguageSwitch variant="default" className="px-4" />
+          </div>
+          
           {/* CTA Mobile */}
-          <div className="mt-8">
+          <div className="mt-6">
             <Link href={ctaHref} className="block">
               <Button 
                 variant="primary" 
