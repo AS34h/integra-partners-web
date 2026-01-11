@@ -161,13 +161,6 @@ export function Header({
               </div>
               
               {/* CTA */}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            
-            {/* CTA */}
-            <div className="hidden lg:block">
               <Link href={ctaHref}>
                 <Button variant="primary" size="md">
                   {ctaText}
@@ -233,6 +226,25 @@ export function Header({
                     hover:bg-gray-100
                     transition-colors
                   "
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          
+          {/* CTA Mobile */}
+          <div className="mt-8">
+            <Link href={ctaHref} className="block">
+              <Button 
+                variant="primary" 
+                size="lg" 
+                className="w-full"
+              >
+                {ctaText}
+              </Button>
+            </Link>
+          </div>
           
           {/* Languages Mobile */}
           <div className="mt-6 pt-6 border-t border-gray-200">
@@ -253,25 +265,6 @@ export function Header({
                 </span>
               ))}
             </div>
-          </div>
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          
-          {/* CTA Mobile */}
-          <div className="mt-8">
-            <Link href={ctaHref} className="block">
-              <Button 
-                variant="primary" 
-                size="lg" 
-                className="w-full"
-              >
-                {ctaText}
-              </Button>
-            </Link>
           </div>
         </nav>
       </div>
