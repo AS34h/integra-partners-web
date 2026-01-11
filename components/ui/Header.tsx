@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { Button } from './Button'
-import { LanguageSwitch } from './LanguageSwitch'
 
 interface NavLink {
   label: string
@@ -35,6 +34,11 @@ export interface HeaderProps {
   logo?: string | React.ReactNode
   
   /**
+   * Langues disponibles
+   */
+  languages?: { code: string; label: string }[]
+  
+  /**
    * Classes CSS additionnelles
    */
   className?: string
@@ -47,11 +51,18 @@ const defaultNavLinks: NavLink[] = [
   { label: 'Ressources', href: '/ressources' },
 ]
 
+const defaultLanguages = [
+  { code: 'fr', label: 'FR' },
+  { code: 'en', label: 'EN' },
+  { code: 'de', label: 'DE' },
+]
+
 export function Header({
   navLinks = defaultNavLinks,
   ctaText = 'Diagnostic',
   ctaHref = '/diagnostic',
   logo = 'INTEGRA PARTNERS',
+  languages = defaultLanguages,
   className = ''
 }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -122,16 +133,34 @@ export function Header({
                       transition-colors
                       hover:text-navy
                     "
-                  >
-                    {link.label}
+                Languages & CTA */}
+            <div className="hidden lg:flex items-center gap-6">
+              {/* Languages */}
+              <div className="flex items-center gap-3">
+                {languages.map((lang, index) => (
+                  <span key={lang.code} className="flex items-center gap-3">
+                    <Link
+                      href={`/${lang.code}`}
+                      className="text-sm text-gray-600 hover:text-navy transition-colors font-medium"
+                      hrefLang={lang.code}
+                    >
+                      {lang.label}
+                    </Link>
+                    {index < languages.length - 1 && (
+                      <span className="text-gray-300">|</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+              
+              {/* CTA */}
                   </Link>
                 </li>
               ))}
             </ul>
             
-            {/* Language + CTA */}
-            <div className="hidden lg:flex items-center gap-4">
-              <LanguageSwitch />
+            {/* CTA */}
+            <div className="hidden lg:block">
               <Link href={ctaHref}>
                 <Button variant="primary" size="md">
                   {ctaText}
@@ -197,6 +226,27 @@ export function Header({
                     hover:bg-gray-100
                     transition-colors
                   "
+          
+          {/* Languages Mobile */}
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-500 mb-3">Langue</p>
+            <div className="flex items-center gap-4">
+              {languages.map((lang, index) => (
+                <span key={lang.code} className="flex items-center gap-4">
+                  <Link
+                    href={`/${lang.code}`}
+                    className="text-sm text-gray-700 hover:text-navy transition-colors font-medium"
+                    hrefLang={lang.code}
+                  >
+                    {lang.label}
+                  </Link>
+                  {index < languages.length - 1 && (
+                    <span className="text-gray-300">|</span>
+                  )}
+                </span>
+              ))}
+            </div>
+          </div>
                 >
                   {link.label}
                 </Link>
@@ -204,16 +254,8 @@ export function Header({
             ))}
           </ul>
           
-          {/* Language Selector Mobile */}
-          <div className="mt-8 pb-6 border-b border-gray-200">
-            <div className="text-caption text-gray-600 mb-3 px-4">
-              Langue / Language
-            </div>
-            <LanguageSwitch variant="default" className="px-4" />
-          </div>
-          
           {/* CTA Mobile */}
-          <div className="mt-6">
+          <div className="mt-8">
             <Link href={ctaHref} className="block">
               <Button 
                 variant="primary" 
