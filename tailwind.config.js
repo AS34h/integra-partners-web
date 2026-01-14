@@ -29,7 +29,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        heading: ['Tiempos Headline', 'Georgia', 'serif'],
+        heading: ['Playfair Display', 'Georgia', 'serif'],
         body: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
       spacing: {

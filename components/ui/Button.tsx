@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
    * Variante du bouton
    * @default 'primary'
    */
-  variant?: 'primary' | 'secondary' | 'ghost'
+  variant?: 'primary' | 'secondary' | 'ghost' | 'gold' | 'outline'
   
   /**
    * Taille du bouton
@@ -51,21 +51,38 @@ export function Button({
   const variantClasses = {
     primary: `
       bg-navy text-white border-none
-      hover:bg-navy-700 
-      active:bg-navy-800
+      hover:brightness-110 hover:shadow-md
+      active:brightness-90
       disabled:bg-gray-400 disabled:cursor-not-allowed
+      transition-all duration-200
     `,
     secondary: `
-      bg-transparent text-navy border border-navy
-      hover:bg-navy hover:text-white
-      active:bg-navy-700 active:text-white
+      bg-transparent text-navy border-2 border-navy
+      hover:bg-navy hover:text-white hover:shadow-sm
+      active:bg-opacity-90
       disabled:border-gray-400 disabled:text-gray-400 disabled:cursor-not-allowed
+      transition-all duration-200
     `,
     ghost: `
       bg-transparent text-navy border-none
-      underline underline-offset-4 decoration-1 decoration-transparent
-      hover:decoration-navy
+      hover:bg-gray-100
+      active:bg-gray-200
       disabled:text-gray-400 disabled:cursor-not-allowed
+      transition-all duration-150
+    `,
+    gold: `
+      bg-gold text-navy border-none font-semibold
+      hover:brightness-105 hover:shadow-md
+      active:brightness-95
+      disabled:bg-gray-400 disabled:cursor-not-allowed
+      transition-all duration-200
+    `,
+    outline: `
+      bg-transparent text-white border-2 border-white
+      hover:bg-white hover:text-navy hover:shadow-md
+      active:bg-gray-100 active:text-navy
+      disabled:border-gray-400 disabled:text-gray-400 disabled:cursor-not-allowed
+      transition-all duration-200
     `
   }
   

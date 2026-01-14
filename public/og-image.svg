@@ -1,0 +1,56 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A2540"/>
+  
+  <!-- Accent line -->
+  <rect x="0" y="0" width="8" height="630" fill="#D4AF37"/>
+  
+  <!-- Grid pattern (subtle) -->
+  <g opacity="0.05">
+    <line x1="0" y1="105" x2="1200" y2="105" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="0" y1="525" x2="1200" y2="525" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="630" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="630" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="630" stroke="#FFFFFF" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1000" y2="630" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  
+  <!-- Logo Symbol (Abstract IP monogram) -->
+  <g transform="translate(100, 200)">
+    <!-- Letter I -->
+    <rect x="0" y="0" width="20" height="230" fill="#D4AF37"/>
+    <rect x="-15" y="0" width="50" height="30" fill="#D4AF37"/>
+    <rect x="-15" y="200" width="50" height="30" fill="#D4AF37"/>
+    
+    <!-- Letter P -->
+    <path d="M 60 0 L 60 230 L 80 230 L 80 120 L 140 120 C 180 120 210 100 210 60 C 210 20 180 0 140 0 Z M 80 20 L 140 20 C 165 20 185 30 185 60 C 185 90 165 100 140 100 L 80 100 Z" fill="#D4AF37"/>
+  </g>
+  
+  <!-- Diagonal accent -->
+  <line x1="1200" y1="0" x2="900" y2="630" stroke="#D4AF37" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Main text -->
+  <text x="400" y="260" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#FFFFFF">
+    INTEGRA
+  </text>
+  <text x="400" y="340" font-family="Georgia, serif" font-size="72" font-weight="600" fill="#FFFFFF">
+    PARTNERS
+  </text>
+  
+  <!-- Tagline -->
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="28" fill="#D4AF37">
+    Conseil en Stratégie &amp; Gouvernance
+  </text>
+  
+  <!-- Baseline -->
+  <rect x="400" y="445" width="600" height="2" fill="#D4AF37" opacity="0.5"/>
+  
+  <!-- Sub-text -->
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="22" fill="#FFFFFF" opacity="0.8">
+    Excellence Institutionnelle • Afrique Francophone
+  </text>
+</svg>

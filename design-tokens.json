@@ -66,7 +66,7 @@
   "typography": {
     "fontFamily": {
       "heading": {
-        "value": "Tiempos Headline, Georgia, serif",
+        "value": "Playfair Display, Georgia, serif",
         "description": "Autorité intellectuelle",
         "weights": [400, 500]
       },

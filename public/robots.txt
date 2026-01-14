@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Bloquer les routes API et admin
+Disallow: /api/
+Disallow: /sanity/
+Disallow: /_next/
+Disallow: /admin/
+
+# Bloquer la pagination (éviter duplicate content)
+Disallow: /fr/analyses/*/page/
+Disallow: /en/insights/*/page/
+Disallow: /fr/ressources/*/page/
+Disallow: /en/resources/*/page/
+
+# Bloquer les pages de tags
+Disallow: /fr/tags/
+Disallow: /en/tags/
+
+# Bloquer les previews
+Disallow: /preview/
+
+# Sitemaps
+Sitemap: https://integrapartners.org/sitemap.xml
+Sitemap: https://integrapartners.org/sitemap-pages.xml
+Sitemap: https://integrapartners.org/sitemap-services.xml
+Sitemap: https://integrapartners.org/sitemap-togo.xml
+Sitemap: https://integrapartners.org/sitemap-diaspora.xml
+Sitemap: https://integrapartners.org/sitemap-analyses.xml
+Sitemap: https://integrapartners.org/sitemap-resources.xml
+
+# Crawl-delay
+Crawl-delay: 1

@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#0A2540"/>
+  <g transform="translate(6, 6) scale(0.11)">
+    <!-- Letter I -->
+    <rect x="0" y="0" width="25" height="180" fill="#D4AF37"/>
+    <rect x="-15" y="0" width="55" height="25" fill="#D4AF37"/>
+    <rect x="-15" y="155" width="55" height="25" fill="#D4AF37"/>
+    
+    <!-- Letter P -->
+    <path d="M 65 0 L 65 180 L 90 180 L 90 95 L 145 95 C 180 95 205 75 205 45 C 205 15 180 0 145 0 Z M 90 20 L 145 20 C 165 20 180 27 180 45 C 180 63 165 75 145 75 L 90 75 Z" fill="#D4AF37"/>
+  </g>
+</svg>

@@ -75,11 +75,28 @@ export function LanguageSwitch({
   
   const handleLanguageChange = (languageCode: string) => {
     setIsOpen(false)
-    onChange?.(languageCode)
     
-    // TODO: Implement actual language change logic
-    // This could be integrated with next-intl or similar i18n library
-    console.log('Language changed to:', languageCode)
+    // Call custom onChange if provided
+    if (onChange) {
+      onChange(languageCode)
+      return
+    }
+    
+    // Default behavior: Navigate to same page with new locale
+    if (typeof window !== 'undefined') {
+      const currentPath = window.location.pathname
+      const pathSegments = currentPath.split('/').filter(Boolean)
+      
+      // Remove current locale if present
+      const locales = languages.map(l => l.code)
+      if (locales.includes(pathSegments[0])) {
+        pathSegments.shift()
+      }
+      
+      // Build new path with selected locale
+      const newPath = `/${languageCode}/${pathSegments.join('/')}`
+      window.location.href = newPath
+    }
   }
   
   return (

@@ -45,22 +45,23 @@ export interface HeaderProps {
 }
 
 const defaultNavLinks: NavLink[] = [
-  { label: 'Cabinet', href: '/cabinet' },
-  { label: 'Méthode', href: '/methode-integra' },
-  { label: 'Domaines', href: '/domaines' },
-  { label: 'Ressources', href: '/ressources' },
+  { label: 'Cabinet', href: '/fr/cabinet' },
+  { label: 'Méthode', href: '/fr/methode-integra' },
+  { label: 'Services', href: '/fr/services' },
+  { label: 'Togo', href: '/fr/togo' },
+  { label: 'Diaspora', href: '/fr/diaspora' },
+  { label: 'Analyses', href: '/fr/analyses' },
 ]
 
 const defaultLanguages = [
   { code: 'fr', label: 'FR' },
   { code: 'en', label: 'EN' },
-  { code: 'de', label: 'DE' },
 ]
 
 export function Header({
   navLinks = defaultNavLinks,
   ctaText = 'Diagnostic',
-  ctaHref = '/diagnostic',
+  ctaHref = '/fr/diagnostic-ims',
   logo = 'INTEGRA PARTNERS',
   languages = defaultLanguages,
   className = ''
@@ -95,10 +96,10 @@ export function Header({
       <header
         className={`
           sticky top-0 z-50
-          bg-white
-          border-b border-gray-200
-          transition-shadow duration-200
-          ${isScrolled ? 'shadow-sm' : ''}
+          bg-white backdrop-blur-sm bg-opacity-95
+          border-b border-gray-100
+          transition-all duration-300
+          ${isScrolled ? 'shadow-md border-gray-200' : ''}
           ${className}
         `.replace(/\s+/g, ' ').trim()}
       >
@@ -130,8 +131,12 @@ export function Header({
                     className="
                       text-body-m text-gray-700
                       font-medium
-                      transition-colors
+                      transition-all duration-200
                       hover:text-navy
+                      relative
+                      after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0
+                      after:bg-navy after:transition-all after:duration-300
+                      hover:after:w-full
                     "
                   >
                     {link.label}
