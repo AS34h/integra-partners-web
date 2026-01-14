@@ -1,13 +1,40 @@
 'use client'
 
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import DOMPurify from 'dompurify'
 import { motion } from 'framer-motion'
-import { Building2, User, Mail, Phone, MessageSquare, ChevronRight } from 'lucide-react'
+import { Building2, User, Mail, Phone, MessageSquare, ChevronRight, CheckCircle, AlertCircle } from 'lucide-react'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Textarea } from '@/components/ui/Textarea'
 import { Select } from '@/components/ui/Select'
 import { Checkbox } from '@/components/ui/Checkbox'
+
+// Schéma de validation Zod
+const formSchema = z.object({
+  organization: z.string().min(2, 'Nom requis (min 2 caractères)'),
+  sector: z.string().min(1, 'Sélectionnez un secteur'),
+  size: z.string().min(1, 'Sélectionnez une taille'),
+  firstName: z.string().min(2, 'Prénom requis'),
+  lastName: z.string().min(2, 'Nom requis'),
+  position: z.string().min(2, 'Fonction requise'),
+  email: z.string().email('Email invalide'),
+  phone: z.string().min(8, 'Téléphone invalide'),
+  domain: z.string().min(1, 'Sélectionnez un domaine'),
+  challenges: z.string()
+    .min(20, 'Trop court (min 20 caractères)')
+    .max(2000, 'Trop long (max 2000 caractères)'),
+  timeline: z.string().optional(),
+  consent: z.boolean().refine(val => val === true, {
+    message: 'Vous devez accepter pour continuer'
+  })
+})
+
+type FormData = z.infer<typeof formSchema>
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -36,12 +63,75 @@ const benefits = [
 ]
 
 export default function DiagnosticPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
+    resolver: zodResolver(formSchema)
+  })
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+    setErrorMessage('')
+
+    try {
+      // 🔒 Sanitize ALL text inputs (XSS protection)
+      const sanitizedData = {
+        ...data,
+        organization: DOMPurify.sanitize(data.organization),
+        sector: DOMPurify.sanitize(data.sector),
+        size: DOMPurify.sanitize(data.size),
+        firstName: DOMPurify.sanitize(data.firstName),
+        lastName: DOMPurify.sanitize(data.lastName),
+        position: DOMPurify.sanitize(data.position),
+        domain: DOMPurify.sanitize(data.domain),
+        challenges: DOMPurify.sanitize(data.challenges),
+        timeline: data.timeline ? DOMPurify.sanitize(data.timeline) : undefined,
+        // Email et phone: déjà validés par Zod, pas besoin de sanitize HTML
+        email: data.email,
+        phone: data.phone,
+        consent: data.consent
+      }
+
+      const response = await fetch('/api/diagnostic', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest' // CSRF protection header
+        },
+        body: JSON.stringify(sanitizedData)
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.message || 'Erreur lors de l\'envoi')
+      }
+
+      setSubmitStatus('success')
+      reset()
+
+      // Redirect after 3s
+      setTimeout(() => {
+        window.location.href = '/fr/cabinet?diagnostic=sent'
+      }, 3000)
+
+    } catch (error: any) {
+      setSubmitStatus('error')
+      setErrorMessage(error.message)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
       <section className="bg-navy text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInUp}
           >
@@ -49,8 +139,8 @@ export default function DiagnosticPage() {
               Diagnostic Stratégique
             </h1>
             <p className="text-body-l text-gray-200">
-              Bénéficiez d'un premier échange confidentiel pour identifier vos 
-              enjeux stratégiques prioritaires et découvrir comment INTEGRA PARTNERS 
+              Bénéficiez d'un premier échange confidentiel pour identifier vos
+              enjeux stratégiques prioritaires et découvrir comment INTEGRA PARTNERS
               peut accompagner votre organisation.
             </p>
           </motion.div>
@@ -60,7 +150,7 @@ export default function DiagnosticPage() {
       {/* Process Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-12"
             {...fadeInUp}
           >
@@ -68,17 +158,17 @@ export default function DiagnosticPage() {
               Le Processus
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Un parcours structuré en 4 étapes pour analyser vos besoins et 
+              Un parcours structuré en 4 étapes pour analyser vos besoins et
               proposer un accompagnement adapté.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             {...fadeInUp}
           >
             {benefits.map((benefit, index) => (
-              <Card 
+              <Card
                 key={index}
                 variant="custom"
                 className="p-6 text-center"
@@ -111,23 +201,26 @@ export default function DiagnosticPage() {
                   Complétez ce formulaire. Un consultant vous contactera sous 48h.
                 </p>
 
-                <form className="space-y-6">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                   {/* Organization Info */}
                   <div className="space-y-4">
                     <h3 className="font-body font-semibold text-anthracite flex items-center gap-2">
                       <Building2 className="w-5 h-5" />
                       Informations Organisation
                     </h3>
-                    
+
                     <Input
                       label="Nom de l'organisation *"
                       placeholder="Entreprise / Institution"
-                      required
+                      {...register('organization')}
+                      error={errors.organization?.message}
                     />
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <Select
                         label="Secteur d'activité *"
+                        {...register('sector')}
+                        error={errors.sector?.message}
                         options={[
                           { value: '', label: 'Sélectionnez un secteur' },
                           { value: 'finance', label: 'Finance & Banque' },
@@ -138,11 +231,12 @@ export default function DiagnosticPage() {
                           { value: 'services', label: 'Services' },
                           { value: 'autre', label: 'Autre' }
                         ]}
-                        required
                       />
 
                       <Select
                         label="Taille de l'organisation *"
+                        {...register('size')}
+                        error={errors.size?.message}
                         options={[
                           { value: '', label: 'Sélectionnez une taille' },
                           { value: 'tpe', label: '1-10 employés' },
@@ -150,7 +244,6 @@ export default function DiagnosticPage() {
                           { value: 'eti', label: '51-250 employés' },
                           { value: 'ge', label: '250+ employés' }
                         ]}
-                        required
                       />
                     </div>
                   </div>
@@ -166,19 +259,22 @@ export default function DiagnosticPage() {
                       <Input
                         label="Prénom *"
                         placeholder="Jean"
-                        required
+                        {...register('firstName')}
+                        error={errors.firstName?.message}
                       />
                       <Input
                         label="Nom *"
                         placeholder="Dupont"
-                        required
+                        {...register('lastName')}
+                        error={errors.lastName?.message}
                       />
                     </div>
 
                     <Input
                       label="Fonction *"
                       placeholder="Directeur Général, DRH, etc."
-                      required
+                      {...register('position')}
+                      error={errors.position?.message}
                     />
 
                     <div className="grid md:grid-cols-2 gap-4">
@@ -186,13 +282,15 @@ export default function DiagnosticPage() {
                         type="email"
                         label="Email professionnel *"
                         placeholder="jean.dupont@entreprise.com"
-                        required
+                        {...register('email')}
+                        error={errors.email?.message}
                       />
                       <Input
                         type="tel"
                         label="Téléphone *"
                         placeholder="+228 XX XX XX XX"
-                        required
+                        {...register('phone')}
+                        error={errors.phone?.message}
                       />
                     </div>
                   </div>
@@ -206,6 +304,8 @@ export default function DiagnosticPage() {
 
                     <Select
                       label="Domaine d'intervention prioritaire *"
+                      {...register('domain')}
+                      error={errors.domain?.message}
                       options={[
                         { value: '', label: 'Sélectionnez un domaine' },
                         { value: 'gouvernance', label: 'Gouvernance & Conformité' },
@@ -214,18 +314,20 @@ export default function DiagnosticPage() {
                         { value: 'transformation', label: 'Transformation Opérationnelle' },
                         { value: 'multiple', label: 'Plusieurs domaines' }
                       ]}
-                      required
                     />
 
                     <Textarea
                       label="Décrivez vos enjeux stratégiques *"
                       placeholder="Expliquez brièvement les défis ou opportunités que vous souhaitez adresser..."
                       rows={6}
-                      required
+                      {...register('challenges')}
+                      error={errors.challenges?.message}
                     />
 
                     <Select
                       label="Horizon de démarrage souhaité"
+                      {...register('timeline')}
+                      error={errors.timeline?.message}
                       options={[
                         { value: '', label: 'Sélectionnez un horizon' },
                         { value: 'urgent', label: 'Urgent (< 1 mois)' },
@@ -240,28 +342,50 @@ export default function DiagnosticPage() {
                   <div className="pt-6 border-t border-gray-200">
                     <Checkbox
                       label="J'accepte que mes données soient utilisées pour me recontacter concernant ma demande. *"
-                      required
+                      {...register('consent')}
                     />
-                    <Checkbox
-                      label="Je souhaite recevoir la newsletter stratégique mensuelle d'INTEGRA PARTNERS."
-                      className="mt-3"
-                    />
+                    {errors.consent && (
+                      <p className="text-sm text-red-600 mt-2">{errors.consent.message}</p>
+                    )}
                     <p className="text-caption text-gray-600 mt-4">
-                      Vos données sont protégées et traitées conformément au RGPD. 
+                      Vos données sont protégées et traitées conformément au RGPD.
                       Consultez notre <a href="/confidentialite" className="underline text-navy">politique de confidentialité</a>.
                     </p>
                   </div>
 
+                  {/* Messages de statut */}
+                  {submitStatus === 'error' && (
+                    <div className="flex items-start gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
+                      <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-red-900">Erreur d'envoi</p>
+                        <p className="text-sm text-red-700">{errorMessage}</p>
+                      </div>
+                    </div>
+                  )}
+
+                  {submitStatus === 'success' && (
+                    <div className="flex items-start gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
+                      <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="font-medium text-green-900">✓ Demande envoyée avec succès !</p>
+                        <p className="text-sm text-green-700">Nous vous contacterons sous 48h. Redirection en cours...</p>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Submit */}
                   <div className="pt-6">
-                    <Button 
-                      variant="primary" 
+                    <Button
+                      type="submit"
+                      variant="primary"
                       size="lg"
                       className="w-full"
-                      icon={<ChevronRight className="w-5 h-5" />}
+                      disabled={isSubmitting}
+                      icon={isSubmitting ? undefined : <ChevronRight className="w-5 h-5" />}
                       iconPosition="right"
                     >
-                      Envoyer la demande
+                      {isSubmitting ? 'Envoi en cours...' : 'Envoyer la demande'}
                     </Button>
                   </div>
                 </form>
@@ -274,7 +398,7 @@ export default function DiagnosticPage() {
       {/* Contact Alternatives */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInUp}
           >

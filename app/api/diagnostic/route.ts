@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { rateLimit } from '@/lib/ratelimit-simple'
+import { validateOrigin, getCSRFConfig } from '@/lib/csrf'
 
 // Schéma de validation avec Zod
 const diagnosticSchema = z.object({
@@ -38,6 +39,18 @@ function truncate(str: string, maxLength: number = 20): string {
 
 export async function POST(request: NextRequest) {
   try {
+    // 🔒 PROTECTION CSRF - Validation de l'origine
+    const csrfConfig = getCSRFConfig()
+    const isValidOrigin = validateOrigin(request, csrfConfig.allowedOrigins)
+    
+    if (!isValidOrigin && process.env.NODE_ENV === 'production') {
+      console.warn('🚫 CSRF: Invalid origin detected')
+      return NextResponse.json({
+        success: false,
+        message: 'Requête non autorisée'
+      }, { status: 403 })
+    }
+    
     // 🔒 PROTECTION RATE LIMITING
     const ip = request.headers.get('x-forwarded-for')?.split(',')[0].trim() 
       || request.headers.get('x-real-ip') 
