@@ -15,29 +15,29 @@ export interface HeaderProps {
    * Liens de navigation
    */
   navLinks?: NavLink[]
-  
+
   /**
    * Texte du bouton CTA
    * @default 'Diagnostic'
    */
   ctaText?: string
-  
+
   /**
    * Lien du bouton CTA
    * @default '/diagnostic'
    */
   ctaHref?: string
-  
+
   /**
    * Logo texte (ou composant)
    */
   logo?: string | React.ReactNode
-  
+
   /**
    * Langues disponibles
    */
   languages?: { code: string; label: string }[]
-  
+
   /**
    * Classes CSS additionnelles
    */
@@ -50,7 +50,7 @@ const defaultNavLinks: NavLink[] = [
   { label: 'Services', href: '/fr/services' },
   { label: 'Togo', href: '/fr/togo' },
   { label: 'Diaspora', href: '/fr/diaspora' },
-  { label: 'Analyses', href: '/fr/analyses' },
+  { label: 'Ressources', href: '/fr/ressources' },
 ]
 
 const defaultLanguages = [
@@ -68,16 +68,16 @@ export function Header({
 }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
-    
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-  
+
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -85,26 +85,26 @@ export function Header({
     } else {
       document.body.style.overflow = 'unset'
     }
-    
+
     return () => {
       document.body.style.overflow = 'unset'
     }
   }, [isMobileMenuOpen])
-  
+
   return (
     <>
       <header
         className={`
           sticky top-0 z-50
-          bg-white backdrop-blur-sm bg-opacity-95
-          border-b border-gray-100
+          bg-gray-950 backdrop-blur-sm
+          border-b border-gray-800
           transition-all duration-300
-          ${isScrolled ? 'shadow-md border-gray-200' : ''}
+          ${isScrolled ? 'shadow-xl border-gray-700' : ''}
           ${className}
         `.replace(/\s+/g, ' ').trim()}
       >
-        <div className="container mx-auto">
-          <nav 
+        <div className="container mx-auto px-6">
+          <nav
             className="flex items-center justify-between h-20"
             aria-label="Navigation principale"
           >
@@ -112,8 +112,8 @@ export function Header({
             <Link href="/" className="flex items-center gap-3">
               {typeof logo === 'string' ? (
                 <span className="
-                  font-heading text-h3 text-navy
-                  tracking-tight
+                  font-heading text-4xl text-white
+                  tracking-tight font-bold
                 ">
                   {logo}
                 </span>
@@ -121,7 +121,7 @@ export function Header({
                 logo
               )}
             </Link>
-            
+
             {/* Desktop Nav */}
             <ul className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
@@ -129,13 +129,13 @@ export function Header({
                   <Link
                     href={link.href}
                     className="
-                      text-body-m text-gray-700
+                      text-base text-gray-400
                       font-medium
                       transition-all duration-200
-                      hover:text-navy
+                      hover:text-white
                       relative
                       after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0
-                      after:bg-navy after:transition-all after:duration-300
+                      after:bg-white after:transition-all after:duration-300
                       hover:after:w-full
                     "
                   >
@@ -144,7 +144,7 @@ export function Header({
                 </li>
               ))}
             </ul>
-            
+
             {/* Languages & CTA */}
             <div className="hidden lg:flex items-center gap-6">
               {/* Languages */}
@@ -153,26 +153,26 @@ export function Header({
                   <span key={lang.code} className="flex items-center gap-3">
                     <Link
                       href={`/${lang.code}`}
-                      className="text-sm text-gray-600 hover:text-navy transition-colors font-medium"
+                      className="text-sm text-gray-500 hover:text-gray-300 transition-colors font-medium"
                       hrefLang={lang.code}
                     >
                       {lang.label}
                     </Link>
                     {index < languages.length - 1 && (
-                      <span className="text-gray-300">|</span>
+                      <span className="text-gray-700">|</span>
                     )}
                   </span>
                 ))}
               </div>
-              
-              {/* CTA */}
+
+              {/* CTA Diagnostic - Version institutionnelle */}
               <Link href={ctaHref}>
-                <Button variant="primary" size="md">
+                <Button variant="primary" size="md" className="bg-white text-gray-950 hover:bg-gray-100 shadow-md hover:shadow-lg font-semibold">
                   {ctaText}
                 </Button>
               </Link>
             </div>
-            
+
             {/* Mobile Menu Toggle */}
             <button
               className="lg:hidden p-2 -mr-2"
@@ -180,17 +180,17 @@ export function Header({
               aria-label="Ouvrir le menu"
               aria-expanded={isMobileMenuOpen}
             >
-              <Menu className="w-6 h-6 text-navy" />
+              <Menu className="w-6 h-6 text-white" />
             </button>
           </nav>
         </div>
       </header>
-      
+
       {/* Mobile Menu Overlay */}
       <div
         className={`
           fixed inset-0 z-50
-          bg-white
+          bg-gray-950
           lg:hidden
           transition-transform duration-300
           ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
@@ -201,9 +201,9 @@ export function Header({
         <div className="
           flex items-center justify-between
           h-20 px-6
-          border-b border-gray-200
+          border-b border-gray-800
         ">
-          <span className="font-heading text-h3 text-navy">
+          <span className="font-heading text-4xl text-white font-bold">
             {typeof logo === 'string' ? logo : 'INTEGRA PARTNERS'}
           </span>
           <button
@@ -211,10 +211,10 @@ export function Header({
             aria-label="Fermer le menu"
             className="p-2 -mr-2"
           >
-            <X className="w-6 h-6 text-navy" />
+            <X className="w-6 h-6 text-white" />
           </button>
         </div>
-        
+
         {/* Navigation */}
         <nav className="p-6">
           <ul className="space-y-4">
@@ -225,10 +225,10 @@ export function Header({
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="
                     block py-3 px-4
-                    text-h4 text-gray-900
+                    text-lg text-gray-300
                     font-medium
                     rounded
-                    hover:bg-gray-100
+                    hover:bg-gray-900 hover:text-white
                     transition-colors
                   "
                 >
@@ -237,35 +237,35 @@ export function Header({
               </li>
             ))}
           </ul>
-          
+
           {/* CTA Mobile */}
           <div className="mt-8">
             <Link href={ctaHref} className="block">
-              <Button 
-                variant="primary" 
-                size="lg" 
-                className="w-full"
+              <Button
+                variant="primary"
+                size="lg"
+                className="w-full bg-white text-gray-950 hover:bg-gray-100"
               >
                 {ctaText}
               </Button>
             </Link>
           </div>
-          
+
           {/* Languages Mobile */}
-          <div className="mt-6 pt-6 border-t border-gray-200">
+          <div className="mt-6 pt-6 border-t border-gray-800">
             <p className="text-sm text-gray-500 mb-3">Langue</p>
             <div className="flex items-center gap-4">
               {languages.map((lang, index) => (
                 <span key={lang.code} className="flex items-center gap-4">
                   <Link
                     href={`/${lang.code}`}
-                    className="text-sm text-gray-700 hover:text-navy transition-colors font-medium"
+                    className="text-sm text-gray-400 hover:text-white transition-colors font-medium"
                     hrefLang={lang.code}
                   >
                     {lang.label}
                   </Link>
                   {index < languages.length - 1 && (
-                    <span className="text-gray-300">|</span>
+                    <span className="text-gray-700">|</span>
                   )}
                 </span>
               ))}
