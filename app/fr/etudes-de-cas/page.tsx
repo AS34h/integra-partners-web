@@ -14,15 +14,15 @@ const fadeInImmediate = {
 
 export default function EtudesDeCasHub() {
   return (
-    <div className="bg-gray-50">
-      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
+    <div className="bg-white">
+      <section className="bg-white py-16 md:py-24 border-b border-gray-100">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-dark">
               Études de <span className="text-[#B8860B]">Cas</span>
             </h1>
 
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-700 mb-8">
               Retours d'expérience réels (anonymisés) : transformations, restructurations,
               due diligence, acquisitions accompagnées par INTEGRA.
             </p>

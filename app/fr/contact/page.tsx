@@ -98,15 +98,15 @@ export default function ContactPage() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-navy-dark">
               Contactez <span className="text-[#B8860B]">INTEGRA PARTNERS</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
               Lomé (Togo) • Cotonou (Bénin) • Diaspora France/Canada/USA
             </p>
 
-            <p className="text-lg text-gray-400">
+            <p className="text-lg text-gray-600">
               Premier échange gratuit et confidentiel (30 min visio ou téléphone)
             </p>
           </motion.div>

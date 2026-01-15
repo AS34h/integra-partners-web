@@ -55,11 +55,11 @@ export default function BanquesTransfertsHub() {
               </Link>
             </nav>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-dark">
               Banques et <span className="text-[#B8860B]">Transferts</span> au Togo
             </h1>
 
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-700 mb-8">
               Guides pratiques sur le système bancaire togolais : ouverture compte pro,
               transferts internationaux, moyens de paiement, sécurité.
             </p>

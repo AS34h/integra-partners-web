@@ -108,16 +108,16 @@ export default function CookiesPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-slate-700-dark text-white py-20">
+      <section className="bg-white py-20 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeInImmediate}>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-navy-dark">
               Politique de Cookies
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl">
+            <p className="text-xl text-gray-700 max-w-3xl">
               Transparence et contrôle sur l'utilisation des cookies sur notre site
             </p>
-            <p className="text-sm text-gray-400 mt-4">
+            <p className="text-sm text-gray-500 mt-4">
               Dernière mise à jour : 11 janvier 2026
             </p>
           </motion.div>
@@ -164,14 +164,14 @@ export default function CookiesPage() {
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
                   className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
                 >
-                  <div className="bg-slate-700-dark text-white p-6">
+                  <div className="bg-gray-100 text-navy-dark p-6">
                     <h3 className="text-2xl font-bold mb-2">{category.category}</h3>
-                    <p className="text-gray-300">{category.description}</p>
+                    <p className="text-gray-700">{category.description}</p>
                   </div>
 
                   <div className="overflow-x-auto">
                     <table className="w-full">
-                      <thead className="bg-gray-100">
+                      <thead className="bg-gray-50">
                         <tr>
                           <th className="px-6 py-3 text-left text-sm font-semibold text-gray-700">Nom du cookie</th>
                           <th className="px-6 py-3 text-left text-sm font-semibold text-gray-700">Finalité</th>
@@ -181,7 +181,7 @@ export default function CookiesPage() {
                       </thead>
                       <tbody className="divide-y divide-gray-200">
                         {category.cookies.map((cookie, cookieIdx) => (
-                          <tr key={cookieIdx} className="hover:bg-gray-50">
+                          <tr key={cookieIdx} className="hover:bg-gray-100">
                             <td className="px-6 py-4 text-sm font-mono text-navy-dark">{cookie.name}</td>
                             <td className="px-6 py-4 text-sm text-gray-700">{cookie.purpose}</td>
                             <td className="px-6 py-4 text-sm text-gray-700">{cookie.duration}</td>
@@ -210,7 +210,7 @@ export default function CookiesPage() {
                 Vous pouvez à tout moment modifier vos préférences de cookies directement sur notre site en
                 cliquant sur le lien "Gérer les cookies" présent en bas de chaque page.
               </p>
-              <button className="bg-slate-700-dark text-white px-6 py-3 rounded-lg hover:bg-slate-700-light transition-colors">
+              <button className="bg-navy-dark text-white px-6 py-3 rounded-lg hover:bg-navy-light transition-colors">
                 Gérer mes préférences
               </button>
             </div>
