@@ -40,13 +40,13 @@ export function HowTo({ name, description, steps, totalTime, pageUrl }: HowToPro
     script.type = 'application/ld+json'
     script.text = JSON.stringify(howToSchema)
     script.id = `howto-schema-${pageUrl.replace(/[^a-zA-Z0-9]/g, '-')}`
-    
+
     // Vérifier si le script existe déjà
     const existingScript = document.getElementById(script.id)
     if (existingScript) {
       existingScript.remove()
     }
-    
+
     document.head.appendChild(script)
 
     return () => {
@@ -61,7 +61,7 @@ export function HowTo({ name, description, steps, totalTime, pageUrl }: HowToPro
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 my-8">
       <h2 className="text-2xl font-bold text-gray-900 mb-2">{name}</h2>
       <p className="text-gray-600 mb-6">{description}</p>
-      
+
       {totalTime && (
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
           <div className="flex items-center">
@@ -100,23 +100,23 @@ function formatDuration(duration: string): string {
   const dayMatch = duration.match(/(\d+)D/)
   const hourMatch = duration.match(/(\d+)H/)
   const minuteMatch = duration.match(/(\d+)M/)
-  
+
   const parts = []
-  
+
   if (dayMatch) {
     const days = parseInt(dayMatch[1])
     parts.push(`${days} jour${days > 1 ? 's' : ''}`)
   }
-  
+
   if (hourMatch) {
     const hours = parseInt(hourMatch[1])
     parts.push(`${hours} heure${hours > 1 ? 's' : ''}`)
   }
-  
+
   if (minuteMatch && !dayMatch && !hourMatch) {
     const minutes = parseInt(minuteMatch[1])
     parts.push(`${minutes} minute${minutes > 1 ? 's' : ''}`)
   }
-  
+
   return parts.join(' ')
 }

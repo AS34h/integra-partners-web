@@ -7,7 +7,7 @@ export default function USACreerEntreprisePage() {
         <h1 className="text-4xl font-bold mb-6">Créer une Entreprise au Togo depuis les USA</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : création SARL à distance depuis USA, 
+            Contenu SEO optimisé à fournir : création SARL à distance depuis USA,
             procuration apostille, compte bancaire, fiscalité US-Togo.
           </p>
           {/* Contenu détaillé à ajouter */}

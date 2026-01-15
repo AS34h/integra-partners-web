@@ -15,23 +15,23 @@ export interface LanguageSwitchProps {
    * @default 'fr'
    */
   currentLanguage?: string
-  
+
   /**
    * Langues disponibles
    */
   languages?: Language[]
-  
+
   /**
    * Callback lors du changement de langue
    */
   onChange?: (languageCode: string) => void
-  
+
   /**
    * Variante d'affichage
    * @default 'default'
    */
   variant?: 'default' | 'compact'
-  
+
   /**
    * Classes CSS additionnelles
    */
@@ -53,9 +53,9 @@ export function LanguageSwitch({
 }: LanguageSwitchProps) {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
-  
+
   const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0]
-  
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -63,42 +63,42 @@ export function LanguageSwitch({
         setIsOpen(false)
       }
     }
-    
+
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside)
     }
-    
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [isOpen])
-  
+
   const handleLanguageChange = (languageCode: string) => {
     setIsOpen(false)
-    
+
     // Call custom onChange if provided
     if (onChange) {
       onChange(languageCode)
       return
     }
-    
+
     // Default behavior: Navigate to same page with new locale
     if (typeof window !== 'undefined') {
       const currentPath = window.location.pathname
       const pathSegments = currentPath.split('/').filter(Boolean)
-      
+
       // Remove current locale if present
       const locales = languages.map(l => l.code)
       if (locales.includes(pathSegments[0])) {
         pathSegments.shift()
       }
-      
+
       // Build new path with selected locale
       const newPath = `/${languageCode}/${pathSegments.join('/')}`
       window.location.href = newPath
     }
   }
-  
+
   return (
     <div className={`relative ${className}`} ref={dropdownRef}>
       {/* Trigger Button */}
@@ -122,15 +122,15 @@ export function LanguageSwitch({
         {variant === 'default' && (
           <span className="font-medium hidden sm:inline">{currentLang.code.toUpperCase()}</span>
         )}
-        <ChevronDown 
+        <ChevronDown
           className={`
             w-4 h-4
             transition-transform duration-200
             ${isOpen ? 'rotate-180' : ''}
-          `} 
+          `}
         />
       </button>
-      
+
       {/* Dropdown Menu */}
       {isOpen && (
         <div className="

@@ -65,7 +65,7 @@ export default function CabinetPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl"
@@ -133,7 +133,7 @@ export default function CabinetPage() {
                   className="p-8"
                 >
                   <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-navy text-white flex items-center justify-center">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-700 text-white flex items-center justify-center">
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
@@ -192,7 +192,7 @@ export default function CabinetPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl mx-auto text-center"

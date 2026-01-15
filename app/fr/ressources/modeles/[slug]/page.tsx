@@ -8,7 +8,7 @@ interface PageProps {
 
 export default function ModelesSlugPage({ params }: PageProps) {
   // TODO: Fetch model data based on params.slug
-  
+
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="max-w-4xl mx-auto">

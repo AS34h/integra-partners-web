@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://integrapartners.com'
-  
+
   // Articles ressources
   const articles = [
     {
@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: '2025-12-15',
     },
   ]
-  
+
   // Guides Togo
   const togoGuides = [
     {
@@ -153,7 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
   ]
-  
+
   // Pages Diaspora
   const diasporaPages = [
     {
@@ -247,7 +247,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
   ]
-  
+
   return [
     {
       url: baseUrl,

@@ -12,7 +12,7 @@ export default function MentionsLegalesPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-navy-dark text-white py-20">
+      <section className="bg-slate-700-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeInUp}>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -221,7 +221,7 @@ export default function MentionsLegalesPage() {
                   Pour exercer ces droits, vous pouvez contacter notre Délégué à la Protection des Données :
                 </p>
 
-                <div className="bg-navy-dark/5 rounded-lg p-4">
+                <div className="bg-slate-700-dark/5 rounded-lg p-4">
                   <p className="font-semibold">Email : <a href="mailto:dpo@integrapartners.com" className="text-gold hover:text-gold-dark underline">dpo@integrapartners.com</a></p>
                   <p className="font-semibold">Courrier : DPO INTEGRA PARTNERS, BP 1234, Lomé, Togo</p>
                 </div>
@@ -279,7 +279,7 @@ export default function MentionsLegalesPage() {
             </div>
 
             {/* Contact */}
-            <div className="bg-navy-dark text-white rounded-lg shadow-sm p-8">
+            <div className="bg-slate-700-dark text-white rounded-lg shadow-sm p-8">
               <h2 className="text-2xl font-bold mb-6">
                 8. Contact
               </h2>

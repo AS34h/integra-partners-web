@@ -16,24 +16,24 @@ export default function ConseilStrategiquePage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-20">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-20">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl">
             <Link href="/fr/services" className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6 transition-colors">
               <ArrowRight className="w-4 h-4 rotate-180" />
               <span>Retour aux services</span>
             </Link>
-            
+
             <div className="inline-block mb-6 px-4 py-2 bg-blue-600/20 rounded-full border border-blue-500/30">
               <span className="text-blue-400 font-semibold text-sm">CONSEIL STRATÉGIQUE</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Conseil Stratégique Premium pour <span className="text-[#B8860B]">Dirigeants & Institutions</span>
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8">
-              Accompagnement des directions générales et conseils d'administration dans leurs décisions 
+              Accompagnement des directions générales et conseils d'administration dans leurs décisions
               stratégiques majeures : positionnement, croissance, transformation et pilotage institutionnel.
             </p>
 
@@ -53,20 +53,20 @@ export default function ConseilStrategiquePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-8">Pour Qui ?</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <Card variant="custom" className="p-6">
                 <Users className="w-10 h-10 text-blue-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">Directions Générales</h3>
                 <p className="text-gray-700">Entreprises privées, groupes, institutions publiques cherchant à définir ou pivoter leur stratégie.</p>
               </Card>
-              
+
               <Card variant="custom" className="p-6">
                 <Shield className="w-10 h-10 text-blue-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">Conseils d'Administration</h3>
                 <p className="text-gray-700">Actionnaires et administrateurs souhaitant renforcer la gouvernance et le contrôle stratégique.</p>
               </Card>
-              
+
               <Card variant="custom" className="p-6">
                 <Award className="w-10 h-10 text-blue-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">Investisseurs & Bailleurs</h3>
@@ -82,7 +82,7 @@ export default function ConseilStrategiquePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-12">Nos Interventions Stratégiques</h2>
-            
+
             <div className="space-y-6">
               {[
                 {
@@ -119,11 +119,11 @@ export default function ConseilStrategiquePage() {
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
                       <span className="text-blue-600 font-bold text-xl">{index + 1}</span>
                     </div>
-                    
+
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-[#0B1A3E] mb-3">{intervention.title}</h3>
                       <p className="text-gray-700 mb-4 leading-relaxed">{intervention.description}</p>
-                      
+
                       <div className="mb-4">
                         <p className="font-semibold text-[#0B1A3E] mb-2">Livrables clés :</p>
                         <ul className="space-y-1">
@@ -160,7 +160,7 @@ export default function ConseilStrategiquePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-8">Méthode INTEGRA 6 Phases</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { phase: '1', titre: 'Cadrage', contenu: 'Enjeux, périmètre, livrables, planning' },
@@ -182,7 +182,7 @@ export default function ConseilStrategiquePage() {
 
             <div className="mt-8 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-lg">
               <p className="text-gray-700">
-                <strong className="text-blue-600">Validation à chaque étape :</strong> Aucune phase ne démarre sans 
+                <strong className="text-blue-600">Validation à chaque étape :</strong> Aucune phase ne démarre sans
                 validation formelle de la précédente par le comité de pilotage client.
               </p>
             </div>
@@ -191,19 +191,19 @@ export default function ConseilStrategiquePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Prêt à Définir Votre Stratégie Gagnante ?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Bénéficiez d'un diagnostic stratégique gratuit de 30 minutes avec un consultant senior. 
+              Bénéficiez d'un diagnostic stratégique gratuit de 30 minutes avec un consultant senior.
               Analyse de vos enjeux et recommandations immédiates.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

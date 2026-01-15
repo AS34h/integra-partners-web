@@ -15,7 +15,7 @@ export default function GuideTVATogo() {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero */}
-      <section className="bg-navy text-white py-12 md:py-16">
+      <section className="bg-slate-700 text-white py-12 md:py-16">
         <div className="container mx-auto">
           <div className="max-w-4xl">
             <div className="mb-4">
@@ -29,7 +29,7 @@ export default function GuideTVATogo() {
               TVA au Togo : Taux, Déclarations OTR & Optimisation 2026
             </h1>
             <p className="text-lg text-gray-200">
-              Maîtrisez la Taxe sur la Valeur Ajoutée au Togo : taux applicables, obligations déclaratives, 
+              Maîtrisez la Taxe sur la Valeur Ajoutée au Togo : taux applicables, obligations déclaratives,
               gestion des crédits de TVA et stratégies d'optimisation fiscale conformes.
             </p>
           </div>
@@ -71,14 +71,14 @@ export default function GuideTVATogo() {
                 Comprendre la TVA au Togo
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                La TVA (Taxe sur la Valeur Ajoutée) est un impôt indirect sur la consommation, 
-                collecté par les entreprises pour le compte de l'<strong>Office Togolais des Recettes (OTR)</strong>. 
-                Au Togo, elle constitue la principale source de recettes fiscales (plus de 40% des 
+                La TVA (Taxe sur la Valeur Ajoutée) est un impôt indirect sur la consommation,
+                collecté par les entreprises pour le compte de l'<strong>Office Togolais des Recettes (OTR)</strong>.
+                Au Togo, elle constitue la principale source de recettes fiscales (plus de 40% des
                 recettes de l'État).
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Instaurée en 1995 et réformée en 2019, la TVA togolaise s'applique aux opérations 
-                économiques réalisées à titre onéreux sur le territoire national. Bien gérée, elle 
+                Instaurée en 1995 et réformée en 2019, la TVA togolaise s'applique aux opérations
+                économiques réalisées à titre onéreux sur le territoire national. Bien gérée, elle
                 représente un coût fiscal neutre pour les entreprises assujetties.
               </p>
 
@@ -86,11 +86,11 @@ export default function GuideTVATogo() {
                 <h3 className="font-bold text-lg text-blue-900 mb-3">🎯 Principe de Fonctionnement</h3>
                 <div className="space-y-3 text-gray-700">
                   <p>
-                    <strong>TVA collectée :</strong> TVA facturée à vos clients sur vos ventes 
+                    <strong>TVA collectée :</strong> TVA facturée à vos clients sur vos ventes
                     (chiffre d'affaires × 18%).
                   </p>
                   <p>
-                    <strong>TVA déductible :</strong> TVA payée sur vos achats professionnels 
+                    <strong>TVA déductible :</strong> TVA payée sur vos achats professionnels
                     (matières premières, services, investissements).
                   </p>
                   <p className="bg-white border border-blue-200 p-4 rounded">
@@ -113,7 +113,7 @@ export default function GuideTVATogo() {
               <div className="space-y-6">
                 {/* Taux Normal */}
                 <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
-                  <div className="bg-navy text-white p-4">
+                  <div className="bg-slate-700 text-white p-4">
                     <div className="flex items-center justify-between">
                       <h3 className="font-bold text-lg">Taux Normal</h3>
                       <div className="text-3xl font-bold">18%</div>
@@ -121,7 +121,7 @@ export default function GuideTVATogo() {
                   </div>
                   <div className="p-6">
                     <p className="text-gray-700 mb-4">
-                      Le taux normal de <strong>18%</strong> s'applique à la quasi-totalité des biens 
+                      Le taux normal de <strong>18%</strong> s'applique à la quasi-totalité des biens
                       et services au Togo (hors exonérations spécifiques).
                     </p>
                     <div className="bg-gray-50 rounded p-4">
@@ -192,8 +192,8 @@ export default function GuideTVATogo() {
                   Attention : Exonération ≠ Hors Champ
                 </h3>
                 <p className="text-gray-700 text-sm">
-                  Une opération <strong>exonérée</strong> donne droit à déduction de la TVA sur achats. 
-                  Une opération <strong>hors champ</strong> (ex: salaires) ne permet pas de récupérer 
+                  Une opération <strong>exonérée</strong> donne droit à déduction de la TVA sur achats.
+                  Une opération <strong>hors champ</strong> (ex: salaires) ne permet pas de récupérer
                   la TVA payée en amont. Nuance critique pour votre trésorerie !
                 </p>
               </div>
@@ -217,11 +217,11 @@ export default function GuideTVATogo() {
                 </div>
                 <div className="space-y-3 text-gray-700 text-sm">
                   <p>
-                    <strong>Exemple :</strong> Si votre CA 2025 atteint ou dépasse 60M FCFA, vous devez 
+                    <strong>Exemple :</strong> Si votre CA 2025 atteint ou dépasse 60M FCFA, vous devez
                     vous immatriculer à la TVA auprès de l'OTR dès le dépassement constaté.
                   </p>
                   <p className="bg-yellow-50 border-l-4 border-yellow-500 p-3">
-                    ⚠️ <strong>Pénalité :</strong> Non-déclaration volontaire = amende 500 000 FCFA 
+                    ⚠️ <strong>Pénalité :</strong> Non-déclaration volontaire = amende 500 000 FCFA
                     + rappel de TVA non collectée + intérêts de retard.
                   </p>
                 </div>
@@ -230,7 +230,7 @@ export default function GuideTVATogo() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                 <h3 className="font-bold text-lg text-navy mb-4">Option Volontaire pour la TVA</h3>
                 <p className="text-gray-700 mb-4">
-                  Même si votre CA {'<'} 60M FCFA, vous pouvez <strong>opter volontairement</strong> 
+                  Même si votre CA {'<'} 60M FCFA, vous pouvez <strong>opter volontairement</strong>
                   pour l'assujettissement à la TVA. Avantages :
                 </p>
                 <ul className="space-y-2 text-gray-700">
@@ -285,7 +285,7 @@ export default function GuideTVATogo() {
                       <div>
                         <p className="font-semibold text-navy">Connexion à e-Tax</p>
                         <p className="text-sm text-gray-700">
-                          Connectez-vous sur <a href="https://etax.otr.tg" className="text-blue-600 underline">etax.otr.tg</a> avec 
+                          Connectez-vous sur <a href="https://etax.otr.tg" className="text-blue-600 underline">etax.otr.tg</a> avec
                           vos identifiants IFU et mot de passe.
                         </p>
                       </div>
@@ -359,7 +359,7 @@ export default function GuideTVATogo() {
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
                 <h3 className="font-bold text-lg text-navy mb-3">Quand Suis-je en Crédit de TVA ?</h3>
                 <p className="text-gray-700 mb-4">
-                  Vous êtes en <strong>crédit de TVA</strong> lorsque la TVA déductible sur vos achats 
+                  Vous êtes en <strong>crédit de TVA</strong> lorsque la TVA déductible sur vos achats
                   dépasse la TVA collectée sur vos ventes dans le mois.
                 </p>
                 <div className="bg-white border border-blue-300 p-4 rounded">
@@ -377,7 +377,7 @@ export default function GuideTVATogo() {
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
                   <h3 className="font-bold text-lg text-navy mb-3">Option 1 : Report du Crédit</h3>
                   <p className="text-gray-700 text-sm mb-3">
-                    Le crédit de TVA est <strong>automatiquement reportable</strong> sur les mois suivants. 
+                    Le crédit de TVA est <strong>automatiquement reportable</strong> sur les mois suivants.
                     Il s'impute sur la TVA à payer des périodes ultérieures.
                   </p>
                   <div className="bg-green-50 border border-green-200 p-3 rounded">
@@ -390,12 +390,12 @@ export default function GuideTVATogo() {
                 <div className="bg-white border border-gray-200 rounded-lg p-6">
                   <h3 className="font-bold text-lg text-navy mb-3">Option 2 : Remboursement OTR</h3>
                   <p className="text-gray-700 text-sm mb-3">
-                    Vous pouvez demander le <strong>remboursement du crédit</strong> après 3 mois consécutifs 
+                    Vous pouvez demander le <strong>remboursement du crédit</strong> après 3 mois consécutifs
                     de crédit de TVA (ou immédiatement si activité exportatrice).
                   </p>
                   <div className="bg-yellow-50 border border-yellow-300 p-3 rounded">
                     <p className="text-xs text-gray-700">
-                      ⚠️ <strong>Procédure :</strong> Demande écrite à l'OTR + contrôle fiscal préalable 
+                      ⚠️ <strong>Procédure :</strong> Demande écrite à l'OTR + contrôle fiscal préalable
                       (délai 3-6 mois).
                     </p>
                   </div>
@@ -544,21 +544,21 @@ export default function GuideTVATogo() {
             </div>
 
             {/* CTA */}
-            <div className="bg-navy text-white rounded-lg p-8 text-center">
+            <div className="bg-slate-700 text-white rounded-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">
                 Besoin d'un Accompagnement Fiscal TVA au Togo ?
               </h2>
               <p className="text-lg text-gray-200 mb-6">
-                INTEGRA PARTNERS vous accompagne dans la gestion de votre fiscalité TVA : diagnostic 
-                de conformité, optimisation des déclarations, récupération des crédits de TVA et 
+                INTEGRA PARTNERS vous accompagne dans la gestion de votre fiscalité TVA : diagnostic
+                de conformité, optimisation des déclarations, récupération des crédits de TVA et
                 assistance en cas de contrôle OTR. <strong>Expertise fiscale certifiée</strong>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/fr/diagnostic-ims">
-                  <Button 
-                    variant="gold" 
-                    size="lg" 
-                    icon={<ChevronRight className="w-5 h-5" />} 
+                  <Button
+                    variant="gold"
+                    size="lg"
+                    icon={<ChevronRight className="w-5 h-5" />}
                     iconPosition="right"
                   >
                     Demander un Audit Fiscal
@@ -580,7 +580,7 @@ export default function GuideTVATogo() {
 
       <section className="bg-white py-12">
         <div className="container mx-auto max-w-4xl">
-          <FAQSection 
+          <FAQSection
             title="Questions Fréquentes sur la TVA au Togo"
             faqs={[
               {

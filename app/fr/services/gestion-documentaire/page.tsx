@@ -16,24 +16,24 @@ export default function GestionDocumentairePage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-20">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-20">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl">
             <Link href="/fr/services" className="inline-flex items-center gap-2 text-gray-300 hover:text-white mb-6 transition-colors">
               <ArrowRight className="w-4 h-4 rotate-180" />
               <span>Retour aux services</span>
             </Link>
-            
+
             <div className="inline-block mb-6 px-4 py-2 bg-indigo-600/20 rounded-full border border-indigo-500/30">
               <span className="text-indigo-400 font-semibold text-sm">GESTION DOCUMENTAIRE</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Gestion Documentaire & <span className="text-[#B8860B]">Conformité Registres OHADA</span>
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8">
-              Rédaction actes juridiques (statuts, PV, pacte d'associés), mise en conformité des registres légaux, 
+              Rédaction actes juridiques (statuts, PV, pacte d'associés), mise en conformité des registres légaux,
               archivage sécurisé et tenue à jour de toute votre documentation d'entreprise OHADA.
             </p>
 
@@ -53,20 +53,20 @@ export default function GestionDocumentairePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-8">Pour Qui ?</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               <Card variant="custom" className="p-6">
                 <Building2 className="w-10 h-10 text-indigo-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">PME et Associations</h3>
                 <p className="text-gray-700">Entreprises cherchant à mettre à jour leurs registres et se conformer aux obligations OHADA.</p>
               </Card>
-              
+
               <Card variant="custom" className="p-6">
                 <FolderOpen className="w-10 h-10 text-indigo-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">Sociétés Multi-Filiales</h3>
                 <p className="text-gray-700">Groupes nécessitant une gestion centralisée et homogène de leurs actes juridiques.</p>
               </Card>
-              
+
               <Card variant="custom" className="p-6">
                 <Shield className="w-10 h-10 text-indigo-600 mb-4" />
                 <h3 className="text-xl font-bold text-[#0B1A3E] mb-3">Entreprises Pré-Levée</h3>
@@ -82,7 +82,7 @@ export default function GestionDocumentairePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-12">Nos Interventions Documentaires</h2>
-            
+
             <div className="space-y-6">
               {[
                 {
@@ -119,11 +119,11 @@ export default function GestionDocumentairePage() {
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center">
                       <span className="text-indigo-600 font-bold text-xl">{index + 1}</span>
                     </div>
-                    
+
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-[#0B1A3E] mb-3">{intervention.title}</h3>
                       <p className="text-gray-700 mb-4 leading-relaxed">{intervention.description}</p>
-                      
+
                       <div className="mb-4">
                         <p className="font-semibold text-[#0B1A3E] mb-2">Livrables clés :</p>
                         <ul className="space-y-1">
@@ -160,7 +160,7 @@ export default function GestionDocumentairePage() {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-[#0B1A3E] mb-8">Méthode INTEGRA 6 Phases</h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { phase: '1', titre: 'Audit', contenu: 'État des lieux documents et registres' },
@@ -182,7 +182,7 @@ export default function GestionDocumentairePage() {
 
             <div className="mt-8 p-6 bg-indigo-50 border-l-4 border-indigo-600 rounded-lg">
               <p className="text-gray-700">
-                <strong className="text-indigo-600">Conformité OHADA garantie :</strong> Tous nos actes sont validés 
+                <strong className="text-indigo-600">Conformité OHADA garantie :</strong> Tous nos actes sont validés
                 par un juriste spécialisé droit des sociétés OHADA. Garantie révision gratuite si non-conformité.
               </p>
             </div>
@@ -191,19 +191,19 @@ export default function GestionDocumentairePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Besoin de Mettre à Jour Vos Documents Légaux ?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Audit documentaire gratuit de 30 minutes : état des lieux de vos registres et recommandations 
+              Audit documentaire gratuit de 30 minutes : état des lieux de vos registres et recommandations
               immédiates pour vous mettre en conformité totale OHADA.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

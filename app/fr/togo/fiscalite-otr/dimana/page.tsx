@@ -17,7 +17,7 @@ export default function DIMANAGuidePage() {
         { name: 'Fiscalité OTR', url: '/fr/togo/fiscalite-otr' },
         { name: 'DIMANA', url: '/fr/togo/fiscalite-otr/dimana' }
       ]} />
-      
+
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4">DIMANA : Déclaration Mensuelle Fiscale au Togo</h1>
         <p className="text-xl text-gray-600">
@@ -34,10 +34,10 @@ export default function DIMANAGuidePage() {
           <div>
             <h3 className="font-semibold text-amber-900 mb-2">Information importante</h3>
             <p className="text-amber-800 text-sm leading-relaxed">
-              Ce guide présente le cadre général de la déclaration DIMANA à titre informatif. 
-              <strong> Les dates d'échéance, taux de pénalités et modalités précises doivent être vérifiés sur les plateformes officielles</strong> : 
-              DIMANA (<a href="https://dimana.otr.tg" className="underline font-medium" target="_blank" rel="noopener">dimana.otr.tg</a>), 
-              e-services OTR, ou auprès de l'Office Togolais des Recettes. 
+              Ce guide présente le cadre général de la déclaration DIMANA à titre informatif.
+              <strong> Les dates d'échéance, taux de pénalités et modalités précises doivent être vérifiés sur les plateformes officielles</strong> :
+              DIMANA (<a href="https://dimana.otr.tg" className="underline font-medium" target="_blank" rel="noopener">dimana.otr.tg</a>),
+              e-services OTR, ou auprès de l'Office Togolais des Recettes.
               INTEGRA PARTNERS assure le suivi complet des déclarations mensuelles pour ses clients.
             </p>
           </div>
@@ -49,19 +49,19 @@ export default function DIMANAGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Qu'est-ce que la déclaration DIMANA ?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            <strong>DIMANA</strong> est l'acronyme de <strong>« Déclaration et Impôts Mensuels Automatisés »</strong>, 
-            la plateforme de télédéclaration mensuelle mise en place par l'<strong>Office Togolais des Recettes (OTR)</strong> 
+            <strong>DIMANA</strong> est l'acronyme de <strong>« Déclaration et Impôts Mensuels Automatisés »</strong>,
+            la plateforme de télédéclaration mensuelle mise en place par l'<strong>Office Togolais des Recettes (OTR)</strong>
             pour simplifier et dématérialiser les obligations fiscales récurrentes des entreprises.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Contrairement à la déclaration annuelle de résultat (IS), DIMANA concerne les <strong>impôts et taxes à déclarer mensuellement</strong>, 
+            Contrairement à la déclaration annuelle de résultat (IS), DIMANA concerne les <strong>impôts et taxes à déclarer mensuellement</strong>,
             notamment la TVA collectée et les retenues à la source sur salaires et prestataires.
           </p>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
             <p className="text-blue-900">
-              <strong>💡 Bon à savoir :</strong> DIMANA est obligatoire pour toutes les entreprises assujetties aux régimes réels d'imposition 
-              (RSI - Régime Simplifié d'Imposition et RNI - Régime Normal d'Imposition). Les micro-entreprises sous régime synthétique 
+              <strong>💡 Bon à savoir :</strong> DIMANA est obligatoire pour toutes les entreprises assujetties aux régimes réels d'imposition
+              (RSI - Régime Simplifié d'Imposition et RNI - Régime Normal d'Imposition). Les micro-entreprises sous régime synthétique
               ont des obligations simplifiées différentes.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function DIMANAGuidePage() {
         {/* Entreprises concernées */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Quelles entreprises doivent déclarer via DIMANA ?</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3 mt-6">Obligation systématique</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Sont obligatoirement soumises à DIMANA toutes les entreprises :
@@ -93,7 +93,7 @@ export default function DIMANAGuidePage() {
         {/* Taxes couvertes */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Quelles taxes sont déclarées via DIMANA ?</h2>
-          
+
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
@@ -101,7 +101,7 @@ export default function DIMANAGuidePage() {
                 Taxe sur la Valeur Ajoutée (TVA)
               </h3>
               <p className="text-gray-700 mb-3">
-                Déclaration de la <strong>TVA collectée</strong> (sur ventes et prestations) et de la <strong>TVA déductible</strong> 
+                Déclaration de la <strong>TVA collectée</strong> (sur ventes et prestations) et de la <strong>TVA déductible</strong>
                 (sur achats et charges). Le solde (TVA collectée - TVA déductible) détermine le montant à payer ou le crédit de TVA.
               </p>
               <ul className="list-disc pl-6 space-y-1 text-gray-700 text-sm">
@@ -164,7 +164,7 @@ export default function DIMANAGuidePage() {
         {/* Procédure de déclaration */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Comment effectuer sa déclaration DIMANA ?</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3">Étape 1 : Accès à la plateforme</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Se connecter à la plateforme DIMANA avec ses identifiants OTR :
@@ -189,7 +189,7 @@ export default function DIMANAGuidePage() {
 
           <div className="bg-green-50 border-l-4 border-green-500 p-4 my-6">
             <p className="text-green-900">
-              <strong>✅ Astuce :</strong> Préparer un tableau récapitulatif mensuel (Excel/comptabilité) avant de saisir sur DIMANA 
+              <strong>✅ Astuce :</strong> Préparer un tableau récapitulatif mensuel (Excel/comptabilité) avant de saisir sur DIMANA
               pour éviter les erreurs et gagner du temps. Vérifier systématiquement la cohérence entre comptabilité et déclaration.
             </p>
           </div>
@@ -216,10 +216,10 @@ export default function DIMANAGuidePage() {
         {/* Échéances */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Échéances et délais à respecter</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3">Calendrier mensuel</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            La déclaration DIMANA suit un <strong>calendrier mensuel strict</strong> dont les dates limites sont fixées 
+            La déclaration DIMANA suit un <strong>calendrier mensuel strict</strong> dont les dates limites sont fixées
             par le Code Général des Impôts. Généralement :
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
@@ -230,15 +230,15 @@ export default function DIMANAGuidePage() {
 
           <div className="bg-red-50 border-l-4 border-red-500 p-4 my-6">
             <p className="text-red-900">
-              <strong>⚠️ Échéances critiques :</strong> Le non-respect des dates limites entraîne automatiquement des pénalités de retard 
+              <strong>⚠️ Échéances critiques :</strong> Le non-respect des dates limites entraîne automatiquement des pénalités de retard
               et majorations. En cas de difficulté, contacter l'OTR AVANT l'échéance pour solliciter un éventuel délai de grâce.
             </p>
           </div>
 
           <h3 className="text-2xl font-semibold mb-3 mt-8">Déclarations rectificatives</h3>
           <p className="text-gray-700 leading-relaxed">
-            En cas d'erreur, il est possible de déposer une <strong>déclaration rectificative</strong> via DIMANA, 
-            mais les corrections doivent être justifiées et peuvent faire l'objet d'un contrôle OTR. 
+            En cas d'erreur, il est possible de déposer une <strong>déclaration rectificative</strong> via DIMANA,
+            mais les corrections doivent être justifiées et peuvent faire l'objet d'un contrôle OTR.
             Privilégier toujours l'exactitude dès la première déclaration.
           </p>
         </section>
@@ -247,7 +247,7 @@ export default function DIMANAGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Sanctions en cas de retard ou d'omission</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Le Code Général des Impôts et le Livre des Procédures Fiscales prévoient des <strong>sanctions automatiques</strong> 
+            Le Code Général des Impôts et le Livre des Procédures Fiscales prévoient des <strong>sanctions automatiques</strong>
             en cas de manquement aux obligations DIMANA :
           </p>
 
@@ -285,7 +285,7 @@ export default function DIMANAGuidePage() {
           </div>
 
           <p className="text-gray-700 leading-relaxed mt-6">
-            <strong>Conséquence grave :</strong> L'absence d'attestation fiscale à jour bloque l'accès aux marchés publics, 
+            <strong>Conséquence grave :</strong> L'absence d'attestation fiscale à jour bloque l'accès aux marchés publics,
             les appels d'offres, et peut entraîner la suspension de l'agrément pour certaines activités réglementées.
           </p>
         </section>
@@ -293,7 +293,7 @@ export default function DIMANAGuidePage() {
         {/* Bonnes pratiques */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Bonnes pratiques pour une conformité DIMANA optimale</h2>
-          
+
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
@@ -301,7 +301,7 @@ export default function DIMANAGuidePage() {
                 Établir un calendrier fiscal mensuel
               </h3>
               <p className="text-gray-700">
-                Programmer des rappels automatiques 5 jours avant chaque échéance DIMANA. Désigner un responsable fiscal 
+                Programmer des rappels automatiques 5 jours avant chaque échéance DIMANA. Désigner un responsable fiscal
                 en charge de la préparation et validation des déclarations. Ne jamais attendre le dernier jour.
               </p>
             </div>
@@ -312,7 +312,7 @@ export default function DIMANAGuidePage() {
                 Réconcilier comptabilité et déclarations
               </h3>
               <p className="text-gray-700">
-                Chaque mois, effectuer un rapprochement entre les écritures comptables (TVA, salaires) et les montants déclarés via DIMANA. 
+                Chaque mois, effectuer un rapprochement entre les écritures comptables (TVA, salaires) et les montants déclarés via DIMANA.
                 Tout écart doit être identifié et justifié. Conserver systématiquement les pièces justificatives (factures, bulletins de paie).
               </p>
             </div>
@@ -323,7 +323,7 @@ export default function DIMANAGuidePage() {
                 Archiver les preuves de déclaration
               </h3>
               <p className="text-gray-700">
-                Télécharger et archiver chaque mois : l'accusé de réception DIMANA, l'avis d'imposition, les preuves de paiement (reçus bancaires, 
+                Télécharger et archiver chaque mois : l'accusé de réception DIMANA, l'avis d'imposition, les preuves de paiement (reçus bancaires,
                 confirmations e-payment). Ces documents sont indispensables en cas de contrôle OTR.
               </p>
             </div>
@@ -334,7 +334,7 @@ export default function DIMANAGuidePage() {
                 Sécuriser l'accès DIMANA
               </h3>
               <p className="text-gray-700">
-                Modifier régulièrement le mot de passe DIMANA. Limiter l'accès aux personnes autorisées. 
+                Modifier régulièrement le mot de passe DIMANA. Limiter l'accès aux personnes autorisées.
                 En cas de départ d'un collaborateur ayant accès à DIMANA, changer immédiatement les identifiants.
               </p>
             </div>
@@ -345,7 +345,7 @@ export default function DIMANAGuidePage() {
                 Se faire accompagner par un professionnel
               </h3>
               <p className="text-gray-700">
-                Pour les entreprises avec un volume important d'opérations, externaliser la gestion DIMANA auprès d'un cabinet comptable 
+                Pour les entreprises avec un volume important d'opérations, externaliser la gestion DIMANA auprès d'un cabinet comptable
                 ou d'un conseil fiscal garantit la conformité et libère du temps pour les activités core business.
               </p>
             </div>
@@ -356,7 +356,7 @@ export default function DIMANAGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Gestion du crédit de TVA</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Lorsque la <strong>TVA déductible</strong> (sur achats et charges) est supérieure à la <strong>TVA collectée</strong> (sur ventes), 
+            Lorsque la <strong>TVA déductible</strong> (sur achats et charges) est supérieure à la <strong>TVA collectée</strong> (sur ventes),
             l'entreprise se trouve en situation de <strong>crédit de TVA</strong>.
           </p>
 
@@ -369,7 +369,7 @@ export default function DIMANAGuidePage() {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
             <p className="text-blue-900">
-              <strong>💡 Conseil :</strong> Les demandes de remboursement de crédit de TVA font systématiquement l'objet d'un contrôle OTR approfondi. 
+              <strong>💡 Conseil :</strong> Les demandes de remboursement de crédit de TVA font systématiquement l'objet d'un contrôle OTR approfondi.
               S'assurer que tous les justificatifs (factures, documents douaniers, contrats) sont irréprochables avant toute demande.
             </p>
           </div>
@@ -401,7 +401,7 @@ export default function DIMANAGuidePage() {
         {/* Ressources officielles */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Ressources officielles et assistance</h2>
-          
+
           <div className="bg-gray-50 rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">Plateformes OTR</h3>
             <ul className="space-y-2 text-gray-700 mb-6">
@@ -425,7 +425,7 @@ export default function DIMANAGuidePage() {
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 mt-12">
           <h2 className="text-3xl font-bold mb-4">Besoin d'une gestion déléguée de vos déclarations DIMANA ?</h2>
           <p className="text-lg mb-6 opacity-90">
-            INTEGRA PARTNERS prend en charge l'intégralité de vos obligations DIMANA : préparation, saisie, validation, 
+            INTEGRA PARTNERS prend en charge l'intégralité de vos obligations DIMANA : préparation, saisie, validation,
             télépaiement et suivi de conformité. Zéro risque de retard, zéro pénalité.
           </p>
           <ul className="space-y-3 mb-6">
@@ -455,14 +455,14 @@ export default function DIMANAGuidePage() {
             </li>
           </ul>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="/fr/contact" 
+            <a
+              href="/fr/contact"
               className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
             >
               Externaliser mes déclarations
             </a>
-            <a 
-              href="/fr/services/structuration-juridico-fiscale" 
+            <a
+              href="/fr/services/structuration-juridico-fiscale"
               className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors border-2 border-white text-center"
             >
               Nos forfaits conformité
@@ -508,7 +508,7 @@ export default function DIMANAGuidePage() {
         </div>
       </div>
 
-      <FAQSection 
+      <FAQSection
         title="Questions Fréquentes sur DIMANA"
         faqs={[
           {

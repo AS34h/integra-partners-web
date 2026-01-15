@@ -12,12 +12,12 @@ interface InternalLinkProps {
 export function InternalLink({ href, children, className }: InternalLinkProps) {
   const pathname = usePathname()
   const locale = pathname.split('/')[1] || 'fr' // Extract locale, default to 'fr'
-  
+
   // Ensure href starts with locale
-  const localizedHref = href.startsWith(`/${locale}`) 
-    ? href 
+  const localizedHref = href.startsWith(`/${locale}`)
+    ? href
     : `/${locale}${href}`
-  
+
   return (
     <Link href={localizedHref} className={className}>
       {children}

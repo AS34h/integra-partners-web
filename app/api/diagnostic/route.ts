@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     // 🔒 PROTECTION CSRF - Validation de l'origine
     const csrfConfig = getCSRFConfig()
     const isValidOrigin = validateOrigin(request, csrfConfig.allowedOrigins)
-    
+
     if (!isValidOrigin && process.env.NODE_ENV === 'production') {
       console.warn('🚫 CSRF: Invalid origin detected')
       return NextResponse.json({
@@ -50,18 +50,18 @@ export async function POST(request: NextRequest) {
         message: 'Requête non autorisée'
       }, { status: 403 })
     }
-    
+
     // 🔒 PROTECTION RATE LIMITING
-    const ip = request.headers.get('x-forwarded-for')?.split(',')[0].trim() 
-      || request.headers.get('x-real-ip') 
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0].trim()
+      || request.headers.get('x-real-ip')
       || 'unknown'
-    
+
     const rateLimitResult = rateLimit(ip, 5, 600000) // 5 requêtes / 10 minutes
-    
+
     if (!rateLimitResult.allowed) {
       const resetDate = new Date(rateLimitResult.resetTime)
       console.warn(`🚫 Rate limit exceeded for IP: ${ip}`)
-      
+
       return NextResponse.json({
         success: false,
         message: 'Trop de requêtes. Veuillez réessayer dans quelques minutes.',
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
           remaining: 0,
           resetAt: resetDate.toISOString()
         }
-      }, { 
+      }, {
         status: 429,
         headers: {
           'X-RateLimit-Limit': rateLimitResult.limit.toString(),
@@ -145,7 +145,7 @@ export async function POST(request: NextRequest) {
         limit: rateLimitResult.limit,
         remaining: rateLimitResult.remaining
       }
-    }, { 
+    }, {
       status: 201,
       headers: {
         'X-RateLimit-Limit': rateLimitResult.limit.toString(),
@@ -174,7 +174,7 @@ export async function POST(request: NextRequest) {
     } else {
       console.error('❌ Diagnostic API error:', error)
     }
-    
+
     return NextResponse.json({
       success: false,
       message: 'Erreur serveur. Veuillez réessayer plus tard.'

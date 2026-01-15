@@ -26,7 +26,7 @@ export const PAGES_SANS_METADATA = {
       traffic: 'MEDIUM'
     }
   ],
-  
+
   // HAUTE PRIORITÉ (Pages institutionnelles + Togo sub-hubs)
   hautePriorite: [
     {
@@ -79,7 +79,7 @@ export const PAGES_SANS_METADATA = {
       traffic: 'LOW'
     }
   ],
-  
+
   // MOYENNE PRIORITÉ (Pages services)
   services: [
     {
@@ -132,7 +132,7 @@ export const PAGES_SANS_METADATA = {
       traffic: 'LOW'
     }
   ],
-  
+
   // PLACEHOLDERS TOGO (À metadata AVANT content)
   placeholdersTogo: [
     {
@@ -164,7 +164,7 @@ export const PAGES_SANS_METADATA = {
       traffic: 'LOW'
     }
   ],
-  
+
   // DIASPORA (Toutes pages manquantes)
   diaspora: [
     {

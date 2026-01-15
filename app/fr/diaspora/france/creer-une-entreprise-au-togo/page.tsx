@@ -135,7 +135,7 @@ export default function CreerEntrepriseFranceTogoPage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -160,15 +160,15 @@ export default function CreerEntrepriseFranceTogoPage() {
                 </h1>
               </div>
             </div>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              SARL clé en main pour <strong>Togolais de France</strong> : statuts OHADA, RCCM, compte bancaire, 
+              SARL clé en main pour <strong>Togolais de France</strong> : statuts OHADA, RCCM, compte bancaire,
               fiscalité OTR. <strong>Signature à distance</strong> avec procuration notaire. <strong>2-3 semaines</strong> garanties.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4"
                 >
@@ -176,7 +176,7 @@ export default function CreerEntrepriseFranceTogoPage() {
                 </Button>
               </Link>
               <a href="#packs">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4"
                 >
@@ -227,7 +227,7 @@ export default function CreerEntrepriseFranceTogoPage() {
               </div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Entrepreneurs Diaspora</h3>
               <p className="text-gray-700 leading-relaxed">
-                Salarié ou auto-entrepreneur en France qui veut lancer activité au Togo (import-export, services, tech). 
+                Salarié ou auto-entrepreneur en France qui veut lancer activité au Togo (import-export, services, tech).
                 Besoin structure légale sans se déplacer.
               </p>
             </Card>
@@ -238,7 +238,7 @@ export default function CreerEntrepriseFranceTogoPage() {
               </div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Investisseurs Retour</h3>
               <p className="text-gray-700 leading-relaxed">
-                Retraité ou proche retraite en France préparant retour définitif Togo. 
+                Retraité ou proche retraite en France préparant retour définitif Togo.
                 Veut structurer activité (immobilier, conseil) 5-10 ans avant.
               </p>
             </Card>
@@ -249,7 +249,7 @@ export default function CreerEntrepriseFranceTogoPage() {
               </div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Projets Familiaux</h3>
               <p className="text-gray-700 leading-relaxed">
-                Plusieurs membres famille diaspora (frères/sœurs France) veulent créer société commune Togo. 
+                Plusieurs membres famille diaspora (frères/sœurs France) veulent créer société commune Togo.
                 Besoin pacte associés sécurisé.
               </p>
             </Card>
@@ -285,7 +285,7 @@ export default function CreerEntrepriseFranceTogoPage() {
                         <span className="text-white font-bold text-xl">{etape.etape}</span>
                       </div>
                     </div>
-                    
+
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
                         <h3 className="text-xl font-bold text-[#0B1A3E]">{etape.titre}</h3>
@@ -294,9 +294,9 @@ export default function CreerEntrepriseFranceTogoPage() {
                           <span className="text-sm font-semibold">{etape.duree}</span>
                         </div>
                       </div>
-                      
+
                       <p className="text-gray-700 mb-4 leading-relaxed">{etape.description}</p>
-                      
+
                       <div className="space-y-2">
                         <p className="text-sm font-semibold text-gray-700">Livrables :</p>
                         {etape.livrables.map((livrable, idx) => (
@@ -374,7 +374,7 @@ export default function CreerEntrepriseFranceTogoPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
+                <Card
                   variant="custom"
                   className={`p-8 h-full ${pack.recommande ? 'border-2 border-[#B8860B] shadow-xl' : ''}`}
                 >
@@ -383,7 +383,7 @@ export default function CreerEntrepriseFranceTogoPage() {
                       <span className="text-white font-semibold text-xs uppercase">⭐ Recommandé</span>
                     </div>
                   )}
-                  
+
                   <h3 className="text-2xl font-bold text-[#0B1A3E] mb-2">{pack.nom}</h3>
                   <div className="mb-4">
                     <p className="text-3xl font-bold text-[#B8860B]">{pack.tarif}</p>
@@ -406,7 +406,7 @@ export default function CreerEntrepriseFranceTogoPage() {
                   </div>
 
                   <Link href="/fr/diagnostic-ims">
-                    <Button 
+                    <Button
                       variant={pack.recommande ? "primary" : "outline"}
                       className={pack.recommande ? "w-full bg-[#B8860B] hover:bg-[#9a6f09]" : "w-full"}
                     >
@@ -421,19 +421,19 @@ export default function CreerEntrepriseFranceTogoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Créez Votre SARL Togo Depuis la France en 3 Semaines
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Diagnostic gratuit 30 min (visio Zoom/WhatsApp) : faisabilité, choix structure, 
+              Diagnostic gratuit 30 min (visio Zoom/WhatsApp) : faisabilité, choix structure,
               budget détaillé et roadmap signature→RCCM.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

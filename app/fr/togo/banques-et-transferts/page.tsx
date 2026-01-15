@@ -46,7 +46,7 @@ const guides = [
 export default function BanquesTransfertsHub() {
   return (
     <div className="bg-gray-50">
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             <nav className="mb-6">
@@ -58,9 +58,9 @@ export default function BanquesTransfertsHub() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Banques et <span className="text-[#B8860B]">Transferts</span> au Togo
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8">
-              Guides pratiques sur le système bancaire togolais : ouverture compte pro, 
+              Guides pratiques sur le système bancaire togolais : ouverture compte pro,
               transferts internationaux, moyens de paiement, sécurité.
             </p>
 

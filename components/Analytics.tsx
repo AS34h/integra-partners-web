@@ -22,13 +22,13 @@ interface AnalyticsProps {
    * Set to true when ready to activate Phase 2
    */
   enabled?: boolean
-  
+
   /**
    * Domain for Plausible tracking
    * @default 'integrapartners.com'
    */
   domain?: string
-  
+
   /**
    * Plausible script source
    * Use custom domain for even better privacy
@@ -36,7 +36,7 @@ interface AnalyticsProps {
   src?: string
 }
 
-export function Analytics({ 
+export function Analytics({
   enabled = false, // Set to true to activate Phase 2
   domain = 'integrapartners.com',
   src = 'https://plausible.io/js/script.js'
@@ -45,7 +45,7 @@ export function Analytics({
   if (!enabled) {
     return null
   }
-  
+
   // Phase 2: Plausible Analytics (privacy-first)
   return (
     <>

@@ -16,7 +16,7 @@ export default function ISGuidePage() {
         { name: 'Fiscalité OTR', url: '/fr/togo/fiscalite-otr' },
         { name: 'Impôt sur les Sociétés', url: '/fr/togo/fiscalite-otr/is' }
       ]} />
-      
+
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4">Impôt sur les Sociétés (IS) au Togo</h1>
         <p className="text-xl text-gray-600">
@@ -33,10 +33,10 @@ export default function ISGuidePage() {
           <div>
             <h3 className="font-semibold text-amber-900 mb-2">Information importante</h3>
             <p className="text-amber-800 text-sm leading-relaxed">
-              Ce guide présente le cadre général de l'Impôt sur les Sociétés au Togo à titre informatif. 
-              <strong> Les taux, délais et modalités précis doivent être vérifiés auprès de sources officielles</strong> : 
-              Code Général des Impôts 2025 (disponible sur <a href="https://www.otr.tg" className="underline font-medium" target="_blank" rel="noopener">otr.tg</a>), 
-              plateforme e-services OTR, ou conseil d'un expert-comptable agréé. 
+              Ce guide présente le cadre général de l'Impôt sur les Sociétés au Togo à titre informatif.
+              <strong> Les taux, délais et modalités précis doivent être vérifiés auprès de sources officielles</strong> :
+              Code Général des Impôts 2025 (disponible sur <a href="https://www.otr.tg" className="underline font-medium" target="_blank" rel="noopener">otr.tg</a>),
+              plateforme e-services OTR, ou conseil d'un expert-comptable agréé.
               INTEGRA PARTNERS accompagne les entreprises dans leur conformité fiscale sur la base des textes en vigueur.
             </p>
           </div>
@@ -48,12 +48,12 @@ export default function ISGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Qu'est-ce que l'Impôt sur les Sociétés ?</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            L'<strong>Impôt sur les Sociétés (IS)</strong> est un impôt direct qui frappe les bénéfices réalisés par les personnes morales 
-            exerçant une activité au Togo. Il s'inscrit dans le cadre harmonisé de l'<strong>UEMOA</strong> (Union Économique et Monétaire Ouest-Africaine) 
+            L'<strong>Impôt sur les Sociétés (IS)</strong> est un impôt direct qui frappe les bénéfices réalisés par les personnes morales
+            exerçant une activité au Togo. Il s'inscrit dans le cadre harmonisé de l'<strong>UEMOA</strong> (Union Économique et Monétaire Ouest-Africaine)
             et respecte les principes du droit <strong>OHADA</strong> (Organisation pour l'Harmonisation en Afrique du Droit des Affaires).
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Géré par l'<strong>Office Togolais des Recettes (OTR)</strong>, l'IS constitue l'une des principales ressources fiscales 
+            Géré par l'<strong>Office Togolais des Recettes (OTR)</strong>, l'IS constitue l'une des principales ressources fiscales
             du Togo et s'applique selon des règles précises définies par le Code Général des Impôts mis à jour annuellement.
           </p>
         </section>
@@ -61,7 +61,7 @@ export default function ISGuidePage() {
         {/* Sociétés concernées */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Quelles sociétés sont assujetties à l'IS ?</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3 mt-6">Assujettissement obligatoire</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Sont obligatoirement soumises à l'IS les sociétés de capitaux constituées selon le droit OHADA :
@@ -89,10 +89,10 @@ export default function ISGuidePage() {
         {/* Base imposable */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Comment est calculée la base imposable ?</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3">Principe général</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            L'IS est calculé sur le <strong>bénéfice net fiscal</strong>, déterminé à partir du résultat comptable 
+            L'IS est calculé sur le <strong>bénéfice net fiscal</strong>, déterminé à partir du résultat comptable
             selon le référentiel <strong>SYSCOHADA Révisé</strong> (Système Comptable OHADA), après réintégrations et déductions fiscales.
           </p>
 
@@ -119,7 +119,7 @@ export default function ISGuidePage() {
         {/* Obligations déclaratives */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Quelles sont les obligations déclaratives ?</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3">Déclaration annuelle</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
             Chaque société assujettie doit déposer une <strong>déclaration de résultat fiscal</strong> accompagnée de :
@@ -134,14 +134,14 @@ export default function ISGuidePage() {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6">
             <p className="text-blue-900">
-              <strong>💡 Bon à savoir :</strong> La date limite de dépôt et les modalités précises sont fixées par 
+              <strong>💡 Bon à savoir :</strong> La date limite de dépôt et les modalités précises sont fixées par
               le Code Général des Impôts et peuvent varier selon l'exercice fiscal de l'entreprise (calendaire ou décalé).
             </p>
           </div>
 
           <h3 className="text-2xl font-semibold mb-3 mt-8">Acomptes provisionnels</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Pour lisser la charge fiscale, les sociétés doivent généralement verser des <strong>acomptes provisionnels</strong> 
+            Pour lisser la charge fiscale, les sociétés doivent généralement verser des <strong>acomptes provisionnels</strong>
             au cours de l'exercice, calculés sur la base de l'IS de l'année précédente. Ces acomptes sont :
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
@@ -155,7 +155,7 @@ export default function ISGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">La télédéclaration avec e-services OTR</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Depuis la digitalisation des services fiscaux togolais, les entreprises doivent utiliser la plateforme 
+            Depuis la digitalisation des services fiscaux togolais, les entreprises doivent utiliser la plateforme
             <strong> e-services.otr.tg</strong> pour :
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
@@ -168,7 +168,7 @@ export default function ISGuidePage() {
 
           <div className="bg-green-50 border-l-4 border-green-500 p-4 my-6">
             <p className="text-green-900">
-              <strong>✅ Avantage :</strong> La télédéclaration simplifie les démarches, réduit les délais de traitement 
+              <strong>✅ Avantage :</strong> La télédéclaration simplifie les démarches, réduit les délais de traitement
               et permet une meilleure traçabilité des obligations fiscales.
             </p>
           </div>
@@ -178,7 +178,7 @@ export default function ISGuidePage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Sanctions en cas de non-respect</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Le non-respect des obligations liées à l'IS expose les sociétés à des <strong>sanctions fiscales</strong> prévues 
+            Le non-respect des obligations liées à l'IS expose les sociétés à des <strong>sanctions fiscales</strong> prévues
             par le Livre des Procédures Fiscales :
           </p>
           <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-6">
@@ -190,7 +190,7 @@ export default function ISGuidePage() {
 
           <div className="bg-red-50 border-l-4 border-red-500 p-4 my-6">
             <p className="text-red-900">
-              <strong>⚠️ Attention :</strong> Les contrôles fiscaux de l'OTR sont de plus en plus fréquents. 
+              <strong>⚠️ Attention :</strong> Les contrôles fiscaux de l'OTR sont de plus en plus fréquents.
               Une comptabilité rigoureuse et des déclarations exactes sont indispensables pour éviter les redressements.
             </p>
           </div>
@@ -199,10 +199,10 @@ export default function ISGuidePage() {
         {/* Exonérations */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Exonérations et avantages fiscaux</h2>
-          
+
           <h3 className="text-2xl font-semibold mb-3">Code des Investissements</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Le Togo propose des <strong>incitations fiscales</strong> pour attirer les investissements, notamment via le Code des Investissements 
+            Le Togo propose des <strong>incitations fiscales</strong> pour attirer les investissements, notamment via le Code des Investissements
             qui peut prévoir :
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
@@ -214,8 +214,8 @@ export default function ISGuidePage() {
 
           <h3 className="text-2xl font-semibold mb-3 mt-6">Zones franches et zones spéciales</h3>
           <p className="text-gray-700 leading-relaxed">
-            Les entreprises installées dans les <strong>zones franches industrielles</strong> ou les <strong>plateformes industrielles d'Adétikopé</strong> 
-            peuvent bénéficier de régimes fiscaux préférentiels. Ces avantages sont accordés sous conditions d'agrément par l'API-Togo 
+            Les entreprises installées dans les <strong>zones franches industrielles</strong> ou les <strong>plateformes industrielles d'Adétikopé</strong>
+            peuvent bénéficier de régimes fiscaux préférentiels. Ces avantages sont accordés sous conditions d'agrément par l'API-Togo
             (Agence de Promotion des Investissements).
           </p>
         </section>
@@ -265,7 +265,7 @@ export default function ISGuidePage() {
         {/* Bonnes pratiques */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Bonnes pratiques pour la conformité IS</h2>
-          
+
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
@@ -273,7 +273,7 @@ export default function ISGuidePage() {
                 Tenir une comptabilité rigoureuse
               </h3>
               <p className="text-gray-700">
-                Respecter scrupuleusement le SYSCOHADA Révisé, conserver tous les justificatifs (factures, contrats, relevés bancaires) 
+                Respecter scrupuleusement le SYSCOHADA Révisé, conserver tous les justificatifs (factures, contrats, relevés bancaires)
                 et effectuer des rapprochements bancaires mensuels.
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function ISGuidePage() {
                 Respecter les échéances
               </h3>
               <p className="text-gray-700">
-                Établir un calendrier fiscal annuel incluant les dates de dépôt de déclaration, de paiement des acomptes et de tenue 
+                Établir un calendrier fiscal annuel incluant les dates de dépôt de déclaration, de paiement des acomptes et de tenue
                 des assemblées générales. Anticiper les délais pour éviter les pénalités.
               </p>
             </div>
@@ -295,7 +295,7 @@ export default function ISGuidePage() {
                 Préparer les contrôles fiscaux
               </h3>
               <p className="text-gray-700">
-                Archiver méthodiquement tous les documents comptables et fiscaux pendant au moins 10 ans. 
+                Archiver méthodiquement tous les documents comptables et fiscaux pendant au moins 10 ans.
                 En cas de contrôle OTR, être en mesure de justifier chaque écriture comptable.
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function ISGuidePage() {
                 Se faire accompagner
               </h3>
               <p className="text-gray-700">
-                Faire appel à un expert-comptable agréé au Togo et/ou un conseil fiscal spécialisé dans le droit OHADA 
+                Faire appel à un expert-comptable agréé au Togo et/ou un conseil fiscal spécialisé dans le droit OHADA
                 pour optimiser légalement votre charge fiscale et sécuriser vos déclarations.
               </p>
             </div>
@@ -316,7 +316,7 @@ export default function ISGuidePage() {
         {/* Ressources officielles */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-4">Ressources officielles et contacts</h2>
-          
+
           <div className="bg-gray-50 rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">Office Togolais des Recettes (OTR)</h3>
             <ul className="space-y-2 text-gray-700">
@@ -339,7 +339,7 @@ export default function ISGuidePage() {
         <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-xl p-8 mt-12">
           <h2 className="text-3xl font-bold mb-4">Besoin d'un accompagnement fiscal personnalisé ?</h2>
           <p className="text-lg mb-6 opacity-90">
-            INTEGRA PARTNERS accompagne les entreprises togolaises et internationales dans leur conformité fiscale, 
+            INTEGRA PARTNERS accompagne les entreprises togolaises et internationales dans leur conformité fiscale,
             l'optimisation légale de leur IS et la sécurisation de leurs relations avec l'OTR.
           </p>
           <ul className="space-y-3 mb-6">
@@ -369,14 +369,14 @@ export default function ISGuidePage() {
             </li>
           </ul>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="/fr/contact" 
+            <a
+              href="/fr/contact"
               className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center"
             >
               Demander un audit fiscal
             </a>
-            <a 
-              href="/fr/services/structuration-juridico-fiscale" 
+            <a
+              href="/fr/services/structuration-juridico-fiscale"
               className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors border-2 border-white text-center"
             >
               Nos services fiscaux
@@ -385,7 +385,7 @@ export default function ISGuidePage() {
         </section>
 
         {/* FAQ Section */}
-        <FAQSection 
+        <FAQSection
           title="Questions Fréquentes sur l'IS au Togo"
           description="Réponses aux questions les plus posées sur l'Impôt sur les Sociétés"
           pageUrl="https://integrapartners.com/fr/togo/fiscalite-otr/is"

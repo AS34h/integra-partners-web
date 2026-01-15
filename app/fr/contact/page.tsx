@@ -89,7 +89,7 @@ export default function ContactPage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-[#B8860B]/20 rounded-full border border-[#B8860B]/30">
@@ -97,11 +97,11 @@ export default function ContactPage() {
                 📞 Parlons de Votre Projet
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Contactez <span className="text-[#B8860B]">INTEGRA PARTNERS</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               Lomé (Togo) • Cotonou (Bénin) • Diaspora France/Canada/USA
             </p>
@@ -301,7 +301,7 @@ export default function ContactPage() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Type de demande <span className="text-red-600">*</span>
                   </label>
-                  <select 
+                  <select
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#B8860B] focus:border-transparent"
                   >
@@ -336,7 +336,7 @@ export default function ContactPage() {
                     id="nda"
                   />
                   <label htmlFor="nda" className="text-sm text-gray-700">
-                    J'accepte que mes données soient traitées de manière confidentielle (NDA signé avant tout échange sensible). 
+                    J'accepte que mes données soient traitées de manière confidentielle (NDA signé avant tout échange sensible).
                     <Link href="/fr/politique-confidentialite" className="text-[#B8860B] hover:underline ml-1">
                       Politique de confidentialité
                     </Link>
@@ -360,7 +360,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Alternatif */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -369,7 +369,7 @@ export default function ContactPage() {
             <p className="text-xl text-gray-300 mb-8">
               Diagnostic gratuit 30 minutes (visio ou téléphone) disponible sous 48h.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
               <button className="bg-[#B8860B] hover:bg-[#9a6f09] text-white font-bold py-5 px-10 rounded-lg text-lg transition-colors duration-300">
                 Réserver Mon Diagnostic Gratuit

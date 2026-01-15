@@ -15,7 +15,7 @@ export default function GuideCreerSARLTogo() {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero */}
-      <section className="bg-navy text-white py-12 md:py-16">
+      <section className="bg-slate-700 text-white py-12 md:py-16">
         <div className="container mx-auto">
           <div className="max-w-4xl">
             <div className="mb-4">
@@ -29,7 +29,7 @@ export default function GuideCreerSARLTogo() {
               Créer une SARL ou SARLU au Togo : Guide Complet 2026
             </h1>
             <p className="text-lg text-gray-200">
-              Tout ce qu'il faut savoir pour créer votre Société à Responsabilité Limitée au Togo : 
+              Tout ce qu'il faut savoir pour créer votre Société à Responsabilité Limitée au Togo :
               capital minimum, démarches d'immatriculation, coûts et délais réels.
             </p>
           </div>
@@ -71,13 +71,13 @@ export default function GuideCreerSARLTogo() {
                 Pourquoi Choisir la SARL au Togo ?
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                La SARL (Société à Responsabilité Limitée) est la forme juridique la plus populaire 
-                au Togo pour les PME. Elle offre un équilibre optimal entre flexibilité de gestion, 
+                La SARL (Société à Responsabilité Limitée) est la forme juridique la plus populaire
+                au Togo pour les PME. Elle offre un équilibre optimal entre flexibilité de gestion,
                 protection du patrimoine personnel et crédibilité institutionnelle.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                La SARLU (SARL Unipersonnelle) permet à un entrepreneur individuel de bénéficier 
-                des mêmes avantages avec un seul associé. Conformes au droit OHADA, ces structures 
+                La SARLU (SARL Unipersonnelle) permet à un entrepreneur individuel de bénéficier
+                des mêmes avantages avec un seul associé. Conformes au droit OHADA, ces structures
                 sont reconnues dans les 17 pays membres.
               </p>
 
@@ -114,7 +114,7 @@ export default function GuideCreerSARLTogo() {
                 <Euro className="w-6 h-6 text-gold" />
                 Capital Social : Montant et Libération
               </h2>
-              
+
               <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
                 <h3 className="font-bold text-lg text-navy mb-4">Capital Minimum Légal</h3>
                 <div className="space-y-4">
@@ -125,7 +125,7 @@ export default function GuideCreerSARLTogo() {
                     </div>
                     <div>
                       <p className="text-gray-700 leading-relaxed">
-                        Le capital minimum d'une SARL ou SARLU au Togo est fixé à <strong>1 million de FCFA</strong> 
+                        Le capital minimum d'une SARL ou SARLU au Togo est fixé à <strong>1 million de FCFA</strong>
                         (environ 1 525 €) par l'Acte Uniforme OHADA relatif au droit des sociétés commerciales.
                       </p>
                       <p className="text-sm text-gray-600 mt-2">
@@ -143,15 +143,15 @@ export default function GuideCreerSARLTogo() {
                 </h3>
                 <div className="space-y-3 text-gray-700">
                   <p>
-                    <strong>À la constitution :</strong> Vous devez libérer (verser effectivement) 
+                    <strong>À la constitution :</strong> Vous devez libérer (verser effectivement)
                     au minimum <strong>20% du capital social</strong>, soit 200 000 FCFA pour le minimum légal.
                   </p>
                   <p>
-                    <strong>Solde :</strong> Les 80% restants (800 000 FCFA) peuvent être libérés 
+                    <strong>Solde :</strong> Les 80% restants (800 000 FCFA) peuvent être libérés
                     progressivement dans un délai maximum de <strong>2 ans</strong> à compter de l'immatriculation.
                   </p>
                   <p className="text-sm bg-white border-l-4 border-blue-500 p-3 mt-4">
-                    💡 <strong>Conseil :</strong> Pour faciliter l'accès au financement bancaire et 
+                    💡 <strong>Conseil :</strong> Pour faciliter l'accès au financement bancaire et
                     rassurer vos partenaires, il est recommandé de libérer 50% à 100% du capital dès la création.
                   </p>
                 </div>
@@ -161,7 +161,7 @@ export default function GuideCreerSARLTogo() {
                 <h3 className="font-bold text-lg text-navy mb-4">Capital Recommandé Selon l'Activité</h3>
                 <div className="overflow-x-auto">
                   <table className="w-full text-left">
-                    <thead className="bg-navy text-white">
+                    <thead className="bg-slate-700 text-white">
                       <tr>
                         <th className="p-3">Type d'Activité</th>
                         <th className="p-3">Capital Conseillé</th>
@@ -203,8 +203,8 @@ export default function GuideCreerSARLTogo() {
               </h2>
 
               <p className="text-gray-700 leading-relaxed mb-6">
-                L'immatriculation au Registre du Commerce et du Crédit Mobilier (RCCM) se fait auprès 
-                du <strong>Centre de Formalités des Entreprises (CFE)</strong> à Lomé. Depuis 2020, 
+                L'immatriculation au Registre du Commerce et du Crédit Mobilier (RCCM) se fait auprès
+                du <strong>Centre de Formalités des Entreprises (CFE)</strong> à Lomé. Depuis 2020,
                 le Togo a digitalisé une partie du processus via le guichet unique.
               </p>
 
@@ -218,7 +218,7 @@ export default function GuideCreerSARLTogo() {
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-navy mb-2">Rédaction et Signature des Statuts</h3>
                       <p className="text-gray-700 mb-3">
-                        Les statuts doivent être rédigés par écrit et signés par tous les associés. 
+                        Les statuts doivent être rédigés par écrit et signés par tous les associés.
                         Pour une SARL, ils doivent obligatoirement être <strong>authentifiés par un notaire</strong>.
                       </p>
                       <div className="bg-gray-50 p-4 rounded">
@@ -245,12 +245,12 @@ export default function GuideCreerSARLTogo() {
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-navy mb-2">Dépôt du Capital en Banque</h3>
                       <p className="text-gray-700 mb-3">
-                        Ouvrez un compte bancaire professionnel et déposez le capital initial (minimum 20% libéré). 
+                        Ouvrez un compte bancaire professionnel et déposez le capital initial (minimum 20% libéré).
                         La banque vous remettra une <strong>attestation de blocage de capital</strong>.
                       </p>
                       <div className="bg-yellow-50 border border-yellow-200 p-4 rounded">
                         <p className="text-sm text-gray-700">
-                          <strong>Important :</strong> Les fonds restent bloqués jusqu'à l'immatriculation. 
+                          <strong>Important :</strong> Les fonds restent bloqués jusqu'à l'immatriculation.
                           Ils seront débloqués sur présentation de l'extrait RCCM.
                         </p>
                         <p className="text-xs text-gray-600 mt-2">
@@ -270,7 +270,7 @@ export default function GuideCreerSARLTogo() {
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-navy mb-2">Dépôt du Dossier au CFE</h3>
                       <p className="text-gray-700 mb-3">
-                        Déposez votre dossier complet au Centre de Formalités des Entreprises (CFE) 
+                        Déposez votre dossier complet au Centre de Formalités des Entreprises (CFE)
                         situé à la Chambre de Commerce et d'Industrie du Togo (CCIT) à Lomé.
                       </p>
                       <div className="bg-gray-50 p-4 rounded">
@@ -300,8 +300,8 @@ export default function GuideCreerSARLTogo() {
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-navy mb-2">Immatriculation RCCM & IFU</h3>
                       <p className="text-gray-700 mb-3">
-                        Le CFE transmet votre dossier au greffe du tribunal de commerce pour l'immatriculation 
-                        au RCCM et à l'Office Togolais des Recettes (OTR) pour l'attribution de votre 
+                        Le CFE transmet votre dossier au greffe du tribunal de commerce pour l'immatriculation
+                        au RCCM et à l'Office Togolais des Recettes (OTR) pour l'attribution de votre
                         <strong> Identifiant Fiscal Unique (IFU)</strong>.
                       </p>
                       <div className="bg-green-50 border border-green-200 p-4 rounded">
@@ -328,8 +328,8 @@ export default function GuideCreerSARLTogo() {
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-navy mb-2">Publication au Journal Officiel</h3>
                       <p className="text-gray-700 mb-3">
-                        Vous devez publier un avis de création dans le <strong>Journal Officiel 
-                        des Annonces Légales (JOAL)</strong> dans les 15 jours suivant l'immatriculation.
+                        Vous devez publier un avis de création dans le <strong>Journal Officiel
+                          des Annonces Légales (JOAL)</strong> dans les 15 jours suivant l'immatriculation.
                       </p>
                       <p className="text-xs text-gray-600">
                         ⏱️ Délai : 1-2 semaines | 💰 Coût : 15 000 - 25 000 FCFA
@@ -349,7 +349,7 @@ export default function GuideCreerSARLTogo() {
 
               <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
                 <table className="w-full">
-                  <thead className="bg-navy text-white">
+                  <thead className="bg-slate-700 text-white">
                     <tr>
                       <th className="p-4 text-left">Poste de Dépense</th>
                       <th className="p-4 text-right">Montant (FCFA)</th>
@@ -390,9 +390,9 @@ export default function GuideCreerSARLTogo() {
 
               <div className="mt-4 bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <p className="text-sm text-gray-700">
-                  <strong>💡 Budget à prévoir :</strong> Comptez entre 150 000 et 250 000 FCFA 
-                  pour l'ensemble des formalités, <strong>hors capital social</strong>. Si vous faites 
-                  appel à un prestataire (avocat, cabinet conseil), ajoutez 100 000 à 300 000 FCFA 
+                  <strong>💡 Budget à prévoir :</strong> Comptez entre 150 000 et 250 000 FCFA
+                  pour l'ensemble des formalités, <strong>hors capital social</strong>. Si vous faites
+                  appel à un prestataire (avocat, cabinet conseil), ajoutez 100 000 à 300 000 FCFA
                   d'honoraires d'accompagnement.
                 </p>
               </div>
@@ -442,21 +442,21 @@ export default function GuideCreerSARLTogo() {
             </div>
 
             {/* CTA */}
-            <div className="bg-navy text-white rounded-lg p-8 text-center">
+            <div className="bg-slate-700 text-white rounded-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">
                 Besoin d'Aide pour Créer Votre SARL au Togo ?
               </h2>
               <p className="text-lg text-gray-200 mb-6">
-                INTEGRA PARTNERS vous accompagne de A à Z dans la création de votre entreprise : 
-                rédaction des statuts, démarches administratives, ouverture de compte bancaire et 
+                INTEGRA PARTNERS vous accompagne de A à Z dans la création de votre entreprise :
+                rédaction des statuts, démarches administratives, ouverture de compte bancaire et
                 conseils fiscaux. <strong>Délai garanti 7 jours</strong>, dossier clé en main.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/fr/diagnostic-ims">
-                  <Button 
-                    variant="gold" 
-                    size="lg" 
-                    icon={<ChevronRight className="w-5 h-5" />} 
+                  <Button
+                    variant="gold"
+                    size="lg"
+                    icon={<ChevronRight className="w-5 h-5" />}
                     iconPosition="right"
                   >
                     Demander un Accompagnement
@@ -478,7 +478,7 @@ export default function GuideCreerSARLTogo() {
 
       <section className="bg-white py-12">
         <div className="container mx-auto max-w-4xl">
-          <FAQSection 
+          <FAQSection
             title="Questions Fréquentes sur la SARL/SARLU au Togo"
             faqs={[
               {

@@ -16,7 +16,7 @@ export function Timeline({ events }: TimelineProps) {
     <div className="relative">
       {/* Vertical line */}
       <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold via-gold/50 to-transparent" />
-      
+
       <div className="space-y-12">
         {events.map((event, index) => (
           <div key={index} className="relative pl-12">
@@ -24,7 +24,7 @@ export function Timeline({ events }: TimelineProps) {
             <div className="absolute left-0 flex items-center justify-center w-8 h-8 rounded-full bg-gold text-navy">
               <div className="w-3 h-3 rounded-full bg-navy" />
             </div>
-            
+
             {/* Content */}
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
               <div className="text-gold font-bold text-sm mb-2">{event.year}</div>

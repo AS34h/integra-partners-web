@@ -7,7 +7,7 @@ export default function SecuriteBancaireFraudesPage() {
         <h1 className="text-4xl font-bold mb-6">Sécurité Bancaire et Fraudes au Togo</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : types fraudes (phishing, arnaque CEO), 
+            Contenu SEO optimisé à fournir : types fraudes (phishing, arnaque CEO),
             protections bancaires, alertes SMS, recours BCEAO, bonnes pratiques entreprises.
           </p>
           {/* Contenu détaillé à ajouter */}

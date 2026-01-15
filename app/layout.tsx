@@ -1,25 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from 'next/font/google'
 import "./globals.css";
 import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
-
-// Fonts optimisées avec next/font
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
-  variable: '--font-inter',
-  display: 'swap',
-  preload: true,
-})
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-playfair',
-  display: 'swap',
-  preload: true,
-})
 
 export const metadata: Metadata = {
   title: "INTEGRA PARTNERS | Cabinet de conseil institutionnel",
@@ -40,8 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
-      <body className={`${inter.className} antialiased`}>
+    <html lang="fr">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

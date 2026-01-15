@@ -7,7 +7,7 @@ export default function SAGuidePage() {
         <h1 className="text-4xl font-bold mb-6">Créer une SA (Société Anonyme) au Togo</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : capital minimum 10M FCFA, conseil d'administration, 
+            Contenu SEO optimisé à fournir : capital minimum 10M FCFA, conseil d'administration,
             commissaire aux comptes, formalités RCCM.
           </p>
           {/* Contenu détaillé à ajouter */}

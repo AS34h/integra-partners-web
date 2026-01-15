@@ -63,9 +63,9 @@ export default function CabinetPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl"
             {...fadeInImmediate}
           >
@@ -73,9 +73,9 @@ export default function CabinetPage() {
               Cabinet de Conseil Stratégique Souverain
             </h1>
             <p className="text-body-l text-gray-200">
-              INTEGRA PARTNERS est un cabinet de conseil indépendant spécialisé 
-              dans l'accompagnement stratégique des dirigeants institutionnels 
-              en Afrique. Notre expertise couvre la gouvernance, la transformation 
+              INTEGRA PARTNERS est un cabinet de conseil indépendant spécialisé
+              dans l'accompagnement stratégique des dirigeants institutionnels
+              en Afrique. Notre expertise couvre la gouvernance, la transformation
               organisationnelle et le positionnement stratégique.
             </p>
           </motion.div>
@@ -85,7 +85,7 @@ export default function CabinetPage() {
       {/* Mission Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-4xl mx-auto"
             {...fadeInImmediate}
           >
@@ -105,7 +105,7 @@ export default function CabinetPage() {
       {/* Expertise Cards */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -113,25 +113,25 @@ export default function CabinetPage() {
               Notre Expertise
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Quatre piliers fondamentaux qui définissent notre approche et 
+              Quatre piliers fondamentaux qui définissent notre approche et
               garantissent la qualité de nos interventions.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 gap-8"
             {...fadeInImmediate}
           >
             {expertise.map((item, index) => {
               const Icon = item.icon
               return (
-                <Card 
+                <Card
                   key={index}
                   variant="custom"
                   className="p-8"
                 >
                   <div className="flex items-start gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-navy text-white flex items-center justify-center">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-slate-700 text-white flex items-center justify-center">
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
@@ -153,7 +153,7 @@ export default function CabinetPage() {
       {/* Values Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -174,7 +174,7 @@ export default function CabinetPage() {
       {/* Histoire & Timeline Section */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -186,7 +186,7 @@ export default function CabinetPage() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="max-w-4xl mx-auto"
             {...fadeInImmediate}
           >
@@ -229,7 +229,7 @@ export default function CabinetPage() {
       {/* Certifications & Accréditations Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -241,31 +241,31 @@ export default function CabinetPage() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="max-w-4xl mx-auto space-y-4"
             {...fadeInImmediate}
           >
-            <CertificationItem 
+            <CertificationItem
               title="Certification ISO 9001:2015"
               description="Système de management de la qualité certifié pour nos processus de conseil stratégique et d'accompagnement institutionnel."
               year="2021"
             />
-            <CertificationItem 
+            <CertificationItem
               title="Conformité RGPD"
               description="Processus de traitement des données clients conformes au Règlement Général sur la Protection des Données. Audits annuels par cabinet tiers."
               year="2022"
             />
-            <CertificationItem 
+            <CertificationItem
               title="Membre UEMOA - Réseau Conseil"
               description="Accréditation auprès de l'Union Économique et Monétaire Ouest-Africaine comme cabinet de conseil référencé pour les institutions régionales."
               year="2023"
             />
-            <CertificationItem 
+            <CertificationItem
               title="Adhésion OHADA Business Institute"
               description="Participation active aux travaux de l'institut de formation OHADA pour la promotion du droit des affaires harmonisé en Afrique."
               year="2023"
             />
-            <CertificationItem 
+            <CertificationItem
               title="Code de Déontologie Conseil"
               description="Respect strict du code de déontologie des métiers du conseil (confidentialité, indépendance, absence de conflit d'intérêts, transparence méthodologique)."
             />
@@ -276,7 +276,7 @@ export default function CabinetPage() {
       {/* Valeurs Opérationnelles Legacy */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -284,17 +284,17 @@ export default function CabinetPage() {
               Nos Engagements Opérationnels
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Des principes non négociables qui guident chaque mission et 
+              Des principes non négociables qui guident chaque mission et
               garantissent l'excellence de nos livrables.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto"
             {...fadeInImmediate}
           >
             {values.map((value, index) => (
-              <Card 
+              <Card
                 key={index}
                 variant="custom"
                 className="p-8"
@@ -313,9 +313,9 @@ export default function CabinetPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInImmediate}
           >
@@ -323,12 +323,12 @@ export default function CabinetPage() {
               Discutons de Votre Projet
             </h2>
             <p className="text-body-l text-gray-200 mb-8">
-              Contactez-nous pour un premier échange confidentiel sur vos 
-              enjeux stratégiques et découvrir comment INTEGRA PARTNERS peut 
+              Contactez-nous pour un premier échange confidentiel sur vos
+              enjeux stratégiques et découvrir comment INTEGRA PARTNERS peut
               accompagner votre organisation.
             </p>
-            <Button 
-              variant="primary" 
+            <Button
+              variant="primary"
               size="lg"
               className="bg-white text-navy hover:bg-gray-100"
             >

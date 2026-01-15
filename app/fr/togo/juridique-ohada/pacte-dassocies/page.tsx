@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { 
-  FileText, 
-  CheckCircle, 
-  AlertCircle, 
+import {
+  FileText,
+  CheckCircle,
+  AlertCircle,
   Shield,
   Scale,
   Users,
@@ -47,8 +47,8 @@ export default function PacteAssociesTogoPage() {
               Protection, Sortie & Gouvernance OHADA
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Guide complet du <strong>pacte d'associés (shareholders' agreement)</strong> au Togo : 
-              différence avec statuts, clauses de protection, stratégies de sortie, valorisation des parts, 
+              Guide complet du <strong>pacte d'associés (shareholders' agreement)</strong> au Togo :
+              différence avec statuts, clauses de protection, stratégies de sortie, valorisation des parts,
               résolution de conflits et modèle type commenté. <strong>Sécurisez votre gouvernance d'entreprise</strong>.
             </p>
           </div>
@@ -106,11 +106,11 @@ export default function PacteAssociesTogoPage() {
                   Qu'est-ce qu'un Pacte d'Associés ?
                 </h2>
               </div>
-              
+
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  Le <strong>pacte d'associés</strong> (ou <em>shareholders' agreement</em>) est un <strong>contrat privé et confidentiel</strong> signé 
-                  entre les associés d'une société, <strong>en complément des statuts</strong>. Il organise les relations entre associés, 
+                  Le <strong>pacte d'associés</strong> (ou <em>shareholders' agreement</em>) est un <strong>contrat privé et confidentiel</strong> signé
+                  entre les associés d'une société, <strong>en complément des statuts</strong>. Il organise les relations entre associés,
                   fixe les règles de gouvernance non publiques, et protège les intérêts de chacun (notamment des minoritaires).
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default function PacteAssociesTogoPage() {
                   <Lock className="w-8 h-8 text-[#B8860B] mb-4" />
                   <h3 className="text-lg font-bold mb-3">Confidentiel</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Contrairement aux statuts (publics au RCCM), le pacte reste <strong>strictement confidentiel</strong> entre associés. 
+                    Contrairement aux statuts (publics au RCCM), le pacte reste <strong>strictement confidentiel</strong> entre associés.
                     Protège votre stratégie et vos accords sensibles.
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export default function PacteAssociesTogoPage() {
                   <Shield className="w-8 h-8 text-green-600 mb-4" />
                   <h3 className="text-lg font-bold text-[#0A1628] mb-3">Flexible</h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <strong>Liberté contractuelle totale</strong> : clauses sur-mesure adaptées à votre situation (OHADA n'impose rien). 
+                    <strong>Liberté contractuelle totale</strong> : clauses sur-mesure adaptées à votre situation (OHADA n'impose rien).
                     Modifiable par simple avenant signé.
                   </p>
                 </div>
@@ -138,7 +138,7 @@ export default function PacteAssociesTogoPage() {
                   <Scale className="w-8 h-8 text-blue-600 mb-4" />
                   <h3 className="text-lg font-bold text-[#0A1628] mb-3">Opposable</h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    <strong>Force juridique entre signataires</strong>. En cas de non-respect, recours possible en justice 
+                    <strong>Force juridique entre signataires</strong>. En cas de non-respect, recours possible en justice
                     (dommages-intérêts, exécution forcée, arbitrage CCJA).
                   </p>
                 </div>
@@ -150,7 +150,7 @@ export default function PacteAssociesTogoPage() {
                   <div>
                     <h3 className="text-lg font-bold text-yellow-900 mb-2">📊 Statistique Clé</h3>
                     <p className="text-yellow-800 text-sm leading-relaxed">
-                      <strong>75% des conflits entre associés</strong> (blocage décisions, sortie conflictuelle, désaccord stratégique) auraient pu être 
+                      <strong>75% des conflits entre associés</strong> (blocage décisions, sortie conflictuelle, désaccord stratégique) auraient pu être
                       évités avec un <strong>pacte d'associés bien rédigé</strong>. C'est une police d'assurance relationnelle indispensable.
                     </p>
                   </div>
@@ -265,8 +265,8 @@ export default function PacteAssociesTogoPage() {
                     <div>
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">1. Protéger les Minoritaires</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Minoritaires à 20-30% = vulnérables face à un majoritaire à 50%+. 
-                        Le pacte leur donne des <strong>droits de veto</strong> sur décisions stratégiques, droit d'information renforcé, 
+                        Minoritaires à 20-30% = vulnérables face à un majoritaire à 50%+.
+                        Le pacte leur donne des <strong>droits de veto</strong> sur décisions stratégiques, droit d'information renforcé,
                         et protection contre la dilution. <strong>Rééquilibre le pouvoir</strong>.
                       </p>
                     </div>
@@ -282,8 +282,8 @@ export default function PacteAssociesTogoPage() {
                     <div>
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">2. Sécuriser la Sortie (Exit Strategy)</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Comment sortir si désaccord stratégique, mésentente, ou opportunité externe ? 
-                        Pacte prévoit <strong>clauses Put (vendre de force), Call (racheter de force), drag-along, tag-along</strong>. 
+                        Comment sortir si désaccord stratégique, mésentente, ou opportunité externe ?
+                        Pacte prévoit <strong>clauses Put (vendre de force), Call (racheter de force), drag-along, tag-along</strong>.
                         Évite les blocages et litiges coûteux.
                       </p>
                     </div>
@@ -300,7 +300,7 @@ export default function PacteAssociesTogoPage() {
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">3. Faciliter l'Investissement</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
                         <strong>Investisseurs professionnels (fonds, business angels)</strong> exigent TOUJOURS un pacte d'associés avec :
-                        clauses anti-dilution, préférence liquidation, représentation au conseil, droit de veto sur budget/recrutements clés. 
+                        clauses anti-dilution, préférence liquidation, représentation au conseil, droit de veto sur budget/recrutements clés.
                         Sans pacte = pas d'investissement.
                       </p>
                     </div>
@@ -316,8 +316,8 @@ export default function PacteAssociesTogoPage() {
                     <div>
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">4. Prévenir et Résoudre les Conflits</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Pacte = <strong>mode d'emploi des relations entre associés</strong>. 
-                        Clauses claires sur : prise de décision, répartition tâches, confidentialité, non-concurrence, médiation obligatoire avant justice. 
+                        Pacte = <strong>mode d'emploi des relations entre associés</strong>.
+                        Clauses claires sur : prise de décision, répartition tâches, confidentialité, non-concurrence, médiation obligatoire avant justice.
                         <strong>Prévention &gt; guérison</strong>.
                       </p>
                     </div>
@@ -333,7 +333,7 @@ export default function PacteAssociesTogoPage() {
                     <div>
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">5. Garder la Confidentialité</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Certaines règles sont <strong>trop sensibles pour être publiques</strong> (répartition réelle du pouvoir, accords d'exclusivité, 
+                        Certaines règles sont <strong>trop sensibles pour être publiques</strong> (répartition réelle du pouvoir, accords d'exclusivité,
                         clauses pénales, valorisation cible pour exit). Le pacte reste privé = <strong>protection stratégique</strong>.
                       </p>
                     </div>
@@ -349,8 +349,8 @@ export default function PacteAssociesTogoPage() {
                     <div>
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">6. Éviter l'Immobilisme (Deadlock)</h3>
                       <p className="text-sm text-gray-700 leading-relaxed">
-                        Structure 50-50 ou 33-33-34 = <strong>risque de blocage total</strong> (aucune majorité). 
-                        Pacte prévoit <strong>mécanismes de déblocage</strong> : expert arbitre, achat-vente (shotgun), médiation obligatoire, 
+                        Structure 50-50 ou 33-33-34 = <strong>risque de blocage total</strong> (aucune majorité).
+                        Pacte prévoit <strong>mécanismes de déblocage</strong> : expert arbitre, achat-vente (shotgun), médiation obligatoire,
                         liquidation ordonnée.
                       </p>
                     </div>
@@ -380,15 +380,15 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Agrément Renforcé des Cessions</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Rendre <strong>obligatoire l'accord UNANIME</strong> (ou majorité qualifiée 75-80%) pour toute cession de parts à un tiers. 
+                        Rendre <strong>obligatoire l'accord UNANIME</strong> (ou majorité qualifiée 75-80%) pour toute cession de parts à un tiers.
                         Droit de veto des associés existants. <strong>Protège contre l'entrée d'associés indésirables</strong>.
                       </p>
                       <div className="bg-gray-50 rounded p-4 text-sm">
                         <p className="text-gray-600 mb-2"><strong>Exemple de rédaction :</strong></p>
                         <p className="text-gray-700 italic leading-relaxed">
-                          "Toute cession de parts sociales, à titre onéreux ou gratuit, au profit d'un tiers à la présente convention, 
-                          est soumise à l'agrément préalable et unanime de l'ensemble des parties. L'associé cédant devra notifier son intention 
-                          par lettre recommandée avec accusé de réception. À défaut d'accord unanime dans les 30 jours, 
+                          "Toute cession de parts sociales, à titre onéreux ou gratuit, au profit d'un tiers à la présente convention,
+                          est soumise à l'agrément préalable et unanime de l'ensemble des parties. L'associé cédant devra notifier son intention
+                          par lettre recommandée avec accusé de réception. À défaut d'accord unanime dans les 30 jours,
                           la cession sera réputée refusée et les autres associés disposeront d'un droit de préemption proportionnel à leur participation."
                         </p>
                       </div>
@@ -407,13 +407,13 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Clause Put (Option de Vente)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Donne au <strong>minoritaire le droit d'obliger le majoritaire à racheter ses parts</strong> dans certains cas : 
-                        désaccord stratégique majeur, non-distribution dividendes 3 ans, changement de contrôle, mésentente grave. 
+                        Donne au <strong>minoritaire le droit d'obliger le majoritaire à racheter ses parts</strong> dans certains cas :
+                        désaccord stratégique majeur, non-distribution dividendes 3 ans, changement de contrôle, mésentente grave.
                         <strong>Sortie de secours pour le minoritaire</strong>.
                       </p>
                       <div className="bg-blue-50 border-l-2 border-blue-600 p-4 rounded text-sm">
                         <p className="text-blue-900 leading-relaxed">
-                          <strong>💡 Prix de rachat :</strong> Prévoir la méthode de valorisation (ex: moyenne actif net comptable 3 derniers exercices, 
+                          <strong>💡 Prix de rachat :</strong> Prévoir la méthode de valorisation (ex: moyenne actif net comptable 3 derniers exercices,
                           ou expertise indépendante par cabinet OHADA, ou multiple EBITDA sectoriel). Délai de paiement : 6-18 mois échelonné.
                         </p>
                       </div>
@@ -432,13 +432,13 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Clause Call (Option d'Achat)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Donne au <strong>majoritaire le droit d'obliger un minoritaire à vendre ses parts</strong> dans certains cas : 
-                        manquement grave aux obligations (non-concurrence, confidentialité), blocage répété des décisions, opportunité de vente globale 
+                        Donne au <strong>majoritaire le droit d'obliger un minoritaire à vendre ses parts</strong> dans certains cas :
+                        manquement grave aux obligations (non-concurrence, confidentialité), blocage répété des décisions, opportunité de vente globale
                         (offre externe rachat 100%). <strong>Sortie forcée du minoritaire toxique</strong>.
                       </p>
                       <div className="bg-yellow-50 border-l-2 border-yellow-500 p-4 rounded text-sm">
                         <p className="text-yellow-800">
-                          ⚠️ <strong>Équilibre délicat :</strong> Call trop facile = abus du majoritaire. 
+                          ⚠️ <strong>Équilibre délicat :</strong> Call trop facile = abus du majoritaire.
                           Recommandation : limiter les cas de Call à des manquements graves objectifs + juste valorisation (pas de prix punitif).
                         </p>
                       </div>
@@ -457,14 +457,14 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Drag-Along (Cession Conjointe Forcée)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Si un acheteur externe propose de racheter <strong>100% de la société</strong> à un prix attractif, 
-                        le(s) majoritaire(s) peut obliger TOUS les associés à vendre leurs parts aux mêmes conditions. 
+                        Si un acheteur externe propose de racheter <strong>100% de la société</strong> à un prix attractif,
+                        le(s) majoritaire(s) peut obliger TOUS les associés à vendre leurs parts aux mêmes conditions.
                         Évite qu'un minoritaire bloque une opportunité de sortie globale.
                       </p>
                       <div className="bg-green-50 border-l-2 border-green-600 p-4 rounded text-sm">
                         <p className="text-green-900">
-                          💡 <strong>Protection minoritaires :</strong> Drag-along valable uniquement si : 
-                          (1) Offre écrite ferme d'achat 100%, (2) Prix ≥ valorisation minimale convenue (ex: 5x EBITDA), 
+                          💡 <strong>Protection minoritaires :</strong> Drag-along valable uniquement si :
+                          (1) Offre écrite ferme d'achat 100%, (2) Prix ≥ valorisation minimale convenue (ex: 5x EBITDA),
                           (3) Paiement cash ou garanties bancaires, (4) Conditions identiques pour tous (pas de discrimination).
                         </p>
                       </div>
@@ -483,8 +483,8 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Tag-Along (Droit de Sortie Conjointe)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Si un majoritaire vend ses parts à un tiers, les <strong>minoritaires ont le droit de vendre leurs parts au même acheteur, 
-                        aux mêmes conditions</strong> (prix, modalités, garanties). Évite qu'un minoritaire reste prisonnier avec un nouvel actionnaire inconnu.
+                        Si un majoritaire vend ses parts à un tiers, les <strong>minoritaires ont le droit de vendre leurs parts au même acheteur,
+                          aux mêmes conditions</strong> (prix, modalités, garanties). Évite qu'un minoritaire reste prisonnier avec un nouvel actionnaire inconnu.
                       </p>
                     </div>
                   </div>
@@ -501,7 +501,7 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Méthode de Valorisation des Parts</h3>
                       <p className="text-sm text-gray-700 mb-4">
-                        Clause <strong>CRITIQUE</strong> : comment valoriser les parts en cas de Put, Call, exclusion, ou succession ? 
+                        Clause <strong>CRITIQUE</strong> : comment valoriser les parts en cas de Put, Call, exclusion, ou succession ?
                         Sans méthode claire = conflit garanti. <strong>Fixer la règle du jeu maintenant</strong> (quand relations sont bonnes).
                       </p>
                       <div className="bg-gray-50 rounded p-4">
@@ -521,7 +521,7 @@ export default function PacteAssociesTogoPage() {
                             <div>
                               <p className="font-semibold text-[#0A1628] text-sm">2. Multiple EBITDA</p>
                               <p className="text-xs text-gray-600">
-                                Valorisation = [EBITDA moyen 2 derniers exercices] × [Multiple sectoriel 4-7x]. 
+                                Valorisation = [EBITDA moyen 2 derniers exercices] × [Multiple sectoriel 4-7x].
                                 <strong>Reflète rentabilité</strong>, mais nécessite EBITDA positif et stable.
                               </p>
                             </div>
@@ -531,7 +531,7 @@ export default function PacteAssociesTogoPage() {
                             <div>
                               <p className="font-semibold text-[#0A1628] text-sm">3. Expertise Indépendante</p>
                               <p className="text-xs text-gray-600">
-                                Cabinet d'audit reconnu (Big 4, ou cabinet régional OHADA agréé). <strong>Le plus fiable</strong>, mais coûteux (1-3M FCFA). 
+                                Cabinet d'audit reconnu (Big 4, ou cabinet régional OHADA agréé). <strong>Le plus fiable</strong>, mais coûteux (1-3M FCFA).
                                 Recommandé si valorisation &gt; 50M FCFA.
                               </p>
                             </div>
@@ -553,12 +553,12 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Clauses Anti-Dilution</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Protègent les associés existants contre une <strong>dilution excessive</strong> en cas d'augmentation de capital. 
+                        Protègent les associés existants contre une <strong>dilution excessive</strong> en cas d'augmentation de capital.
                         Types : droit de préemption proportionnel (souscrire à hauteur de sa %), clause de ratchet (ajustement du prix si augmentation à prix inférieur).
                       </p>
                       <div className="bg-blue-50 border-l-2 border-blue-600 p-4 rounded text-sm">
                         <p className="text-blue-900">
-                          💡 <strong>Cas pratique :</strong> Vous détenez 30%. Augmentation de capital ouvre 20% nouveaux à un investisseur. 
+                          💡 <strong>Cas pratique :</strong> Vous détenez 30%. Augmentation de capital ouvre 20% nouveaux à un investisseur.
                           Sans protection : vous passez à 24%. Avec droit de préemption : vous pouvez souscrire 30% des nouveaux titres pour maintenir 30%.
                         </p>
                       </div>
@@ -577,14 +577,14 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Non-Concurrence et Confidentialité</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        <strong>Non-concurrence :</strong> Interdit aux associés d'exercer une activité concurrente pendant leur participation 
+                        <strong>Non-concurrence :</strong> Interdit aux associés d'exercer une activité concurrente pendant leur participation
                         ET 2-3 ans après leur sortie (périmètre géographique et sectoriel précis).<br />
-                        <strong>Confidentialité :</strong> Secret absolu sur données stratégiques (business plan, clients, marges, process, savoir-faire) 
+                        <strong>Confidentialité :</strong> Secret absolu sur données stratégiques (business plan, clients, marges, process, savoir-faire)
                         pendant et après (10 ans post-sortie).
                       </p>
                       <div className="bg-red-50 border-l-2 border-red-600 p-4 rounded text-sm">
                         <p className="text-red-900">
-                          ⚠️ <strong>Clause pénale :</strong> Prévoir une pénalité financière dissuasive en cas de violation. 
+                          ⚠️ <strong>Clause pénale :</strong> Prévoir une pénalité financière dissuasive en cas de violation.
                           Ex: 50% de la valorisation des parts, ou 500 000 - 2 000 000 FCFA + dommages-intérêts + interdiction de concurrence par injonction judiciaire.
                         </p>
                       </div>
@@ -625,7 +625,7 @@ export default function PacteAssociesTogoPage() {
                         </ul>
                       </div>
                       <p className="text-xs text-gray-600 mt-3">
-                        💡 <strong>Droit de veto minoritaires :</strong> Même à 20%, un minoritaire peut bloquer ces décisions si accord unanime requis. 
+                        💡 <strong>Droit de veto minoritaires :</strong> Même à 20%, un minoritaire peut bloquer ces décisions si accord unanime requis.
                         Protège contre décisions unilatérales du majoritaire.
                       </p>
                     </div>
@@ -643,13 +643,13 @@ export default function PacteAssociesTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-[#0A1628] mb-3">Médiation et Arbitrage CCJA</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        En cas de litige entre associés : <strong>médiation amiable obligatoire (30-60 jours)</strong> avant tout recours judiciaire. 
+                        En cas de litige entre associés : <strong>médiation amiable obligatoire (30-60 jours)</strong> avant tout recours judiciaire.
                         Médiateur : expert OHADA indépendant agréé.<br />
                         Si échec médiation : <strong>arbitrage obligatoire devant la CCJA (Cour Commune de Justice et d'Arbitrage OHADA)</strong> plutôt que tribunaux togolais.
                       </p>
                       <div className="bg-green-50 border-l-2 border-green-600 p-4 rounded text-sm">
                         <p className="text-green-900 leading-relaxed">
-                          💡 <strong>Avantages CCJA :</strong> Sentence arbitrale 6-12 mois (vs 3-5 ans justice nationale), confidentialité totale, 
+                          💡 <strong>Avantages CCJA :</strong> Sentence arbitrale 6-12 mois (vs 3-5 ans justice nationale), confidentialité totale,
                           arbitres experts OHADA, sentence exécutoire dans les 17 États OHADA sans exequatur. <strong>Référence pour litiges commerciaux régionaux</strong>.
                         </p>
                       </div>
@@ -676,7 +676,7 @@ export default function PacteAssociesTogoPage() {
                     <h3 className="text-lg font-bold text-green-900">Idéal : À la Création</h3>
                   </div>
                   <p className="text-sm text-green-800 leading-relaxed mb-3">
-                    <strong>Meilleur moment :</strong> Signature simultanée avec les statuts, AVANT l'immatriculation RCCM. 
+                    <strong>Meilleur moment :</strong> Signature simultanée avec les statuts, AVANT l'immatriculation RCCM.
                     Relations encore saines, intérêts alignés, négociation sereine. <strong>Prévention maximale</strong>.
                   </p>
                   <p className="text-xs text-green-700">
@@ -706,7 +706,7 @@ export default function PacteAssociesTogoPage() {
                     <h3 className="text-lg font-bold text-orange-900">Tardif : En Conflit</h3>
                   </div>
                   <p className="text-sm text-orange-800 leading-relaxed mb-3">
-                    Conflit déjà ouvert = <strong>très difficile de négocier un pacte</strong>. Positions tranchées, méfiance, 
+                    Conflit déjà ouvert = <strong>très difficile de négocier un pacte</strong>. Positions tranchées, méfiance,
                     exigences maximalistes. Nécessite médiation tierce pour débloquer.
                   </p>
                   <p className="text-xs text-orange-700">
@@ -721,8 +721,8 @@ export default function PacteAssociesTogoPage() {
                   Recommandation INTEGRA
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  <strong>Signez TOUJOURS un pacte d'associés dès qu'il y a 2+ associés</strong>, même (surtout !) si vous êtes amis ou en famille. 
-                  Les plus gros conflits viennent de sociétés entre proches (confiance excessive = négligence contractuelle). 
+                  <strong>Signez TOUJOURS un pacte d'associés dès qu'il y a 2+ associés</strong>, même (surtout !) si vous êtes amis ou en famille.
+                  Les plus gros conflits viennent de sociétés entre proches (confiance excessive = négligence contractuelle).
                   <strong>Un bon pacte protège l'amitié, pas l'inverse</strong>. Coût : 300-500K FCFA. Coût d'un conflit sans pacte : 5-20M FCFA + 3-5 ans de procédure.
                 </p>
               </div>
@@ -797,14 +797,14 @@ export default function PacteAssociesTogoPage() {
               Besoin d'un Pacte d'Associés sur Mesure au Togo ?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              INTEGRA rédige des <strong>pactes d'associés blindés juridiquement</strong> adaptés à votre structure et vos enjeux : 
-              analyse de gouvernance, identification des risques, rédaction de clauses protectrices (Put/Call, anti-dilution, valorisation, arbitrage), 
+              INTEGRA rédige des <strong>pactes d'associés blindés juridiquement</strong> adaptés à votre structure et vos enjeux :
+              analyse de gouvernance, identification des risques, rédaction de clauses protectrices (Put/Call, anti-dilution, valorisation, arbitrage),
               et négociation entre associés. <strong>Sécurisez votre aventure entrepreneuriale</strong>.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -812,7 +812,7 @@ export default function PacteAssociesTogoPage() {
                 </Button>
               </Link>
               <Link href="/fr/togo/juridique-ohada/statuts">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg"
                 >
@@ -822,8 +822,8 @@ export default function PacteAssociesTogoPage() {
             </div>
 
             <p className="text-sm text-gray-400">
-              Tarif forfaitaire pacte d'associés : <span className="text-white font-semibold">350 000 FCFA TTC</span> (analyse + rédaction complète 15-30 pages + 2 réunions négociation). 
-              Révision pacte existant : <span className="text-white font-semibold">150 000 FCFA TTC</span>. 
+              Tarif forfaitaire pacte d'associés : <span className="text-white font-semibold">350 000 FCFA TTC</span> (analyse + rédaction complète 15-30 pages + 2 réunions négociation).
+              Révision pacte existant : <span className="text-white font-semibold">150 000 FCFA TTC</span>.
               Médiation conflit associés : <span className="text-white font-semibold">200 000 FCFA/jour</span>.
             </p>
           </div>

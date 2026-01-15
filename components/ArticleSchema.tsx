@@ -61,13 +61,13 @@ export function ArticleSchema({
     script.type = 'application/ld+json'
     script.text = JSON.stringify(articleSchema)
     script.id = `article-schema-${pageUrl.replace(/[^a-zA-Z0-9]/g, '-')}`
-    
+
     // Vérifier si le script existe déjà
     const existingScript = document.getElementById(script.id)
     if (existingScript) {
       existingScript.remove()
     }
-    
+
     document.head.appendChild(script)
 
     return () => {

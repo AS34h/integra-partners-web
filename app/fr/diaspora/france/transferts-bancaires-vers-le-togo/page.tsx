@@ -209,7 +209,7 @@ export default function TransfertsBancairesFranceTogoPage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -234,15 +234,15 @@ export default function TransfertsBancairesFranceTogoPage() {
                 </h1>
               </div>
             </div>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              <strong>Réduisez frais transferts EUR→FCFA de 5-8% à 1-2%</strong>. Comptes bidevise, 
+              <strong>Réduisez frais transferts EUR→FCFA de 5-8% à 1-2%</strong>. Comptes bidevise,
               virements optimisés, conformité TRACFIN/OTR. Pour aide familiale, gestion entreprise ou investissements.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4"
                 >
@@ -250,7 +250,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                 </Button>
               </Link>
               <a href="#solutions">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4"
                 >
@@ -358,7 +358,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
+                <Card
                   variant="custom"
                   className={`p-6 h-full ${solution.recommande ? 'border-2 border-[#B8860B] shadow-xl' : ''}`}
                 >
@@ -484,7 +484,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                       <p className="text-gray-700 mb-4 leading-relaxed">{item.description}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4 bg-green-50 rounded-lg p-4">
                     <Shield className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                     <div>
@@ -517,7 +517,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
+                <Card
                   variant="custom"
                   className={`p-8 h-full ${formule.recommande ? 'border-2 border-[#B8860B] shadow-xl' : ''}`}
                 >
@@ -526,7 +526,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                       <span className="text-white font-semibold text-xs uppercase">⭐ Populaire</span>
                     </div>
                   )}
-                  
+
                   <h3 className="text-2xl font-bold text-[#0B1A3E] mb-2">{formule.nom}</h3>
                   <div className="mb-4">
                     <p className="text-3xl font-bold text-[#B8860B]">{formule.tarif}</p>
@@ -545,7 +545,7 @@ export default function TransfertsBancairesFranceTogoPage() {
                   </div>
 
                   <Link href="/fr/diagnostic-ims">
-                    <Button 
+                    <Button
                       variant={formule.recommande ? "primary" : "outline"}
                       className={formule.recommande ? "w-full bg-[#B8860B] hover:bg-[#9a6f09]" : "w-full"}
                     >
@@ -560,7 +560,7 @@ export default function TransfertsBancairesFranceTogoPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -569,9 +569,9 @@ export default function TransfertsBancairesFranceTogoPage() {
             <p className="text-xl text-gray-300 mb-8">
               Audit transferts gratuit 30 min : calcul économies possibles, solution optimale, plan mise en œuvre.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

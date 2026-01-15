@@ -7,7 +7,7 @@ export default function AllemagneCreerEntreprisePage() {
         <h1 className="text-4xl font-bold mb-6">Créer une Entreprise au Togo depuis l'Allemagne</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : création SARL distance Allemagne, 
+            Contenu SEO optimisé à fournir : création SARL distance Allemagne,
             procuration notaire, compte bancaire, fiscalité Allemagne-Togo.
           </p>
           {/* Contenu détaillé à ajouter */}

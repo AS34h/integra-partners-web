@@ -15,7 +15,7 @@ const fadeInImmediate = {
 export default function DiasporaAllemagnePage() {
   return (
     <div className="bg-gray-50">
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-6">
@@ -24,9 +24,9 @@ export default function DiasporaAllemagnePage() {
                 Diaspora <span className="text-[#B8860B]">Allemagne</span>
               </h1>
             </div>
-            
+
             <p className="text-xl text-gray-300 mb-8">
-              Créer votre entreprise au Togo depuis Berlin, Munich, Francfort. 
+              Créer votre entreprise au Togo depuis Berlin, Munich, Francfort.
               Accompagnement diaspora togolaise en Allemagne.
             </p>
 

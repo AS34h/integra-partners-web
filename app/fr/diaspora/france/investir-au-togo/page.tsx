@@ -176,7 +176,7 @@ export default function InvestirTogoFrancePage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -201,16 +201,16 @@ export default function InvestirTogoFrancePage() {
                 </h1>
               </div>
             </div>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              <strong>Immobilier, PME, startups</strong> au Togo pour Togolais de France. 
-              Due diligence 360°, structuration juridico-fiscale France-Togo, gestion déléguée. 
+              <strong>Immobilier, PME, startups</strong> au Togo pour Togolais de France.
+              Due diligence 360°, structuration juridico-fiscale France-Togo, gestion déléguée.
               <strong>ROI 8-25%/an</strong> selon actif.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4"
                 >
@@ -218,7 +218,7 @@ export default function InvestirTogoFrancePage() {
                 </Button>
               </Link>
               <a href="#types">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4"
                 >
@@ -264,7 +264,7 @@ export default function InvestirTogoFrancePage() {
               <div className="text-5xl mb-4">💼</div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Investisseurs Diaspora</h3>
               <p className="text-gray-700 leading-relaxed">
-                Togolais France 40-60 ans, épargne 20-100K EUR, cherchent diversification patrimoine hors Europe. 
+                Togolais France 40-60 ans, épargne 20-100K EUR, cherchent diversification patrimoine hors Europe.
                 ROI attractif + préparation retour.
               </p>
             </Card>
@@ -273,7 +273,7 @@ export default function InvestirTogoFrancePage() {
               <div className="text-5xl mb-4">🏖️</div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Retraités Préparant Retour</h3>
               <p className="text-gray-700 leading-relaxed">
-                Retraite France proche (5-10 ans), veulent sécuriser revenus Togo (loyers immobilier, dividendes PME). 
+                Retraite France proche (5-10 ans), veulent sécuriser revenus Togo (loyers immobilier, dividendes PME).
                 Patrimoine transmissible.
               </p>
             </Card>
@@ -282,7 +282,7 @@ export default function InvestirTogoFrancePage() {
               <div className="text-5xl mb-4">👨‍👩‍👧‍👦</div>
               <h3 className="text-xl font-bold text-[#0B1A3E] mb-4">Family Offices Togolais-Français</h3>
               <p className="text-gray-700 leading-relaxed">
-                Familles diaspora fortunées (200K+ EUR patrimoine), cherchent structuration holdings France-Togo + 
+                Familles diaspora fortunées (200K+ EUR patrimoine), cherchent structuration holdings France-Togo +
                 gestion professionnelle.
               </p>
             </Card>
@@ -394,7 +394,7 @@ export default function InvestirTogoFrancePage() {
                       <p className="text-gray-700 mb-4">{item.probleme}</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start gap-4 bg-green-50 rounded-lg p-4">
                     <Shield className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                     <div>
@@ -467,7 +467,7 @@ export default function InvestirTogoFrancePage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card 
+                <Card
                   variant="custom"
                   className={`p-8 h-full ${formule.recommande ? 'border-2 border-[#B8860B] shadow-xl' : ''}`}
                 >
@@ -476,7 +476,7 @@ export default function InvestirTogoFrancePage() {
                       <span className="text-white font-semibold text-xs uppercase">⭐ Recommandé</span>
                     </div>
                   )}
-                  
+
                   <h3 className="text-2xl font-bold text-[#0B1A3E] mb-2">{formule.nom}</h3>
                   <div className="mb-4">
                     <p className="text-3xl font-bold text-[#B8860B]">{formule.tarif}</p>
@@ -495,7 +495,7 @@ export default function InvestirTogoFrancePage() {
                   </div>
 
                   <Link href="/fr/diagnostic-ims">
-                    <Button 
+                    <Button
                       variant={formule.recommande ? "primary" : "outline"}
                       className={formule.recommande ? "w-full bg-[#B8860B] hover:bg-[#9a6f09]" : "w-full"}
                     >
@@ -510,7 +510,7 @@ export default function InvestirTogoFrancePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -519,9 +519,9 @@ export default function InvestirTogoFrancePage() {
             <p className="text-xl text-gray-300 mb-8">
               Diagnostic investissement gratuit 30 min : opportunités, ROI attendu, structuration optimale France-Togo.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

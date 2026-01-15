@@ -25,7 +25,7 @@ interface BreadcrumbProps {
  */
 export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
   const baseUrl = 'https://integrapartners.com'
-  
+
   // Construire le schema.org BreadcrumbList
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -48,7 +48,7 @@ export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
     ]
   }
 
-  const allPaths = showHome 
+  const allPaths = showHome
     ? [{ name: 'Accueil', url: '/' }, ...paths]
     : paths
 
@@ -59,17 +59,17 @@ export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
+
       {/* UI Breadcrumb */}
       <nav aria-label="Fil d'Ariane" className="mb-6">
         <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
           {allPaths.map((path, index) => {
             const isLast = index === allPaths.length - 1
-            
+
             return (
               <li key={path.url} className="flex items-center gap-2">
                 {index === 0 && showHome ? (
-                  <Link 
+                  <Link
                     href={path.url}
                     className="flex items-center gap-1 hover:text-primary-600 transition-colors"
                   >
@@ -79,7 +79,7 @@ export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
                 ) : (
                   <>
                     {!isLast ? (
-                      <Link 
+                      <Link
                         href={path.url}
                         className="hover:text-primary-600 transition-colors"
                       >
@@ -92,7 +92,7 @@ export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
                     )}
                   </>
                 )}
-                
+
                 {!isLast && (
                   <ChevronRight className="w-4 h-4 text-gray-400" aria-hidden="true" />
                 )}
@@ -118,7 +118,7 @@ export function Breadcrumb({ paths, showHome = true }: BreadcrumbProps) {
  */
 export function useBreadcrumbPaths(pathname: string): BreadcrumbPath[] {
   const segments = pathname.split('/').filter(Boolean)
-  
+
   // Mapping des slugs vers noms lisibles
   const nameMap: Record<string, string> = {
     'fr': 'Français',
@@ -145,24 +145,24 @@ export function useBreadcrumbPaths(pathname: string): BreadcrumbPath[] {
     'diagnostic-ims': 'Diagnostic IMS',
     'nos-standards': 'Nos Standards',
   }
-  
+
   const paths: BreadcrumbPath[] = []
   let currentPath = ''
-  
+
   segments.forEach((segment, index) => {
     // Skip 'fr' dans les paths
     if (segment === 'fr') return
-    
+
     currentPath += `/${segment}`
-    const name = nameMap[segment] || segment.split('-').map(w => 
+    const name = nameMap[segment] || segment.split('-').map(w =>
       w.charAt(0).toUpperCase() + w.slice(1)
     ).join(' ')
-    
+
     paths.push({
       name,
       url: `/fr${currentPath}`
     })
   })
-  
+
   return paths
 }

@@ -1,17 +1,17 @@
 import React from 'react';
-import { 
-  ArticleSection, 
-  ArticleSubSection, 
-  Paragraph, 
-  Blockquote, 
-  ChecklistItem, 
-  BulletList, 
-  NumberedList, 
-  HighlightBox, 
-  StatCard, 
-  ComparisonTable, 
-  StepCard, 
-  KeyPoint 
+import {
+  ArticleSection,
+  ArticleSubSection,
+  Paragraph,
+  Blockquote,
+  ChecklistItem,
+  BulletList,
+  NumberedList,
+  HighlightBox,
+  StatCard,
+  ComparisonTable,
+  StepCard,
+  KeyPoint
 } from './ArticleComponents';
 import { Shield, AlertCircle, Scale, FileText, Building2, Users } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -23,24 +23,24 @@ export function GuideConformiteOHADA() {
         title="Guide Complet de Conformité OHADA"
       >
         <Paragraph>
-          Le droit OHADA (Organisation pour l'Harmonisation en Afrique du Droit des Affaires) 
-          constitue le cadre juridique unifié applicable dans 17 pays d'Afrique. Pour les 
-          entreprises opérant dans l'espace OHADA, la conformité juridique n'est pas optionnelle : 
-          elle conditionne la validité des actes, la protection des dirigeants et la pérennité 
+          Le droit OHADA (Organisation pour l'Harmonisation en Afrique du Droit des Affaires)
+          constitue le cadre juridique unifié applicable dans 17 pays d'Afrique. Pour les
+          entreprises opérant dans l'espace OHADA, la conformité juridique n'est pas optionnelle :
+          elle conditionne la validité des actes, la protection des dirigeants et la pérennité
           des activités.
         </Paragraph>
 
         <Blockquote>
-          « Les Actes uniformes sont directement applicables et obligatoires dans les États Parties, 
+          « Les Actes uniformes sont directement applicables et obligatoires dans les États Parties,
           nonobstant toute disposition contraire de droit interne, antérieure ou postérieure. »
           <br />
           <strong>— Acte Uniforme OHADA</strong>
         </Blockquote>
 
         <Paragraph>
-          Ce guide détaille les obligations légales essentielles, les démarches de mise en 
-          conformité et les risques encourus en cas de non-respect. Il s'adresse aux dirigeants 
-          d'entreprises, juristes d'entreprise, DAF et conseils externes intervenant dans 
+          Ce guide détaille les obligations légales essentielles, les démarches de mise en
+          conformité et les risques encourus en cas de non-respect. Il s'adresse aux dirigeants
+          d'entreprises, juristes d'entreprise, DAF et conseils externes intervenant dans
           l'espace OHADA.
         </Paragraph>
 
@@ -65,66 +65,66 @@ export function GuideConformiteOHADA() {
       >
         <ArticleSubSection title="1. Immatriculation et Formalités Constitutives">
           <Paragraph>
-            Toute société commerciale doit obligatoirement être immatriculée au Registre du 
-            Commerce et du Crédit Mobilier (RCCM) conformément à l'Acte Uniforme sur le Droit 
+            Toute société commerciale doit obligatoirement être immatriculée au Registre du
+            Commerce et du Crédit Mobilier (RCCM) conformément à l'Acte Uniforme sur le Droit
             Commercial Général.
           </Paragraph>
 
           <div className="space-y-3 mt-6">
             <ChecklistItem checked>
-              <strong>Dépôt des statuts authentifiés</strong> auprès du greffe du tribunal compétent 
+              <strong>Dépôt des statuts authentifiés</strong> auprès du greffe du tribunal compétent
               (notaire requis pour SARL, SA, SAS)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Déclaration notariée de souscription et de versement</strong> certifiant la 
+              <strong>Déclaration notariée de souscription et de versement</strong> certifiant la
               libération du capital social minimum (SARL: 1M FCFA, SA: 10M FCFA)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Publication au Journal Officiel des annonces légales</strong> (JOAL) dans les 
+              <strong>Publication au Journal Officiel des annonces légales</strong> (JOAL) dans les
               15 jours suivant l'immatriculation
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Obtention du numéro IFU (Identifiant Fiscal Unique)</strong> auprès de la 
+              <strong>Obtention du numéro IFU (Identifiant Fiscal Unique)</strong> auprès de la
               Direction Générale des Impôts pour activation fiscale
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Déclaration CNSS/INAM</strong> pour l'affiliation des salariés à la sécurité 
+              <strong>Déclaration CNSS/INAM</strong> pour l'affiliation des salariés à la sécurité
               sociale (obligatoire dès le 1er salarié)
             </ChecklistItem>
           </div>
 
           <HighlightBox type="warning">
-            <strong>Délai critique :</strong> L'immatriculation doit intervenir dans les 30 jours 
-            suivant la signature des statuts. Au-delà, la société peut être considérée comme 
+            <strong>Délai critique :</strong> L'immatriculation doit intervenir dans les 30 jours
+            suivant la signature des statuts. Au-delà, la société peut être considérée comme
             société de fait avec responsabilité illimitée des associés.
           </HighlightBox>
         </ArticleSubSection>
 
         <ArticleSubSection title="2. Tenue de la Comptabilité SYSCOHADA Révisé">
           <Paragraph>
-            L'Acte Uniforme relatif au Droit Comptable et à l'Information Financière (AUDCIF) 
+            L'Acte Uniforme relatif au Droit Comptable et à l'Information Financière (AUDCIF)
             impose le Système Comptable OHADA (SYSCOHADA) Révisé à toutes les entités.
           </Paragraph>
 
           <div className="space-y-3 mt-6">
             <ChecklistItem checked>
-              <strong>Tenue de livres comptables obligatoires</strong> : Livre-Journal, Grand-Livre, 
+              <strong>Tenue de livres comptables obligatoires</strong> : Livre-Journal, Grand-Livre,
               Balance, Livre d'Inventaire (cotés et paraphés par le tribunal)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Établissement des états financiers annuels</strong> : Bilan, Compte de 
+              <strong>Établissement des états financiers annuels</strong> : Bilan, Compte de
               Résultat, Tableau de Flux de Trésorerie (TAFIRE), Notes annexes
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Conservation des pièces justificatives</strong> pendant 10 ans minimum 
+              <strong>Conservation des pièces justificatives</strong> pendant 10 ans minimum
               (factures, relevés bancaires, contrats)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Dépôt des comptes annuels au RCCM</strong> dans les 6 mois de la clôture 
+              <strong>Dépôt des comptes annuels au RCCM</strong> dans les 6 mois de la clôture
               (obligation pour SA et SCA, recommandée pour SARL)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Certification des comptes par commissaire aux comptes</strong> (obligatoire 
+              <strong>Certification des comptes par commissaire aux comptes</strong> (obligatoire
               pour SA, SCA et SARL dépassant 2 des 3 seuils: CA 250M, total bilan 125M, 50 salariés)
             </ChecklistItem>
           </div>
@@ -132,29 +132,29 @@ export function GuideConformiteOHADA() {
 
         <ArticleSubSection title="3. Gouvernance Statutaire et Assemblées">
           <Paragraph>
-            L'Acte Uniforme sur le Droit des Sociétés Commerciales impose des règles strictes 
+            L'Acte Uniforme sur le Droit des Sociétés Commerciales impose des règles strictes
             de gouvernance selon la forme juridique.
           </Paragraph>
 
           <div className="space-y-3 mt-6">
             <ChecklistItem checked>
-              <strong>Assemblée Générale Ordinaire annuelle</strong> dans les 6 mois de la clôture 
+              <strong>Assemblée Générale Ordinaire annuelle</strong> dans les 6 mois de la clôture
               pour approuver les comptes et affecter le résultat
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Tenue de registres obligatoires</strong> : Registre des procès-verbaux 
+              <strong>Tenue de registres obligatoires</strong> : Registre des procès-verbaux
               d'assemblées, Registre des mouvements de titres, Registre de présence
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Respect des quorums et majorités</strong> : AGO (1/4 puis 1/5 en 2e 
+              <strong>Respect des quorums et majorités</strong> : AGO (1/4 puis 1/5 en 2e
               convocation), AGE (1/2 puis 1/3)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Publication des modifications statutaires</strong> au RCCM et au JOAL 
+              <strong>Publication des modifications statutaires</strong> au RCCM et au JOAL
               (changement de gérance, transfert de siège, augmentation de capital)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Convention réglementée</strong> : Autorisation préalable de l'AG pour 
+              <strong>Convention réglementée</strong> : Autorisation préalable de l'AG pour
               tout contrat entre la société et un dirigeant/associé
             </ChecklistItem>
           </div>
@@ -165,7 +165,7 @@ export function GuideConformiteOHADA() {
         title="Méthodologie de Mise en Conformité"
       >
         <Paragraph>
-          La mise en conformité OHADA nécessite une approche structurée en 4 phases pour 
+          La mise en conformité OHADA nécessite une approche structurée en 4 phases pour
           identifier les écarts, prioriser les actions et sécuriser juridiquement l'entreprise.
         </Paragraph>
 
@@ -241,7 +241,7 @@ export function GuideConformiteOHADA() {
         title="Sanctions et Risques Encourus"
       >
         <Paragraph>
-          Le non-respect des obligations OHADA expose l'entreprise et ses dirigeants à des 
+          Le non-respect des obligations OHADA expose l'entreprise et ses dirigeants à des
           sanctions civiles, pénales et commerciales graves.
         </Paragraph>
 
@@ -350,12 +350,12 @@ export function GuideConformiteOHADA() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">Complexité Administrative Multi-Juridictions</h4>
             <p className="mb-3">
-              Les entreprises opérant dans plusieurs pays OHADA sont confrontées à des 
+              Les entreprises opérant dans plusieurs pays OHADA sont confrontées à des
               interprétations divergentes des Actes Uniformes par les autorités locales.
             </p>
             <p className="text-sm">
-              <strong>Solution :</strong> Audit juridique pays par pays avec conseil local. 
-              Privilégier l'approche la plus conservatrice en cas de doute interprétatif. 
+              <strong>Solution :</strong> Audit juridique pays par pays avec conseil local.
+              Privilégier l'approche la plus conservatrice en cas de doute interprétatif.
               Documenter les consultations juridiques obtenues.
             </p>
           </HighlightBox>
@@ -363,12 +363,12 @@ export function GuideConformiteOHADA() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">Coûts de Régularisation Élevés</h4>
             <p className="mb-3">
-              La mise en conformité d'une société en situation irrégulière depuis plusieurs 
+              La mise en conformité d'une société en situation irrégulière depuis plusieurs
               années peut coûter entre 2M et 10M FCFA (honoraires + formalités + pénalités).
             </p>
             <p className="text-sm">
-              <strong>Solution :</strong> Prioriser les actions critiques (RCCM, AGO, comptabilité) 
-              avant les formalités secondaires. Négocier avec l'administration des délais de 
+              <strong>Solution :</strong> Prioriser les actions critiques (RCCM, AGO, comptabilité)
+              avant les formalités secondaires. Négocier avec l'administration des délais de
               régularisation progressive. Provisionner le budget sur 2-3 exercices si nécessaire.
             </p>
           </HighlightBox>
@@ -376,13 +376,13 @@ export function GuideConformiteOHADA() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">Absence de Culture de Conformité</h4>
             <p className="mb-3">
-              Les PME africaines perçoivent souvent la conformité OHADA comme une contrainte 
+              Les PME africaines perçoivent souvent la conformité OHADA comme une contrainte
               bureaucratique sans valeur ajoutée immédiate.
             </p>
             <p className="text-sm">
-              <strong>Solution :</strong> Former les dirigeants aux bénéfices concrets : 
-              sécurisation juridique des contrats, accès au financement bancaire, attractivité 
-              pour investisseurs, protection personnelle des dirigeants. Démontrer le ROI de 
+              <strong>Solution :</strong> Former les dirigeants aux bénéfices concrets :
+              sécurisation juridique des contrats, accès au financement bancaire, attractivité
+              pour investisseurs, protection personnelle des dirigeants. Démontrer le ROI de
               la conformité (levée de blocages opérationnels, crédibilité commerciale).
             </p>
           </HighlightBox>
@@ -391,9 +391,9 @@ export function GuideConformiteOHADA() {
 
       <ArticleSection title="Conclusion et Recommandations">
         <Paragraph>
-          La conformité OHADA n'est pas une option : c'est une condition de survie juridique 
-          pour toute entreprise opérant dans l'espace OHADA. Les sanctions encourues en cas 
-          de non-respect peuvent aller jusqu'à la nullité de la société et la responsabilité 
+          La conformité OHADA n'est pas une option : c'est une condition de survie juridique
+          pour toute entreprise opérant dans l'espace OHADA. Les sanctions encourues en cas
+          de non-respect peuvent aller jusqu'à la nullité de la société et la responsabilité
           personnelle illimitée des dirigeants.
         </Paragraph>
 
@@ -414,8 +414,8 @@ export function GuideConformiteOHADA() {
             Besoin d'un Audit de Conformité OHADA ?
           </h3>
           <p className="mb-6 text-gray-200">
-            INTEGRA PARTNERS accompagne les entreprises dans leur mise en conformité juridique 
-            OHADA avec une approche pragmatique et budgétée. Diagnostic initial offert pour 
+            INTEGRA PARTNERS accompagne les entreprises dans leur mise en conformité juridique
+            OHADA avec une approche pragmatique et budgétée. Diagnostic initial offert pour
             toute demande qualifiée.
           </p>
           <Button variant="primary" size="lg" className="bg-gold hover:bg-gold/90 text-navy">

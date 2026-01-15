@@ -13,7 +13,7 @@ export default function ConfidentialitePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-navy-dark text-white py-20">
+      <section className="bg-slate-700-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeInUp}>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -94,7 +94,7 @@ export default function ConfidentialitePage() {
                   Le responsable du traitement de vos données personnelles est :
                 </p>
 
-                <div className="bg-navy-dark/5 rounded-lg p-6">
+                <div className="bg-slate-700-dark/5 rounded-lg p-6">
                   <p className="mb-2"><strong>Société :</strong> INTEGRA PARTNERS SARL</p>
                   <p className="mb-2"><strong>Adresse :</strong> Boulevard du 13 Janvier, BP 1234, Lomé, Togo</p>
                   <p className="mb-2">
@@ -330,7 +330,7 @@ export default function ConfidentialitePage() {
                   </li>
                 </ul>
 
-                <div className="bg-navy-dark/5 rounded-lg p-6 mt-6">
+                <div className="bg-slate-700-dark/5 rounded-lg p-6 mt-6">
                   <h3 className="font-bold text-navy-dark mb-3">Garanties mises en place</h3>
                   <p className="mb-4">
                     Ces transferts sont encadrés par les garanties suivantes :
@@ -373,7 +373,7 @@ export default function ConfidentialitePage() {
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
-                      <tr className="bg-navy-dark text-white">
+                      <tr className="bg-slate-700-dark text-white">
                         <th className="px-4 py-3 text-left">Type de données</th>
                         <th className="px-4 py-3 text-left">Durée de conservation</th>
                       </tr>
@@ -432,7 +432,7 @@ export default function ConfidentialitePage() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4 mt-6">
-                  <div className="bg-navy-dark/5 rounded-lg p-4">
+                  <div className="bg-slate-700-dark/5 rounded-lg p-4">
                     <h3 className="font-bold text-navy-dark mb-2">🔒 Mesures techniques</h3>
                     <ul className="text-sm space-y-1">
                       <li>• Chiffrement SSL/TLS (HTTPS)</li>
@@ -443,7 +443,7 @@ export default function ConfidentialitePage() {
                     </ul>
                   </div>
 
-                  <div className="bg-navy-dark/5 rounded-lg p-4">
+                  <div className="bg-slate-700-dark/5 rounded-lg p-4">
                     <h3 className="font-bold text-navy-dark mb-2">👥 Mesures organisationnelles</h3>
                     <ul className="text-sm space-y-1">
                       <li>• Politique de sécurité stricte</li>
@@ -544,7 +544,7 @@ export default function ConfidentialitePage() {
                   </div>
                 </div>
 
-                <div className="bg-navy-dark text-white rounded-lg p-6 mt-8">
+                <div className="bg-slate-700-dark text-white rounded-lg p-6 mt-8">
                   <h3 className="text-xl font-bold mb-4">Comment exercer vos droits ?</h3>
                   <p className="mb-4">
                     Pour exercer l'un de ces droits, contactez notre Délégué à la Protection des Données :
@@ -640,7 +640,7 @@ export default function ConfidentialitePage() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-navy-dark text-white">
+      <section className="py-16 bg-slate-700-dark text-white">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div {...fadeInUp} className="text-center">
             <h2 className="text-3xl font-bold mb-6">Questions sur la protection de vos données ?</h2>

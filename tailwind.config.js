@@ -68,7 +68,7 @@ module.exports = {
           800: '#060E18',
           900: '#040A10',
         },
-        
+
         'anthracite': {
           DEFAULT: '#2D3748',
           50: '#F7FAFC',
@@ -82,7 +82,7 @@ module.exports = {
           800: '#1A202C',
           900: '#171923',
         },
-        
+
         // Accent souverain (usage < 5%)
         'gold': {
           DEFAULT: '#B8860B',
@@ -97,7 +97,7 @@ module.exports = {
           800: '#7D6208',
           900: '#5E4A06',
         },
-        
+
         // Grayscale institutionnel (priorité)
         'gray': {
           950: '#0F172A',
@@ -112,7 +112,7 @@ module.exports = {
           100: '#F8FAFC',
           50: '#FAFBFC',
         },
-        
+
         // Sémantiques (désaturées)
         'success': {
           DEFAULT: '#2F6F4E',

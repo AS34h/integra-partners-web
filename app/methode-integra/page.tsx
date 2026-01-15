@@ -120,7 +120,7 @@ export default function MethodePage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl"
@@ -211,7 +211,7 @@ export default function MethodePage() {
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Phase Number & Icon */}
                       <div className="flex-shrink-0">
-                        <div className="w-20 h-20 rounded-lg bg-navy text-white flex flex-col items-center justify-center">
+                        <div className="w-20 h-20 rounded-lg bg-slate-700 text-white flex flex-col items-center justify-center">
                           <div className="text-2xl font-bold">{phase.number}</div>
                         </div>
                         <div className="mt-4 flex justify-center">
@@ -295,7 +295,7 @@ export default function MethodePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl mx-auto text-center"

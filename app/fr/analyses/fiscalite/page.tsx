@@ -28,7 +28,7 @@ export default function AnalysesFiscalitePage() {
         <h1 className="text-4xl font-bold mb-6">Analyses Fiscalité Africaine</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Catégorie analyses fiscalité : articles à venir sur optimisation IS/TVA, 
+            Catégorie analyses fiscalité : articles à venir sur optimisation IS/TVA,
             conventions fiscales, prix de transfert, fiscalité internationale.
           </p>
           {/* Liste articles avec [slug] dynamique */}

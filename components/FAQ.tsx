@@ -18,7 +18,7 @@ interface FAQSectionProps {
 
 export function FAQSection({ items, faqs, title = "Questions fréquentes", description, pageUrl }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
-  
+
   const faqItems = items || faqs || []
 
   return (
@@ -27,7 +27,7 @@ export function FAQSection({ items, faqs, title = "Questions fréquentes", descr
       {description && (
         <p className="text-gray-600 mb-6">{description}</p>
       )}
-      
+
       <div className="space-y-4">
         {faqItems.map((item, index) => (
           <div key={index} className="border-b border-gray-200 last:border-0">
@@ -38,13 +38,12 @@ export function FAQSection({ items, faqs, title = "Questions fréquentes", descr
               <span className="text-lg font-semibold text-gray-900 pr-8">
                 {item.question}
               </span>
-              <ChevronDown 
-                className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${
-                  openIndex === index ? 'rotate-180' : ''
-                }`}
+              <ChevronDown
+                className={`w-5 h-5 text-gray-500 flex-shrink-0 transition-transform duration-200 ${openIndex === index ? 'rotate-180' : ''
+                  }`}
               />
             </button>
-            
+
             {openIndex === index && (
               <div className="pb-4 pr-8">
                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">

@@ -120,7 +120,7 @@ export default function CookiesPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-navy-dark text-white py-20">
+      <section className="bg-slate-700-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeInUp}>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -176,7 +176,7 @@ export default function CookiesPage() {
                   transition={{ duration: 0.6, delay: idx * 0.1 }}
                   className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
                 >
-                  <div className="bg-navy-dark text-white p-6">
+                  <div className="bg-slate-700-dark text-white p-6">
                     <h3 className="text-2xl font-bold mb-2">{category.category}</h3>
                     <p className="text-gray-300">{category.description}</p>
                   </div>
@@ -222,7 +222,7 @@ export default function CookiesPage() {
                 Vous pouvez à tout moment modifier vos préférences de cookies directement sur notre site en 
                 cliquant sur le lien "Gérer les cookies" présent en bas de chaque page.
               </p>
-              <button className="bg-navy-dark text-white px-6 py-3 rounded-lg hover:bg-navy-light transition-colors">
+              <button className="bg-slate-700-dark text-white px-6 py-3 rounded-lg hover:bg-slate-700-light transition-colors">
                 Gérer mes préférences
               </button>
             </div>
@@ -380,7 +380,7 @@ export default function CookiesPage() {
       </section>
 
       {/* Contact */}
-      <section className="py-16 bg-navy-dark text-white">
+      <section className="py-16 bg-slate-700-dark text-white">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div {...fadeInUp} className="text-center">
             <h2 className="text-3xl font-bold mb-6">Questions sur notre politique de cookies ?</h2>

@@ -68,12 +68,19 @@
       "heading": {
         "value": "Playfair Display, Georgia, serif",
         "description": "Autorité intellectuelle",
-        "weights": [400, 500]
+        "weights": [
+          400,
+          500
+        ]
       },
       "body": {
         "value": "Inter, system-ui, -apple-system, sans-serif",
         "description": "Lisibilité institutionnelle",
-        "weights": [400, 500, 600]
+        "weights": [
+          400,
+          500,
+          600
+        ]
       }
     },
     "fontSize": {
@@ -847,69 +854,69 @@
         "usage": "Espacement majeur, hero sections"
       },
       "32": {
-  "animations": {
-    "duration": {
-      "fast": {
-        "value": "150ms",
-        "tailwind": "duration-150",
-        "usage": "Micro-interactions (icon shift, link underline)"
-      },
-      "base": {
-        "value": "200ms",
-        "tailwind": "duration-200",
-        "usage": "Standard transitions (button hover, colors)"
-      },
-      "slow": {
-        "value": "300ms",
-        "tailwind": "duration-300",
-        "usage": "Modal, drawer, complex animations"
+        "animations": {
+          "duration": {
+            "fast": {
+              "value": "150ms",
+              "tailwind": "duration-150",
+              "usage": "Micro-interactions (icon shift, link underline)"
+            },
+            "base": {
+              "value": "200ms",
+              "tailwind": "duration-200",
+              "usage": "Standard transitions (button hover, colors)"
+            },
+            "slow": {
+              "value": "300ms",
+              "tailwind": "duration-300",
+              "usage": "Modal, drawer, complex animations"
+            }
+          },
+          "easing": {
+            "default": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+            "tailwind": "ease-in-out"
+          },
+          "properties": {
+            "colors": "transition-colors",
+            "transform": "transition-transform",
+            "shadow": "transition-shadow",
+            "opacity": "transition-opacity",
+            "all": "transition-all"
+          },
+          "rules": [
+            "Duration max: 300ms (sauf exceptions)",
+            "Toujours avec prefers-reduced-motion",
+            "GPU-accelerated properties only (transform, opacity)",
+            "Animations subtiles uniquement",
+            "Jamais d'autoplay",
+            "Jamais de bounce/rotate/slide agressif",
+            "Purpose-driven: chaque animation sert une fonction",
+            "Test accessibility: motion-reduce",
+            "Hover states: 150-200ms",
+            "Scroll animations: use Framer Motion sparingly"
+          ]
+        },
+        "icons": {
+          "library": "Lucide React",
+          "sizes": {
+            "sm": "w-4 h-4 (16px)",
+            "md": "w-5 h-5 (20px)",
+            "lg": "w-6 h-6 (24px)",
+            "xl": "w-8 h-8 (32px)"
+          },
+          "strokeWidth": 1.5,
+          "usage": {
+            "navigation": "ChevronRight, ArrowRight",
+            "actions": "Mail, Phone, Download",
+            "status": "CheckCircle, AlertTriangle, Info",
+            "interface": "Menu, X, Search"
+          },
+          "rules": [
+            "Toujours avec aria-hidden='true' si décoratif",
+            "Taille cohérente avec texte adjacent",
+            "StrokeWidth 1.5 pour équilibre institutionnel",
+            "Préférer outlined vs filled",
+            "Color: currentColor pour flexibilité"
+          ]
+        }
       }
-    },
-    "easing": {
-      "default": "cubic-bezier(0.4, 0.0, 0.2, 1)",
-      "tailwind": "ease-in-out"
-    },
-    "properties": {
-      "colors": "transition-colors",
-      "transform": "transition-transform",
-      "shadow": "transition-shadow",
-      "opacity": "transition-opacity",
-      "all": "transition-all"
-    },
-    "rules": [
-      "Duration max: 300ms (sauf exceptions)",
-      "Toujours avec prefers-reduced-motion",
-      "GPU-accelerated properties only (transform, opacity)",
-      "Animations subtiles uniquement",
-      "Jamais d'autoplay",
-      "Jamais de bounce/rotate/slide agressif",
-      "Purpose-driven: chaque animation sert une fonction",
-      "Test accessibility: motion-reduce",
-      "Hover states: 150-200ms",
-      "Scroll animations: use Framer Motion sparingly"
-    ]
-  },
-  "icons": {
-    "library": "Lucide React",
-    "sizes": {
-      "sm": "w-4 h-4 (16px)",
-      "md": "w-5 h-5 (20px)",
-      "lg": "w-6 h-6 (24px)",
-      "xl": "w-8 h-8 (32px)"
-    },
-    "strokeWidth": 1.5,
-    "usage": {
-      "navigation": "ChevronRight, ArrowRight",
-      "actions": "Mail, Phone, Download",
-      "status": "CheckCircle, AlertTriangle, Info",
-      "interface": "Menu, X, Search"
-    },
-    "rules": [
-      "Toujours avec aria-hidden='true' si décoratif",
-      "Taille cohérente avec texte adjacent",
-      "StrokeWidth 1.5 pour équilibre institutionnel",
-      "Préférer outlined vs filled",
-      "Color: currentColor pour flexibilité"
-    ]
-  }
-}

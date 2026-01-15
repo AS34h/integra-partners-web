@@ -51,16 +51,16 @@ export const NumberedList: React.FC<{ children: React.ReactNode }> = ({ children
   </ol>
 )
 
-export const HighlightBox: React.FC<{ type?: 'info' | 'warning' | 'success'; children: React.ReactNode }> = ({ 
-  type = 'info', 
-  children 
+export const HighlightBox: React.FC<{ type?: 'info' | 'warning' | 'success'; children: React.ReactNode }> = ({
+  type = 'info',
+  children
 }) => {
   const styles = {
     info: 'bg-blue-50 border-blue-200 text-blue-900',
     warning: 'bg-orange-50 border-orange-200 text-orange-900',
     success: 'bg-green-50 border-green-200 text-green-900',
   }
-  
+
   const icons = {
     info: <Zap className="w-5 h-5" />,
     warning: <AlertCircle className="w-5 h-5" />,
@@ -90,7 +90,7 @@ export const StatCard: React.FC<{ label: string; value: string; trend?: string }
   </div>
 )
 
-export const ComparisonTable: React.FC<{ 
+export const ComparisonTable: React.FC<{
   headers: string[]
   rows: { label: string; before: string; after: string; improvement: string }[]
 }> = ({ headers, rows }) => (
@@ -119,11 +119,11 @@ export const ComparisonTable: React.FC<{
   </div>
 )
 
-export const StepCard: React.FC<{ number: number; title: string; duration: string; children: React.ReactNode }> = ({ 
-  number, 
-  title, 
-  duration, 
-  children 
+export const StepCard: React.FC<{ number: number; title: string; duration: string; children: React.ReactNode }> = ({
+  number,
+  title,
+  duration,
+  children
 }) => (
   <div className="bg-white border border-gray-200 rounded-lg p-6 mb-6">
     <div className="flex items-start gap-4 mb-4">
@@ -141,10 +141,10 @@ export const StepCard: React.FC<{ number: number; title: string; duration: strin
   </div>
 )
 
-export const KeyPoint: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ 
-  icon, 
-  title, 
-  children 
+export const KeyPoint: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({
+  icon,
+  title,
+  children
 }) => (
   <div className="bg-gray-50 rounded-lg p-6 mb-4">
     <div className="flex items-start gap-4">

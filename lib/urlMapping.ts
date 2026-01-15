@@ -8,7 +8,7 @@ export const URL_MAPPING = {
   'contact': 'contact',
   'mentions-legales': 'legal-notice',
   'politique-confidentialite': 'privacy-policy',
-  
+
   // Services
   'services': 'services',
   'conseil-strategique': 'strategic-advisory',
@@ -18,7 +18,7 @@ export const URL_MAPPING = {
   'diaspora-et-investisseurs': 'diaspora-investors',
   'creation-dentreprise': 'company-formation',
   'gestion-documentaire': 'document-management',
-  
+
   // Togo
   'togo': 'togo',
   'creer-une-entreprise': 'start-a-business',
@@ -26,7 +26,7 @@ export const URL_MAPPING = {
   'juridique-ohada': 'legal-ohada',
   'banques-et-transferts': 'banks-transfers',
   'conformite-et-risques': 'compliance-risks',
-  
+
   // Diaspora
   'diaspora': 'diaspora',
   'france': 'france',
@@ -37,17 +37,17 @@ export const URL_MAPPING = {
   'creer-une-entreprise-au-togo': 'start-business-in-togo',
   'investir-au-togo': 'invest-in-togo',
   'transferts-bancaires-vers-le-togo': 'bank-transfers-to-togo',
-  
+
   // Analyses
   'analyses': 'insights',
   'gouvernance': 'governance',
   'fiscalite': 'taxation',
   'investissement': 'investment',
   'conformite-et-risque': 'compliance-risk',
-  
+
   // Études de cas
   'etudes-de-cas': 'case-studies',
-  
+
   // Ressources
   'ressources': 'resources',
   'modeles': 'templates',

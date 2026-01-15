@@ -28,7 +28,7 @@ export default function AnalysesInvestissementPage() {
         <h1 className="text-4xl font-bold mb-6">Analyses Investissement en Afrique</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Catégorie analyses investissement : articles à venir sur marchés africains, 
+            Catégorie analyses investissement : articles à venir sur marchés africains,
             due diligence, M&A, private equity, structuration holdings.
           </p>
           {/* Liste articles avec [slug] dynamique */}

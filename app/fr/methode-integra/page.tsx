@@ -119,9 +119,9 @@ export default function MethodePage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl"
             {...fadeInImmediate}
           >
@@ -132,8 +132,8 @@ export default function MethodePage() {
               La Méthode INTEGRA
             </h1>
             <p className="text-body-l text-gray-200">
-              Un framework structuré en 6 phases pour accompagner les transformations 
-              institutionnelles avec rigueur, pragmatisme et excellence opérationnelle. 
+              Un framework structuré en 6 phases pour accompagner les transformations
+              institutionnelles avec rigueur, pragmatisme et excellence opérationnelle.
               Éprouvée auprès de dirigeants en Afrique francophone.
             </p>
           </motion.div>
@@ -143,7 +143,7 @@ export default function MethodePage() {
       {/* Principles Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -151,17 +151,17 @@ export default function MethodePage() {
               Principes Fondamentaux
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Quatre piliers méthodologiques qui garantissent la qualité et 
+              Quatre piliers méthodologiques qui garantissent la qualité et
               la pertinence de nos interventions.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
             {...fadeInImmediate}
           >
             {principles.map((principle, index) => (
-              <Card 
+              <Card
                 key={index}
                 variant="custom"
                 className="p-6 text-center"
@@ -182,7 +182,7 @@ export default function MethodePage() {
       {/* Phases Section */}
       <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             {...fadeInImmediate}
           >
@@ -190,7 +190,7 @@ export default function MethodePage() {
               Les 6 Phases de la Méthode
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Un processus itératif et structuré qui s'adapte aux spécificités 
+              Un processus itératif et structuré qui s'adapte aux spécificités
               de chaque mission tout en garantissant des standards d'excellence.
             </p>
           </motion.div>
@@ -203,14 +203,14 @@ export default function MethodePage() {
                   key={index}
                   {...fadeInImmediate}
                 >
-                  <Card 
+                  <Card
                     variant="custom"
                     className="p-8"
                   >
                     <div className="flex flex-col md:flex-row gap-6">
                       {/* Phase Number & Icon */}
                       <div className="flex-shrink-0">
-                        <div className="w-20 h-20 rounded-lg bg-navy text-white flex flex-col items-center justify-center">
+                        <div className="w-20 h-20 rounded-lg bg-slate-700 text-white flex flex-col items-center justify-center">
                           <div className="text-2xl font-bold">{phase.number}</div>
                         </div>
                         <div className="mt-4 flex justify-center">
@@ -228,7 +228,7 @@ export default function MethodePage() {
                             {phase.duration}
                           </span>
                         </div>
-                        
+
                         <p className="text-body-m text-gray-700 mb-6">
                           {phase.description}
                         </p>
@@ -239,7 +239,7 @@ export default function MethodePage() {
                           </h4>
                           <ul className="grid md:grid-cols-2 gap-2">
                             {phase.deliverables.map((deliverable, idx) => (
-                              <li 
+                              <li
                                 key={idx}
                                 className="flex items-start gap-2 text-body-m text-gray-700"
                               >
@@ -262,7 +262,7 @@ export default function MethodePage() {
       {/* Adaptability Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-4xl mx-auto"
             {...fadeInImmediate}
           >
@@ -271,7 +271,7 @@ export default function MethodePage() {
             </h2>
             <Card variant="custom" className="p-8 border-gold">
               <p className="text-body-l text-anthracite mb-4">
-                La Méthode INTEGRA n'est pas un processus rigide. Chaque phase 
+                La Méthode INTEGRA n'est pas un processus rigide. Chaque phase
                 s'adapte aux contraintes spécifiques de la mission :
               </p>
               <ul className="space-y-3">
@@ -294,9 +294,9 @@ export default function MethodePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInImmediate}
           >
@@ -304,19 +304,19 @@ export default function MethodePage() {
               Appliquons la Méthode à Votre Contexte
             </h2>
             <p className="text-body-l text-gray-200 mb-8">
-              Discutons de vos enjeux stratégiques et définissons ensemble 
+              Discutons de vos enjeux stratégiques et définissons ensemble
               le parcours d'accompagnement le plus adapté à votre organisation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="primary" 
+              <Button
+                variant="primary"
                 size="lg"
                 className="bg-white text-navy hover:bg-gray-100"
               >
                 Demander un diagnostic
               </Button>
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 size="lg"
                 className="text-white hover:decoration-white"
                 icon={<ChevronRight className="w-5 h-5" />}

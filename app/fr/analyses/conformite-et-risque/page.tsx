@@ -28,7 +28,7 @@ export default function AnalysesConformiteRisquePage() {
         <h1 className="text-4xl font-bold mb-6">Analyses Conformité & Risque</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Catégorie analyses conformité & risque : articles à venir sur AML/KYC, 
+            Catégorie analyses conformité & risque : articles à venir sur AML/KYC,
             cartographie risques, audit interne, contentieux OHADA.
           </p>
           {/* Liste articles avec [slug] dynamique */}

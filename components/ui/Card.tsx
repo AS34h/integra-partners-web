@@ -14,53 +14,53 @@ interface CardProps {
    * @default 'service'
    */
   variant?: 'service' | 'article' | 'stat' | 'custom'
-  
+
   /**
    * Titre de la card
    */
   title?: string
-  
+
   /**
    * Description/contenu
    */
   description?: string
-  
+
   /**
    * Icône (optionnelle, pour service)
    */
   icon?: ReactNode
-  
+
   /**
    * Image (optionnelle, pour article)
    */
   image?: string
-  
+
   /**
    * Alt de l'image
    */
   imageAlt?: string
-  
+
   /**
    * URL de destination
    */
   href?: string
-  
+
   /**
    * Label du CTA
    * @default 'En savoir plus'
    */
   ctaLabel?: string
-  
+
   /**
    * Meta info (pour article)
    */
   meta?: CardMeta
-  
+
   /**
    * Contenu personnalisé
    */
   children?: ReactNode
-  
+
   /**
    * Classes CSS additionnelles
    */
@@ -88,7 +88,7 @@ export function Card({
     hover:border-anthracite
     hover:shadow-sm
   `
-  
+
   // Service Card
   if (variant === 'service') {
     return (
@@ -104,23 +104,23 @@ export function Card({
             </div>
           </div>
         )}
-        
+
         {title && (
           <h3 className="mb-3 font-heading text-h4 text-navy">
             {title}
           </h3>
         )}
-        
+
         {description && (
           <p className="mb-6 text-body-m text-gray-700 leading-relaxed">
             {description}
           </p>
         )}
-        
+
         {children}
-        
+
         {href && (
-          <Link 
+          <Link
             href={href}
             className="inline-flex items-center gap-2 text-navy font-medium group"
           >
@@ -131,7 +131,7 @@ export function Card({
       </article>
     )
   }
-  
+
   // Article Card
   if (variant === 'article') {
     const content = (
@@ -149,7 +149,7 @@ export function Card({
             />
           </div>
         )}
-        
+
         <div className="p-8">
           {meta && (
             <div className="flex items-center gap-2 mb-4 text-caption text-gray-600">
@@ -168,19 +168,19 @@ export function Card({
               )}
             </div>
           )}
-          
+
           {title && (
             <h3 className="font-heading text-h4 text-navy mb-3">
               {title}
             </h3>
           )}
-          
+
           {description && (
             <p className="text-body-m text-gray-700 mb-4">
               {description}
             </p>
           )}
-          
+
           {href && (
             <div className="
               inline-flex items-center gap-2 
@@ -194,10 +194,10 @@ export function Card({
         </div>
       </>
     )
-    
+
     if (href) {
       return (
-        <Link 
+        <Link
           href={href}
           className={`${baseClasses} overflow-hidden group block ${className}`.replace(/\s+/g, ' ').trim()}
         >
@@ -205,14 +205,14 @@ export function Card({
         </Link>
       )
     }
-    
+
     return (
       <article className={`${baseClasses} overflow-hidden ${className}`.replace(/\s+/g, ' ').trim()}>
         {content}
       </article>
     )
   }
-  
+
   // Stat Card
   if (variant === 'stat') {
     return (
@@ -221,7 +221,7 @@ export function Card({
       </article>
     )
   }
-  
+
   // Custom/Default
   return (
     <article className={`${baseClasses} p-8 ${className}`.replace(/\s+/g, ' ').trim()}>

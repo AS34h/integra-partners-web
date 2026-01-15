@@ -2,10 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   INTEGRA PARTNERS — Design System Institutionnel
+   Inspiré par : Deloitte, PWC, EY, KPMG, Banque Mondiale
+   ========================================================================== */
+
 :root {
-  --navy: #0A1628;
-  --anthracite: #2D3748;
-  --gold: #B8860B;
+  /* Couleurs Institutionnelles */
+  --navy: #003366;
+  /* Bleu marine professionnel */
+  --navy-dark: #001a33;
+  /* Navy ultra foncé */
+  --navy-light: #004080;
+  /* Navy clair */
+  --anthracite: #2c3e50;
+  /* Gris anthracite */
+  --slate: #475569;
+  /* Gris ardoise */
+  --gold: #b8860b;
+  /* Accent doré sobre */
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  /* Blanc cassé élégant */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Typographie professionnelle */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Espacements institutionnels (généreux) */
+  --spacing-section: 5rem;
+  /* 80px */
+  --spacing-large: 3rem;
+  /* 48px */
+  --spacing-medium: 2rem;
+  /* 32px */
+  --spacing-small: 1.5rem;
+  /* 24px */
+
+  /* Transitions douces */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -16,73 +58,310 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #475569;
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  color: var(--gray-700);
+  background-color: var(--white);
+  line-height: 1.7;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), 'Georgia', serif;
-  color: var(--navy);
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 48px;
-  letter-spacing: -0.02em;
-}
-
-h2 {
-  font-size: 36px;
   letter-spacing: -0.01em;
 }
 
+/* ==========================================================================
+   Typographie Institutionnelle (Big Four Style)
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sans);
+  color: var(--navy);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  /* 36-56px responsive */
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
+  /* 30-44px */
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
 h3 {
-  font-size: 28px;
-  color: var(--anthracite);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  /* 24-32px */
+  font-weight: 600;
+  color: var(--navy-dark);
 }
 
 h4 {
-  font-size: 20px;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  /* 20-24px */
+  font-weight: 600;
   color: var(--anthracite);
 }
 
+h5 {
+  font-size: 1.125rem;
+  /* 18px */
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+h6 {
+  font-size: 1rem;
+  /* 16px */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-600);
+}
+
+/* Paragraphes et corps de texte */
+p {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.0625rem;
+  /* 17px - Lisibilité optimale */
+  line-height: 1.75;
+  color: var(--slate);
+}
+
+.lead {
+  font-size: 1.25rem;
+  /* 20px */
+  line-height: 1.8;
+  color: var(--gray-600);
+  font-weight: 400;
+}
+
+.text-large {
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 1.75;
+}
+
+/* Liens institutionnels */
 a {
   color: var(--navy);
   text-decoration: none;
-  transition: color 150ms ease-in-out;
+  transition: var(--transition);
+  font-weight: 500;
 }
 
 a:hover {
-  color: var(--anthracite);
+  color: var(--navy-light);
 }
 
-/* Utilities */
+a:focus {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Layout Institutionnel
+   ========================================================================== */
+
 .container {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: clamp(1.5rem, 5vw, 3rem);
+  padding-right: clamp(1.5rem, 5vw, 3rem);
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+.section {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+/* ==========================================================================
+   Couleurs de fond institutionnelles
+   ========================================================================== */
+
+.bg-navy {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.bg-navy-dark {
+  background-color: var(--navy-dark);
+  color: var(--white);
+}
+
+.bg-off-white {
+  background-color: var(--off-white);
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-50);
+}
+
+/* ==========================================================================
+   Accessibilité (WCAG AA)
+   ========================================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus,
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background-color: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+/* Focus visible pour navigation clavier */
+*:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Utilities Institutionnelles
+   ========================================================================== */
+
+.text-navy {
+  color: var(--navy) !important;
+}
+
+.text-anthracite {
+  color: var(--anthracite) !important;
+}
+
+.text-slate {
+  color: var(--slate) !important;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Bordures subtiles */
+.border-subtle {
+  border: 1px solid var(--gray-200);
+}
+
+/* Ombres professionnelles */
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   Animations professionnelles
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Respecter les préférences utilisateur */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Responsive Design (Mobile-first)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 3rem;
+  }
+
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .no-print {
+    display: none !important;
   }
 }

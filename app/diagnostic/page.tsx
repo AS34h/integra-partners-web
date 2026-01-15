@@ -97,7 +97,7 @@ export default function DiagnosticPage() {
 
       const response = await fetch('/api/diagnostic', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'X-Requested-With': 'XMLHttpRequest' // CSRF protection header
         },
@@ -129,7 +129,7 @@ export default function DiagnosticPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div
             className="max-w-3xl mx-auto text-center"
@@ -173,7 +173,7 @@ export default function DiagnosticPage() {
                 variant="custom"
                 className="p-6 text-center"
               >
-                <div className="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+                <div className="w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                   {index + 1}
                 </div>
                 <h3 className="font-body font-semibold text-navy mb-2">

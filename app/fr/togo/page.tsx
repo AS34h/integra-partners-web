@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
-import { 
-  Building2, 
-  Receipt, 
-  FileText, 
+import {
+  Building2,
+  Receipt,
+  FileText,
   Scale,
   Shield,
   ChevronRight,
@@ -30,21 +30,21 @@ export default function TogoGuidesHubPage() {
               <TrendingUp className="w-4 h-4 text-[#B8860B]" />
               <span className="text-sm text-[#B8860B] font-semibold">Guides Entrepreneurs 2026</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Guides Complets pour Créer et Gérer<br className="hidden md:block" />
               Votre Entreprise au Togo
             </h1>
-            
+
             <p className="text-xl text-gray-300 leading-relaxed mb-8">
-              Guides pratiques et exhaustifs pour entrepreneurs togolais et diaspora : 
-              <strong> création de SARL, fiscalité OTR, immatriculation RCCM, statuts OHADA, pacte d'associés</strong>. 
+              Guides pratiques et exhaustifs pour entrepreneurs togolais et diaspora :
+              <strong> création de SARL, fiscalité OTR, immatriculation RCCM, statuts OHADA, pacte d'associés</strong>.
               Expertise INTEGRA au service de votre projet entrepreneurial.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -52,7 +52,7 @@ export default function TogoGuidesHubPage() {
                 </Button>
               </Link>
               <a href="#guides">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg"
                 >
@@ -105,7 +105,7 @@ export default function TogoGuidesHubPage() {
                 <Building2 className="w-8 h-8 text-[#B8860B]" />
                 <h2 className="text-3xl font-bold text-[#0A1628]">Création d'Entreprise</h2>
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Guide SARL */}
                 <Link href="/fr/togo/creer-une-entreprise/sarl-sarlu" className="group">
@@ -121,12 +121,12 @@ export default function TogoGuidesHubPage() {
                           Créer une SARL ou SARLU au Togo
                         </h3>
                         <p className="text-sm text-gray-600 mb-4">
-                          Guide complet : capital social 1M FCFA, avantages, démarches RCCM en 5 étapes, 
+                          Guide complet : capital social 1M FCFA, avantages, démarches RCCM en 5 étapes,
                           coûts détaillés 150-250K, délais réels 7-10 jours.
                         </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                       <span className="flex items-center gap-1">
                         <CheckCircle className="w-4 h-4 text-green-600" />
@@ -159,12 +159,12 @@ export default function TogoGuidesHubPage() {
                           RCCM et Immatriculation au Togo
                         </h3>
                         <p className="text-sm text-gray-600 mb-4">
-                          Procédure guichet unique CFE, 8 documents requis, numéro IFU automatique, 
+                          Procédure guichet unique CFE, 8 documents requis, numéro IFU automatique,
                           coûts 93K FCFA, délais 3-5 jours, 10 erreurs à éviter.
                         </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                       <span className="flex items-center gap-1">
                         <CheckCircle className="w-4 h-4 text-green-600" />
@@ -191,7 +191,7 @@ export default function TogoGuidesHubPage() {
                 <Receipt className="w-8 h-8 text-[#B8860B]" />
                 <h2 className="text-3xl font-bold text-[#0A1628]">Fiscalité & Conformité</h2>
               </div>
-              
+
               <div className="grid md:grid-cols-1 gap-6">
                 {/* Guide TVA */}
                 <Link href="/fr/togo/fiscalite-otr/tva" className="group">
@@ -207,12 +207,12 @@ export default function TogoGuidesHubPage() {
                           TVA au Togo : Taux, Déclarations & Optimisation OTR
                         </h3>
                         <p className="text-sm text-gray-600 mb-4">
-                          Guide exhaustif TVA : taux 18%, exonérations 0%, seuil 60M FCFA, déclarations e-Tax, 
+                          Guide exhaustif TVA : taux 18%, exonérations 0%, seuil 60M FCFA, déclarations e-Tax,
                           crédits TVA, sanctions 25-100%, 4 stratégies d'optimisation fiscale.
                         </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
                       <span className="flex items-center gap-1">
                         <CheckCircle className="w-4 h-4 text-green-600" />
@@ -243,7 +243,7 @@ export default function TogoGuidesHubPage() {
                 <Scale className="w-8 h-8 text-[#B8860B]" />
                 <h2 className="text-3xl font-bold text-[#0A1628]">Juridique Avancé</h2>
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Guide Statuts */}
                 <Link href="/fr/togo/juridique-ohada/statuts" className="group">
@@ -262,12 +262,12 @@ export default function TogoGuidesHubPage() {
                           Rédaction Statuts SARL OHADA
                         </h3>
                         <p className="text-sm text-gray-700 mb-4">
-                          Guide expert : 12 clauses obligatoires OHADA 2014, 8 clauses recommandées, 
+                          Guide expert : 12 clauses obligatoires OHADA 2014, 8 clauses recommandées,
                           10 erreurs fréquentes, SARL vs SAS, révision des statuts.
                         </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                       <span className="flex items-center gap-1">
                         <CheckCircle className="w-4 h-4 text-blue-600" />
@@ -303,12 +303,12 @@ export default function TogoGuidesHubPage() {
                           Pacte d'Associés : Protection & Sortie
                         </h3>
                         <p className="text-sm text-gray-700 mb-4">
-                          Guide premium : 10 clauses essentielles (Put/Call, Drag/Tag-Along), 
+                          Guide premium : 10 clauses essentielles (Put/Call, Drag/Tag-Along),
                           méthodes de valorisation, arbitrage CCJA, protection minoritaires.
                         </p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                       <span className="flex items-center gap-1">
                         <CheckCircle className="w-4 h-4 text-purple-600" />
@@ -341,14 +341,14 @@ export default function TogoGuidesHubPage() {
               Besoin d'un Accompagnement Personnalisé ?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              INTEGRA vous accompagne de A à Z dans votre projet entrepreneurial au Togo : 
-              <strong> création SARL, immatriculation RCCM, conformité fiscale, rédaction de statuts et pacte d'associés</strong>. 
+              INTEGRA vous accompagne de A à Z dans votre projet entrepreneurial au Togo :
+              <strong> création SARL, immatriculation RCCM, conformité fiscale, rédaction de statuts et pacte d'associés</strong>.
               Expertise certifiée OHADA et connaissance approfondie du contexte togolais.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -356,7 +356,7 @@ export default function TogoGuidesHubPage() {
                 </Button>
               </Link>
               <Link href="/fr/cabinet">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg"
                 >

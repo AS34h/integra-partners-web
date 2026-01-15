@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumb } from '@/components/Breadcrumb';
-import { 
-  FileText, 
-  CheckCircle, 
-  AlertCircle, 
+import {
+  FileText,
+  CheckCircle,
+  AlertCircle,
   Scale,
   Shield,
   BookOpen,
@@ -46,7 +46,7 @@ export default function StatutsSARLTogoPage() {
               Guide OHADA Complet & Modèles
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Guide expert pour rédiger des statuts de SARL conformes à l'<strong>Acte Uniforme OHADA 2014</strong> : 
+              Guide expert pour rédiger des statuts de SARL conformes à l'<strong>Acte Uniforme OHADA 2014</strong> :
               clauses obligatoires, clauses recommandées, pièges juridiques à éviter, différences SARL/SAS et modèles types commentés.
             </p>
           </div>
@@ -104,11 +104,11 @@ export default function StatutsSARLTogoPage() {
                   Pourquoi les Statuts sont-ils Cruciaux ?
                 </h2>
               </div>
-              
+
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  Les <strong>statuts</strong> sont la <strong>constitution juridique de votre entreprise</strong>. Ils définissent les règles 
-                  du jeu entre associés, organisent le fonctionnement de la société, et encadrent les pouvoirs des dirigeants. 
+                  Les <strong>statuts</strong> sont la <strong>constitution juridique de votre entreprise</strong>. Ils définissent les règles
+                  du jeu entre associés, organisent le fonctionnement de la société, et encadrent les pouvoirs des dirigeants.
                   Des statuts mal rédigés = conflits, blocages, et risques juridiques.
                 </p>
               </div>
@@ -118,7 +118,7 @@ export default function StatutsSARLTogoPage() {
                   <Shield className="w-8 h-8 text-[#B8860B] mb-4" />
                   <h3 className="text-lg font-bold text-[#0A1628] mb-3">Protection Juridique</h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    Statuts conformes OHADA = <strong>protection maximale</strong> en cas de litige, contrôle fiscal, 
+                    Statuts conformes OHADA = <strong>protection maximale</strong> en cas de litige, contrôle fiscal,
                     ou conflit entre associés. Le juge applique d'abord les statuts.
                   </p>
                 </div>
@@ -127,7 +127,7 @@ export default function StatutsSARLTogoPage() {
                   <Scale className="w-8 h-8 text-green-600 mb-4" />
                   <h3 className="text-lg font-bold text-[#0A1628] mb-3">Prévention Conflits</h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    <strong>80% des conflits entre associés</strong> viennent de statuts flous ou incomplets. 
+                    <strong>80% des conflits entre associés</strong> viennent de statuts flous ou incomplets.
                     Clauses claires = relations saines et décisions fluides.
                   </p>
                 </div>
@@ -136,7 +136,7 @@ export default function StatutsSARLTogoPage() {
                   <BookOpen className="w-8 h-8 text-blue-600 mb-4" />
                   <h3 className="text-lg font-bold text-[#0A1628] mb-3">Crédibilité Externe</h3>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    Banques, investisseurs et partenaires <strong>scrutent vos statuts</strong>. 
+                    Banques, investisseurs et partenaires <strong>scrutent vos statuts</strong>.
                     Statuts professionnels = crédibilité et confiance immédiate.
                   </p>
                 </div>
@@ -148,7 +148,7 @@ export default function StatutsSARLTogoPage() {
                   <div>
                     <h3 className="text-lg font-bold text-red-900 mb-2">⚠️ Risque des Modèles Gratuits en Ligne</h3>
                     <p className="text-red-800 text-sm leading-relaxed mb-3">
-                      Les modèles téléchargés sur internet sont souvent <strong>obsolètes (pré-2014), incomplets, ou inadaptés au contexte togolais</strong>. 
+                      Les modèles téléchargés sur internet sont souvent <strong>obsolètes (pré-2014), incomplets, ou inadaptés au contexte togolais</strong>.
                       Résultat : rejet RCCM, nullité de clauses, ou conflits futurs coûteux.
                     </p>
                     <p className="text-red-700 text-xs font-semibold">
@@ -174,7 +174,7 @@ export default function StatutsSARLTogoPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-2">Acte Uniforme OHADA 2014</h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      L'<strong>Acte Uniforme relatif au Droit des Sociétés Commerciales</strong> (AU DSC) impose 12 mentions obligatoires. 
+                      L'<strong>Acte Uniforme relatif au Droit des Sociétés Commerciales</strong> (AU DSC) impose 12 mentions obligatoires.
                       Leur absence = <strong>nullité potentielle des statuts</strong> ou rejet RCCM.
                     </p>
                   </div>
@@ -270,7 +270,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Durée de la Société</h3>
                       <p className="text-sm text-gray-700">
-                        <strong>99 ans maximum</strong> à compter de l'immatriculation RCCM (art. 29 AU DSC). 
+                        <strong>99 ans maximum</strong> à compter de l'immatriculation RCCM (art. 29 AU DSC).
                         Standard : <strong>99 ans</strong> (renouvellement automatique possible).
                       </p>
                     </div>
@@ -292,7 +292,7 @@ export default function StatutsSARLTogoPage() {
                       </p>
                       <div className="bg-gray-50 rounded p-3 text-sm">
                         <p className="font-mono text-[#0A1628]">
-                          "Le capital social est fixé à CINQ MILLIONS (5 000 000) de francs CFA, divisé en CINQUANTE (50) parts sociales de CENT MILLE (100 000) francs CFA chacune, 
+                          "Le capital social est fixé à CINQ MILLIONS (5 000 000) de francs CFA, divisé en CINQUANTE (50) parts sociales de CENT MILLE (100 000) francs CFA chacune,
                           intégralement souscrites et libérées à hauteur de UN MILLION (1 000 000) de francs CFA."
                         </p>
                       </div>
@@ -333,7 +333,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Gérance (Direction)</h3>
                       <p className="text-sm text-gray-700">
-                        Nom, prénoms, nationalité, domicile et pouvoirs du <strong>Gérant</strong> (ou co-gérants). 
+                        Nom, prénoms, nationalité, domicile et pouvoirs du <strong>Gérant</strong> (ou co-gérants).
                         Préciser si gérant associé ou tiers, durée du mandat (illimitée ou limitée), et modalités de révocation.
                       </p>
                     </div>
@@ -351,7 +351,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Modalités de Fonctionnement</h3>
                       <p className="text-sm text-gray-700">
-                        Règles de convocation, tenue et décisions des <strong>Assemblées Générales</strong> (AG Ordinaire et AG Extraordinaire). 
+                        Règles de convocation, tenue et décisions des <strong>Assemblées Générales</strong> (AG Ordinaire et AG Extraordinaire).
                         Quorum et majorités requis (par défaut OHADA : majorité simple AGO, 2/3 AGE).
                       </p>
                     </div>
@@ -369,7 +369,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Exercice Social (Année Fiscale)</h3>
                       <p className="text-sm text-gray-700">
-                        Date de début et de fin de l'exercice comptable. Standard : <strong>1er janvier au 31 décembre</strong>. 
+                        Date de début et de fin de l'exercice comptable. Standard : <strong>1er janvier au 31 décembre</strong>.
                         Peut être différent (ex: 1er juillet-30 juin) pour raisons sectorielles.
                       </p>
                     </div>
@@ -387,7 +387,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Répartition des Bénéfices</h3>
                       <p className="text-sm text-gray-700 mb-2">
-                        Affectation du résultat net : <strong>réserve légale (10% jusqu'à 20% du capital), réserves facultatives, dividendes</strong>. 
+                        Affectation du résultat net : <strong>réserve légale (10% jusqu'à 20% du capital), réserves facultatives, dividendes</strong>.
                         Modalités de distribution aux associés proportionnellement aux parts.
                       </p>
                       <div className="bg-green-50 border-l-2 border-green-600 p-3 rounded text-sm">
@@ -410,7 +410,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">Dissolution et Liquidation</h3>
                       <p className="text-sm text-gray-700">
-                        Causes de dissolution (terme, décision associés, perte 50%+ capital, etc.), modalités de liquidation, 
+                        Causes de dissolution (terme, décision associés, perte 50%+ capital, etc.), modalités de liquidation,
                         désignation du liquidateur, répartition du boni/mali de liquidation.
                       </p>
                     </div>
@@ -424,7 +424,7 @@ export default function StatutsSARLTogoPage() {
                   <div>
                     <h3 className="font-bold text-red-900 mb-2">Conséquence de l'Absence d'une Clause Obligatoire</h3>
                     <p className="text-red-800 text-sm">
-                      <strong>Nullité des statuts</strong> (art. 243 AU DSC) ou <strong>rejet du dossier RCCM</strong>. 
+                      <strong>Nullité des statuts</strong> (art. 243 AU DSC) ou <strong>rejet du dossier RCCM</strong>.
                       Si découvert après immatriculation : exposition à des sanctions fiscales et responsabilité personnelle des dirigeants.
                     </p>
                   </div>
@@ -446,7 +446,7 @@ export default function StatutsSARLTogoPage() {
                   <Shield className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                   <div>
                     <p className="text-blue-900 text-sm leading-relaxed">
-                      Ces clauses ne sont pas exigées par l'OHADA mais sont <strong>fortement recommandées</strong> pour sécuriser les relations entre associés, 
+                      Ces clauses ne sont pas exigées par l'OHADA mais sont <strong>fortement recommandées</strong> pour sécuriser les relations entre associés,
                       prévenir les conflits, et protéger les intérêts minoritaires. <strong>80% des litiges auraient pu être évités</strong> avec ces clauses.
                     </p>
                   </div>
@@ -463,13 +463,13 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">1. Clause d'Agrément (Cession de Parts)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Oblige tout associé souhaitant céder ses parts à <strong>obtenir l'agrément préalable de la majorité des associés</strong> (ou des 2/3). 
+                        Oblige tout associé souhaitant céder ses parts à <strong>obtenir l'agrément préalable de la majorité des associés</strong> (ou des 2/3).
                         Protège contre l'entrée d'associés indésirables.
                       </p>
                       <div className="bg-gray-50 rounded p-3 text-sm">
                         <p className="text-gray-600 mb-1"><strong>Exemple de rédaction :</strong></p>
                         <p className="text-gray-700 italic">
-                          "Toute cession de parts sociales à des tiers est soumise à l'agrément préalable des associés représentant au moins les deux tiers (2/3) du capital social, 
+                          "Toute cession de parts sociales à des tiers est soumise à l'agrément préalable des associés représentant au moins les deux tiers (2/3) du capital social,
                           réunis en Assemblée Générale Extraordinaire."
                         </p>
                       </div>
@@ -486,7 +486,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">2. Clause de Préemption</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Donne aux associés existants un <strong>droit de priorité d'achat</strong> des parts d'un associé sortant, avant qu'elles ne soient proposées à un tiers. 
+                        Donne aux associés existants un <strong>droit de priorité d'achat</strong> des parts d'un associé sortant, avant qu'elles ne soient proposées à un tiers.
                         Maintient le contrôle entre associés historiques.
                       </p>
                     </div>
@@ -502,7 +502,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">3. Clause d'Inaliénabilité (Temporaire)</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Interdit la cession de parts pendant une durée déterminée (ex: <strong>3 à 5 ans</strong> après constitution). 
+                        Interdit la cession de parts pendant une durée déterminée (ex: <strong>3 à 5 ans</strong> après constitution).
                         Assure la stabilité de l'actionnariat dans les premières années critiques.
                       </p>
                       <div className="bg-yellow-50 border-l-2 border-yellow-500 p-3 rounded text-sm">
@@ -523,7 +523,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">4. Clause d'Exclusion d'un Associé</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Permet d'exclure un associé en cas de <strong>manquement grave</strong> (violation pacte associés, concurrence déloyale, comportement nuisible, etc.). 
+                        Permet d'exclure un associé en cas de <strong>manquement grave</strong> (violation pacte associés, concurrence déloyale, comportement nuisible, etc.).
                         Préciser les motifs légitimes et la procédure (AGE à majorité renforcée).
                       </p>
                     </div>
@@ -560,7 +560,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">6. Clause de Non-Concurrence des Associés</h3>
                       <p className="text-sm text-gray-700">
-                        Interdit aux associés d'exercer une <strong>activité concurrente</strong> pendant la durée de leur participation et X années après leur sortie (2-3 ans standard). 
+                        Interdit aux associés d'exercer une <strong>activité concurrente</strong> pendant la durée de leur participation et X années après leur sortie (2-3 ans standard).
                         Protège le savoir-faire et la clientèle.
                       </p>
                     </div>
@@ -576,7 +576,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">7. Droits des Minoritaires</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Clauses protectrices : <strong>droit de veto sur décisions stratégiques</strong> (ex: cession d'actifs majeurs, changement d'activité, fusion), 
+                        Clauses protectrices : <strong>droit de veto sur décisions stratégiques</strong> (ex: cession d'actifs majeurs, changement d'activité, fusion),
                         droit d'information renforcé, représentation au conseil de gérance.
                       </p>
                     </div>
@@ -592,7 +592,7 @@ export default function StatutsSARLTogoPage() {
                     <div className="flex-1">
                       <h3 className="text-lg font-bold text-[#0A1628] mb-2">8. Clause de Médiation/Arbitrage</h3>
                       <p className="text-sm text-gray-700 mb-3">
-                        Oblige les associés à tenter une <strong>médiation amiable</strong> (30-60 jours) avant tout recours judiciaire. 
+                        Oblige les associés à tenter une <strong>médiation amiable</strong> (30-60 jours) avant tout recours judiciaire.
                         Si échec, soumettre le litige à un <strong>arbitrage CCJA (Cour Commune de Justice et d'Arbitrage OHADA)</strong> plutôt qu'aux tribunaux nationaux (plus rapide, plus expert).
                       </p>
                       <div className="bg-green-50 border-l-2 border-green-600 p-3 rounded text-sm">
@@ -771,7 +771,7 @@ export default function StatutsSARLTogoPage() {
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  Les statuts ne sont <strong>pas figés</strong>. Vous pouvez (et devez) les réviser en cas de changement majeur de votre activité, 
+                  Les statuts ne sont <strong>pas figés</strong>. Vous pouvez (et devez) les réviser en cas de changement majeur de votre activité,
                   structure ou stratégie. <strong>Modification = Assemblée Générale Extraordinaire (AGE)</strong> + Enregistrement RCCM.
                 </p>
               </div>
@@ -860,14 +860,14 @@ export default function StatutsSARLTogoPage() {
               Besoin d'une Expertise Juridique pour Vos Statuts ?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              INTEGRA vous accompagne dans la <strong>rédaction ou révision de statuts conformes OHADA 2014</strong> : 
-              analyse de votre situation, rédaction sur-mesure avec clauses protectrices, validation juridique, 
+              INTEGRA vous accompagne dans la <strong>rédaction ou révision de statuts conformes OHADA 2014</strong> :
+              analyse de votre situation, rédaction sur-mesure avec clauses protectrices, validation juridique,
               et coordination avec notaire. <strong>Statuts sécurisés et pérennes garantis</strong>.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -875,7 +875,7 @@ export default function StatutsSARLTogoPage() {
                 </Button>
               </Link>
               <Link href="/fr/togo/juridique-ohada/pacte-dassocies">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg"
                 >
@@ -885,7 +885,7 @@ export default function StatutsSARLTogoPage() {
             </div>
 
             <p className="text-sm text-gray-400">
-              Tarif forfaitaire statuts SARL : <span className="text-white font-semibold">200 000 FCFA TTC</span> (rédaction complète + validation OHADA + coordination notaire). 
+              Tarif forfaitaire statuts SARL : <span className="text-white font-semibold">200 000 FCFA TTC</span> (rédaction complète + validation OHADA + coordination notaire).
               Révision statuts existants : <span className="text-white font-semibold">100 000 FCFA TTC</span>.
             </p>
           </div>

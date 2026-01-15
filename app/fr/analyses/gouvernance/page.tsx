@@ -28,7 +28,7 @@ export default function AnalysesGouvernancePage() {
         <h1 className="text-4xl font-bold mb-6">Analyses Gouvernance d'Entreprise</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Catégorie analyses gouvernance : articles à venir sur conseils d'administration, 
+            Catégorie analyses gouvernance : articles à venir sur conseils d'administration,
             contrôle interne, audit, risques, conformité OHADA.
           </p>
           {/* Liste articles avec [slug] dynamique */}

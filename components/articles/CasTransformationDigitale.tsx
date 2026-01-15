@@ -1,8 +1,8 @@
 import React from 'react'
-import { 
-  ArticleSection, 
-  ArticleSubSection, 
-  Paragraph, 
+import {
+  ArticleSection,
+  ArticleSubSection,
+  Paragraph,
   Blockquote,
   ChecklistItem,
   BulletList,
@@ -42,7 +42,7 @@ export const CasTransformationDigitale: React.FC = () => (
     <ArticleSection title="1. Situation Initiale">
       <ArticleSubSection title="Enjeux Identifiés">
         <Paragraph>L'institution faisait face à plusieurs défis majeurs :</Paragraph>
-        
+
         <BulletList>
           <ChecklistItem checked={false}>
             <strong>Processus 100% papier</strong> : Workflows manuels, archivage physique
@@ -311,14 +311,14 @@ export const CasTransformationDigitale: React.FC = () => (
     {/* Conclusion */}
     <ArticleSection title="Conclusion">
       <Paragraph>
-        Cette transformation digitale démontre qu'il est possible de moderniser une institution publique 
-        en Afrique avec des résultats mesurables et durables. Les clés du succès : <strong>sponsorship fort</strong>, 
+        Cette transformation digitale démontre qu'il est possible de moderniser une institution publique
+        en Afrique avec des résultats mesurables et durables. Les clés du succès : <strong>sponsorship fort</strong>,
         <strong> approche progressive</strong>, <strong> formation intensive</strong>, et <strong> change management rigoureux</strong>.
       </Paragraph>
 
       <HighlightBox type="info">
         <Paragraph className="font-semibold mb-0">
-          INTEGRA PARTNERS maîtrise l'accompagnement de transformations digitales complexes, 
+          INTEGRA PARTNERS maîtrise l'accompagnement de transformations digitales complexes,
           de la vision stratégique à l'exécution opérationnelle.
         </Paragraph>
       </HighlightBox>

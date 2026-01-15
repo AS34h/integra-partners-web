@@ -41,18 +41,18 @@ const guides = [
 export default function FiscaliteOTRHub() {
   return (
     <div className="bg-gray-50">
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <Link href="/fr/togo" className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-6">
               <ArrowRight className="w-4 h-4 rotate-180" />
               Retour Guides Togo
             </Link>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Fiscalité <span className="text-[#B8860B]">OTR Togo</span>
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8">
               Guides fiscalité togolaise : TVA, IS, DIMANA, pénalités. Optimisez votre conformité OTR.
             </p>

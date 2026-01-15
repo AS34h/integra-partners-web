@@ -11,22 +11,22 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
    * Label du champ
    */
   label?: string
-  
+
   /**
    * Message d'erreur
    */
   error?: string
-  
+
   /**
    * Texte d'aide
    */
   helper?: string
-  
+
   /**
    * Options du select
    */
   options: SelectOption[]
-  
+
   /**
    * Texte du placeholder
    * @default 'Sélectionner...'
@@ -49,11 +49,11 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(({
   const selectId = id || `select-${generatedId}`
   const errorId = `${selectId}-error`
   const helperId = `${selectId}-helper`
-  
+
   return (
     <div className="space-y-2">
       {label && (
-        <label 
+        <label
           htmlFor={selectId}
           className="block text-label text-gray-700 font-medium"
         >
@@ -61,7 +61,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(({
           {required && <span className="text-error ml-1" aria-label="requis">*</span>}
         </label>
       )}
-      
+
       <select
         ref={ref}
         id={selectId}
@@ -74,8 +74,8 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(({
           transition-colors duration-150
           focus:outline-none
           disabled:bg-gray-100 disabled:cursor-not-allowed disabled:text-gray-500
-          ${error 
-            ? 'border-error focus:border-error focus:ring-1 focus:ring-error' 
+          ${error
+            ? 'border-error focus:border-error focus:ring-1 focus:ring-error'
             : 'border-gray-400 focus:border-navy focus:ring-1 focus:ring-navy'
           }
           ${className}
@@ -92,14 +92,14 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(({
           </option>
         ))}
       </select>
-      
+
       {error && (
         <p id={errorId} className="text-sm text-error flex items-center gap-2" role="alert">
           <AlertCircle className="w-4 h-4 flex-shrink-0" />
           <span>{error}</span>
         </p>
       )}
-      
+
       {helper && !error && (
         <p id={helperId} className="text-sm text-gray-600">
           {helper}

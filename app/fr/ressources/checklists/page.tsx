@@ -14,7 +14,7 @@ const fadeInImmediate = {
 export default function ChecklistsPage() {
   return (
     <div className="bg-gray-50">
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             <nav className="mb-6">
@@ -26,7 +26,7 @@ export default function ChecklistsPage() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               <span className="text-[#B8860B]">Checklists</span> Pratiques
             </h1>
-            
+
             <p className="text-xl text-gray-300 mb-8">
               Listes de contrôle : création entreprise, conformité fiscale, clôture annuelle.
             </p>
@@ -43,7 +43,7 @@ export default function ChecklistsPage() {
                 Checklists à Venir
               </h2>
               <p className="text-gray-700 mb-6">
-                Nous préparons des checklists détaillées : création SARL (15 étapes), 
+                Nous préparons des checklists détaillées : création SARL (15 étapes),
                 clôture fiscale (20 points), conformité OHADA (12 vérifications).
               </p>
               <p className="text-sm text-gray-600">

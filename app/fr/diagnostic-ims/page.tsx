@@ -44,24 +44,24 @@ export default function DiagnosticPage() {
     e.preventDefault()
     setLoading(true)
     setError(null)
-    
+
     const formElement = e.currentTarget
     const formData = new FormData(formElement)
     const data = Object.fromEntries(formData.entries())
-    
+
     try {
       const response = await fetch('/api/diagnostic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       })
-      
+
       const result = await response.json()
-      
+
       if (!response.ok) {
         throw new Error(result.error || 'Une erreur est survenue')
       }
-      
+
       setSuccess(true)
       formElement.reset()
     } catch (err) {
@@ -74,9 +74,9 @@ export default function DiagnosticPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInImmediate}
           >
@@ -84,8 +84,8 @@ export default function DiagnosticPage() {
               Diagnostic Stratégique
             </h1>
             <p className="text-body-l text-gray-200">
-              Bénéficiez d'un premier échange confidentiel pour identifier vos 
-              enjeux stratégiques prioritaires et découvrir comment INTEGRA PARTNERS 
+              Bénéficiez d'un premier échange confidentiel pour identifier vos
+              enjeux stratégiques prioritaires et découvrir comment INTEGRA PARTNERS
               peut accompagner votre organisation.
             </p>
           </motion.div>
@@ -95,7 +95,7 @@ export default function DiagnosticPage() {
       {/* Process Section */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="text-center mb-12"
             {...fadeInImmediate}
           >
@@ -103,22 +103,22 @@ export default function DiagnosticPage() {
               Le Processus
             </h2>
             <p className="text-body-l text-anthracite max-w-3xl mx-auto">
-              Un parcours structuré en 4 étapes pour analyser vos besoins et 
+              Un parcours structuré en 4 étapes pour analyser vos besoins et
               proposer un accompagnement adapté.
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
             {...fadeInImmediate}
           >
             {benefits.map((benefit, index) => (
-              <Card 
+              <Card
                 key={index}
                 variant="custom"
                 className="p-6 text-center"
               >
-                <div className="w-12 h-12 rounded-full bg-navy text-white flex items-center justify-center mx-auto mb-4 font-bold text-xl">
+                <div className="w-12 h-12 rounded-full bg-slate-700 text-white flex items-center justify-center mx-auto mb-4 font-bold text-xl">
                   {index + 1}
                 </div>
                 <h3 className="font-body font-semibold text-navy mb-2">
@@ -175,7 +175,7 @@ export default function DiagnosticPage() {
                       <Building2 className="w-5 h-5" />
                       Informations Organisation
                     </h3>
-                    
+
                     <Input
                       name="organization"
                       label="Nom de l'organisation *"
@@ -317,16 +317,16 @@ export default function DiagnosticPage() {
                       className="mt-3"
                     />
                     <p className="text-caption text-gray-600 mt-4">
-                      Vos données sont protégées et traitées conformément au RGPD. 
+                      Vos données sont protégées et traitées conformément au RGPD.
                       Consultez notre <a href="/confidentialite" className="underline text-navy">politique de confidentialité</a>.
                     </p>
                   </div>
 
                   {/* Submit */}
                   <div className="pt-6">
-                    <Button 
+                    <Button
                       type="submit"
-                      variant="primary" 
+                      variant="primary"
                       size="lg"
                       className="w-full"
                       disabled={loading}
@@ -346,7 +346,7 @@ export default function DiagnosticPage() {
       {/* Contact Alternatives */}
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             {...fadeInImmediate}
           >

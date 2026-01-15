@@ -1,17 +1,17 @@
 import React from 'react';
-import { 
-  ArticleSection, 
-  ArticleSubSection, 
-  Paragraph, 
-  Blockquote, 
-  ChecklistItem, 
-  BulletList, 
-  NumberedList, 
-  HighlightBox, 
-  StatCard, 
-  ComparisonTable, 
-  StepCard, 
-  KeyPoint 
+import {
+  ArticleSection,
+  ArticleSubSection,
+  Paragraph,
+  Blockquote,
+  ChecklistItem,
+  BulletList,
+  NumberedList,
+  HighlightBox,
+  StatCard,
+  ComparisonTable,
+  StepCard,
+  KeyPoint
 } from './ArticleComponents';
 import { Target, TrendingUp, Users, Zap, AlertTriangle, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -23,23 +23,23 @@ export function EtudePositionnementMarches() {
         title="Étude de Positionnement Stratégique sur les Marchés Africains"
       >
         <Paragraph>
-          Le positionnement stratégique détermine la place qu'occupe une entreprise dans l'esprit 
-          de ses clients cibles, par rapport à ses concurrents. Sur les marchés africains, où la 
-          concurrence s'intensifie et les attentes clients évoluent rapidement, un positionnement 
+          Le positionnement stratégique détermine la place qu'occupe une entreprise dans l'esprit
+          de ses clients cibles, par rapport à ses concurrents. Sur les marchés africains, où la
+          concurrence s'intensifie et les attentes clients évoluent rapidement, un positionnement
           clair et différenciant n'est plus optionnel : c'est une condition de survie.
         </Paragraph>
 
         <Blockquote>
           <strong>Michael Porter, Harvard Business School :</strong><br />
-          « L'essence de la stratégie est de choisir ce que l'on ne fera pas. Le positionnement 
-          consiste à créer une position unique et valorisable en effectuant des choix différents 
+          « L'essence de la stratégie est de choisir ce que l'on ne fera pas. Le positionnement
+          consiste à créer une position unique et valorisable en effectuant des choix différents
           de ceux de ses concurrents. »
         </Blockquote>
 
         <Paragraph>
-          Cette étude de cas présente la méthodologie INTEGRA de positionnement stratégique, 
-          appliquée avec succès auprès de 25+ entreprises en Afrique francophone (services 
-          financiers, télécoms, distribution, industrie). Nous détaillons les 5 phases de 
+          Cette étude de cas présente la méthodologie INTEGRA de positionnement stratégique,
+          appliquée avec succès auprès de 25+ entreprises en Afrique francophone (services
+          financiers, télécoms, distribution, industrie). Nous détaillons les 5 phases de
           l'analyse, les KPIs de succès et les pièges à éviter.
         </Paragraph>
 
@@ -63,8 +63,8 @@ export function EtudePositionnementMarches() {
         title="Méthodologie d'Analyse de Positionnement"
       >
         <Paragraph>
-          Notre méthodologie structurée en 5 phases permet d'identifier le positionnement optimal 
-          en combinant analyse concurrentielle, insights clients et capacités internes. Durée 
+          Notre méthodologie structurée en 5 phases permet d'identifier le positionnement optimal
+          en combinant analyse concurrentielle, insights clients et capacités internes. Durée
           totale : 6 à 10 semaines.
         </Paragraph>
 
@@ -144,14 +144,14 @@ export function EtudePositionnementMarches() {
       >
         <ArticleSubSection title="Contexte et Enjeux">
           <Paragraph>
-            <strong>Client :</strong> Banque régionale présente dans 5 pays d'Afrique de l'Ouest, 
-            80 agences, 350K clients, CA 45M€. Position de challenger (4e acteur) sur un marché 
+            <strong>Client :</strong> Banque régionale présente dans 5 pays d'Afrique de l'Ouest,
+            80 agences, 350K clients, CA 45M€. Position de challenger (4e acteur) sur un marché
             dominé par 3 grands groupes panafricains.
           </Paragraph>
 
           <Paragraph>
-            <strong>Problématique :</strong> Perception de marque floue ("banque comme les autres"), 
-            taux d'attrition clients élevé (18%/an), difficultés à recruter clientèle premium, 
+            <strong>Problématique :</strong> Perception de marque floue ("banque comme les autres"),
+            taux d'attrition clients élevé (18%/an), difficultés à recruter clientèle premium,
             guerre des prix sur les comptes courants et crédits.
           </Paragraph>
 
@@ -220,15 +220,15 @@ export function EtudePositionnementMarches() {
           </div>
 
           <Paragraph className="mt-6">
-            <strong>Insight clé des enquêtes clients :</strong> Les PME et entrepreneurs (segment 
-            représentant 40% du PNB) se plaignent du manque de conseil personnalisé et de 
-            compréhension de leurs enjeux business. Les grandes banques les traitent "comme des 
+            <strong>Insight clé des enquêtes clients :</strong> Les PME et entrepreneurs (segment
+            représentant 40% du PNB) se plaignent du manque de conseil personnalisé et de
+            compréhension de leurs enjeux business. Les grandes banques les traitent "comme des
             numéros", et les banques digitales n'offrent pas le support humain nécessaire.
           </Paragraph>
 
           <HighlightBox type="success">
-            <strong>Opportunité identifiée :</strong> Espace vide sur le positionnement "Banque 
-            partenaire de la croissance des PME", combinant expertise conseil + solutions 
+            <strong>Opportunité identifiée :</strong> Espace vide sur le positionnement "Banque
+            partenaire de la croissance des PME", combinant expertise conseil + solutions
             financières adaptées + accompagnement humain rapproché.
           </HighlightBox>
         </ArticleSubSection>
@@ -237,31 +237,31 @@ export function EtudePositionnementMarches() {
           <div className="bg-navy text-white p-8 rounded-lg my-6">
             <h4 className="text-xl font-bold mb-4">Énoncé de Positionnement</h4>
             <p className="text-lg leading-relaxed">
-              « Pour les <strong>dirigeants de PME ambitieuses</strong> en Afrique de l'Ouest qui 
-              cherchent un <strong>partenaire financier qui comprend leurs défis</strong>, 
-              [Banque X] est la <strong>banque de croissance</strong> qui combine 
-              <strong> expertise conseil business</strong> et <strong>solutions financières 
-              sur-mesure</strong>, parce que nous avons fait le choix stratégique de 
-              <strong> spécialiser nos équipes par secteur</strong> et de limiter notre portefeuille 
+              « Pour les <strong>dirigeants de PME ambitieuses</strong> en Afrique de l'Ouest qui
+              cherchent un <strong>partenaire financier qui comprend leurs défis</strong>,
+              [Banque X] est la <strong>banque de croissance</strong> qui combine
+              <strong> expertise conseil business</strong> et <strong>solutions financières
+                sur-mesure</strong>, parce que nous avons fait le choix stratégique de
+              <strong> spécialiser nos équipes par secteur</strong> et de limiter notre portefeuille
               à 50 clients par chargé d'affaires (vs 120-200 dans les grandes banques). »
             </p>
           </div>
 
           <div className="space-y-3">
             <ChecklistItem checked>
-              <strong>Cible prioritaire :</strong> PME 10-200 salariés, CA 500M-10Mds FCFA, 
+              <strong>Cible prioritaire :</strong> PME 10-200 salariés, CA 500M-10Mds FCFA,
               secteurs commerce/distribution/services/industrie légère
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Bénéfice fonctionnel :</strong> Accès à un conseiller expert sectoriel + 
+              <strong>Bénéfice fonctionnel :</strong> Accès à un conseiller expert sectoriel +
               solutions crédit sur-mesure + délais de réponse garantis (48h étude crédit)
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Bénéfice émotionnel :</strong> Sentiment d'être compris, valorisé, soutenu 
+              <strong>Bénéfice émotionnel :</strong> Sentiment d'être compris, valorisé, soutenu
               dans son projet entrepreneurial
             </ChecklistItem>
             <ChecklistItem checked>
-              <strong>Raisons de croire :</strong> Équipes formées à l'analyse sectorielle, 
+              <strong>Raisons de croire :</strong> Équipes formées à l'analyse sectorielle,
               partenariats avec cabinets conseil, fonds de garantie 50M FCFA pour PME innovantes
             </ChecklistItem>
           </div>
@@ -288,8 +288,8 @@ export function EtudePositionnementMarches() {
           </div>
 
           <Paragraph className="mt-6">
-            <strong>Impact business :</strong> Acquisition de 2 400 nouveaux clients PME (vs 
-            objectif 2 000), hausse du PNB moyen par client PME de +28%, réduction du coût 
+            <strong>Impact business :</strong> Acquisition de 2 400 nouveaux clients PME (vs
+            objectif 2 000), hausse du PNB moyen par client PME de +28%, réduction du coût
             d'acquisition client de -34%, amélioration du Net Promoter Score de 18 à 42.
           </Paragraph>
         </ArticleSubSection>
@@ -299,7 +299,7 @@ export function EtudePositionnementMarches() {
         title="KPIs de Succès d'un Positionnement"
       >
         <Paragraph>
-          Le succès d'un positionnement stratégique se mesure à travers 3 niveaux de KPIs, 
+          Le succès d'un positionnement stratégique se mesure à travers 3 niveaux de KPIs,
           de la perception (court terme) à la performance business (moyen/long terme).
         </Paragraph>
 
@@ -348,9 +348,9 @@ export function EtudePositionnementMarches() {
         </div>
 
         <HighlightBox type="info">
-          <strong>Délai de maturité :</strong> Un positionnement stratégique met en moyenne 
-          18 à 36 mois pour produire son plein effet sur la performance business. La patience 
-          et la constance sont critiques : 60% des échecs de repositionnement sont dus à un 
+          <strong>Délai de maturité :</strong> Un positionnement stratégique met en moyenne
+          18 à 36 mois pour produire son plein effet sur la performance business. La patience
+          et la constance sont critiques : 60% des échecs de repositionnement sont dus à un
           abandon prématuré avant que les bénéfices ne se matérialisent.
         </HighlightBox>
       </ArticleSection>
@@ -362,8 +362,8 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">1. Positionnement Non-Différenciant (Me-Too)</h4>
             <p>
-              Se positionner comme "leader qualité" ou "service client excellence" sans preuve 
-              tangible ni différence observable. <strong>Résultat :</strong> Invisibilité et 
+              Se positionner comme "leader qualité" ou "service client excellence" sans preuve
+              tangible ni différence observable. <strong>Résultat :</strong> Invisibilité et
               guerre des prix.
             </p>
           </HighlightBox>
@@ -371,7 +371,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">2. Décalage Capacités Internes vs Promesse Externe</h4>
             <p>
-              Promettre une "expérience premium" sans avoir les processus, outils ou talents 
+              Promettre une "expérience premium" sans avoir les processus, outils ou talents
               pour la délivrer. <strong>Résultat :</strong> Insatisfaction client et bouche-à-oreille négatif.
             </p>
           </HighlightBox>
@@ -379,7 +379,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">3. Segmentation Trop Large (Vouloir Plaire à Tout le Monde)</h4>
             <p>
-              Cibler "toutes les entreprises" ou "tous les consommateurs" par peur de renoncer 
+              Cibler "toutes les entreprises" ou "tous les consommateurs" par peur de renoncer
               à des clients. <strong>Résultat :</strong> Message dilué, aucune cible ne se sent concernée.
             </p>
           </HighlightBox>
@@ -387,7 +387,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">4. Changement de Positionnement Trop Fréquent</h4>
             <p>
-              Modifier le message tous les 6-12 mois en fonction des modes ou de la pression 
+              Modifier le message tous les 6-12 mois en fonction des modes ou de la pression
               concurrentielle. <strong>Résultat :</strong> Confusion du marché, perte de crédibilité.
             </p>
           </HighlightBox>
@@ -395,7 +395,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">5. Ignorer la Concurrence et les Espaces Déjà Occupés</h4>
             <p>
-              Se positionner sur un attribut déjà détenu par un concurrent dominant sans avoir 
+              Se positionner sur un attribut déjà détenu par un concurrent dominant sans avoir
               de légitimité supérieure. <strong>Résultat :</strong> Combat perdu d'avance, ressources gaspillées.
             </p>
           </HighlightBox>
@@ -403,7 +403,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">6. Positionnement Basé sur une Innovation Non-Durable</h4>
             <p>
-              Se différencier sur une fonctionnalité facilement copiable (ex: "première banque 
+              Se différencier sur une fonctionnalité facilement copiable (ex: "première banque
               mobile"). <strong>Résultat :</strong> Avantage temporaire, obsolescence rapide du positionnement.
             </p>
           </HighlightBox>
@@ -411,7 +411,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">7. Absence d'Implication de la Direction Générale</h4>
             <p>
-              Déléguer le positionnement au département marketing sans validation stratégique 
+              Déléguer le positionnement au département marketing sans validation stratégique
               top management. <strong>Résultat :</strong> Manque d'alignement opérationnel, sabotage involontaire.
             </p>
           </HighlightBox>
@@ -419,7 +419,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">8. Sous-Investissement en Communication</h4>
             <p>
-              Définir un positionnement mais ne pas allouer le budget publicitaire nécessaire 
+              Définir un positionnement mais ne pas allouer le budget publicitaire nécessaire
               pour l'ancrer dans les esprits. <strong>Résultat :</strong> Positionnement qui reste dans les slides PowerPoint.
             </p>
           </HighlightBox>
@@ -427,7 +427,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">9. Négliger l'Expérience Client Réelle</h4>
             <p>
-              Communiquer un positionnement sans ajuster les processus opérationnels (accueil, 
+              Communiquer un positionnement sans ajuster les processus opérationnels (accueil,
               SAV, produit). <strong>Résultat :</strong> Gap perception vs réalité, désillusion client.
             </p>
           </HighlightBox>
@@ -435,7 +435,7 @@ export function EtudePositionnementMarches() {
           <HighlightBox type="warning">
             <h4 className="font-bold mb-2">10. Absence de Mesure et d'Ajustement</h4>
             <p>
-              Lancer un positionnement sans tracking rigoureux des KPIs de perception et business. 
+              Lancer un positionnement sans tracking rigoureux des KPIs de perception et business.
               <strong>Résultat :</strong> Impossible de savoir si ça fonctionne, décisions en aveugle.
             </p>
           </HighlightBox>
@@ -444,8 +444,8 @@ export function EtudePositionnementMarches() {
 
       <ArticleSection title="Recommandations Finales">
         <Paragraph>
-          Le positionnement stratégique est un investissement de long terme qui structure toute 
-          votre stratégie marketing et commerciale. Il ne s'agit pas d'un exercice créatif 
+          Le positionnement stratégique est un investissement de long terme qui structure toute
+          votre stratégie marketing et commerciale. Il ne s'agit pas d'un exercice créatif
           ponctuel, mais d'une décision stratégique qui engage l'entreprise sur 3 à 5 ans minimum.
         </Paragraph>
 
@@ -481,8 +481,8 @@ export function EtudePositionnementMarches() {
             Besoin d'une Étude de Positionnement pour Votre Entreprise ?
           </h3>
           <p className="mb-6 text-gray-200">
-            INTEGRA PARTNERS a accompagné 25+ entreprises africaines dans la définition et 
-            l'activation de leur positionnement stratégique. Méthodologie éprouvée, insights 
+            INTEGRA PARTNERS a accompagné 25+ entreprises africaines dans la définition et
+            l'activation de leur positionnement stratégique. Méthodologie éprouvée, insights
             actionnables, résultats mesurables. Diagnostic stratégique offert.
           </p>
           <Button variant="primary" size="lg" className="bg-gold hover:bg-gold/90 text-navy">

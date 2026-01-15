@@ -124,7 +124,7 @@ export default function NosStandardsPage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-[#B8860B]/20 rounded-full border border-[#B8860B]/30">
@@ -132,18 +132,18 @@ export default function NosStandardsPage() {
                 🛡️ Garanties & Conformité
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Nos Standards de <span className="text-[#B8860B]">Confidentialité, Traçabilité & Conformité</span>
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              INTEGRA s'engage sur <strong>4 piliers non négociables</strong> : confidentialité absolue, 
+              INTEGRA s'engage sur <strong>4 piliers non négociables</strong> : confidentialité absolue,
               traçabilité documentaire, conformité réglementaire et transparence tarifaire.
             </p>
 
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
               >
@@ -361,7 +361,7 @@ export default function NosStandardsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -370,9 +370,9 @@ export default function NosStandardsPage() {
             <p className="text-xl text-gray-300 mb-8">
               Diagnostic gratuit 30 minutes : confidentialité garantie dès premier échange.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

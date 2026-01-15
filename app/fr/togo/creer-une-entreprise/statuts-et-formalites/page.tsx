@@ -7,7 +7,7 @@ export default function StatutsFormalitesPage() {
         <h1 className="text-4xl font-bold mb-6">Statuts et Formalités de Création au Togo</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : rédaction statuts OHADA, mentions obligatoires, 
+            Contenu SEO optimisé à fournir : rédaction statuts OHADA, mentions obligatoires,
             formalités post-création, registres légaux.
           </p>
           {/* Contenu détaillé à ajouter */}

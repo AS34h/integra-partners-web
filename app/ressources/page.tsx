@@ -65,7 +65,7 @@ export default function RessourcesPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl"
@@ -90,7 +90,7 @@ export default function RessourcesPage() {
             className="flex flex-wrap gap-3 justify-center"
             {...fadeInUp}
           >
-            <button className="px-6 py-2 rounded-full bg-navy text-white font-medium text-sm">
+            <button className="px-6 py-2 rounded-full bg-slate-700 text-white font-medium text-sm">
               Tous
             </button>
             {topics.map((topic, index) => (
@@ -122,7 +122,7 @@ export default function RessourcesPage() {
                   className="p-8 group"
                 >
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-navy text-white flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-slate-700 text-white flex items-center justify-center flex-shrink-0">
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
@@ -210,7 +210,7 @@ export default function RessourcesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl mx-auto text-center"

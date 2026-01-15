@@ -7,7 +7,7 @@ export default function GouvernancePVPage() {
         <h1 className="text-4xl font-bold mb-6">Gouvernance et PV d'Assemblées (OHADA)</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : PV AG ordinaire/extraordinaire, conseil d'administration, 
+            Contenu SEO optimisé à fournir : PV AG ordinaire/extraordinaire, conseil d'administration,
             quorum, majorité, formalités dépôt RCCM.
           </p>
           {/* Contenu détaillé à ajouter */}

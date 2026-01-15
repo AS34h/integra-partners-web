@@ -82,7 +82,7 @@ export default function DiasporaFrancePage() {
   return (
     <div className="bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -95,18 +95,18 @@ export default function DiasporaFrancePage() {
 
             <div className="text-center">
               <div className="text-7xl mb-6">🇫🇷</div>
-              
+
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Togolais de France : <span className="text-[#B8860B]">Créez, Investissez ou Gérez</span> au Togo en Toute Sécurité
               </h1>
-              
+
               <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-                INTEGRA accompagne la <strong>diaspora togolaise en France</strong> (Paris, Lyon, Marseille, Bordeaux) 
+                INTEGRA accompagne la <strong>diaspora togolaise en France</strong> (Paris, Lyon, Marseille, Bordeaux)
                 dans leurs projets entrepreneuriaux et d'investissement au Togo : SARL à distance, immobilier, transferts optimisés.
               </p>
 
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -146,7 +146,7 @@ export default function DiasporaFrancePage() {
               Pourquoi Investir au Togo depuis la France ?
             </h2>
             <p className="text-xl text-gray-600">
-              150 000+ Togolais en France cherchent à concrétiser projets entrepreneuriaux, 
+              150 000+ Togolais en France cherchent à concrétiser projets entrepreneuriaux,
               préparer retour au pays ou aider la famille.
             </p>
           </motion.div>
@@ -155,8 +155,8 @@ export default function DiasporaFrancePage() {
             <Card variant="custom" className="p-8">
               <h3 className="text-2xl font-bold text-[#0B1A3E] mb-4">💰 Pouvoir d'Achat EUR</h3>
               <p className="text-gray-700 leading-relaxed">
-                Avec <strong>1€ = 655 FCFA</strong>, votre salaire français permet d'investir significativement au Togo : 
-                <strong> 10K EUR = 6,5M FCFA</strong> (terrain, SARL, petit immeuble). 
+                Avec <strong>1€ = 655 FCFA</strong>, votre salaire français permet d'investir significativement au Togo :
+                <strong> 10K EUR = 6,5M FCFA</strong> (terrain, SARL, petit immeuble).
                 Les retraites françaises (€€€) financent projets ambitieux.
               </p>
             </Card>
@@ -164,7 +164,7 @@ export default function DiasporaFrancePage() {
             <Card variant="custom" className="p-8">
               <h3 className="text-2xl font-bold text-[#0B1A3E] mb-4">🏠 Préparer le Retour</h3>
               <p className="text-gray-700 leading-relaxed">
-                Beaucoup de Togolais en France préparent leur retour définitif (retraite, rapprochement familial). 
+                Beaucoup de Togolais en France préparent leur retour définitif (retraite, rapprochement familial).
                 <strong> Structurer activité et patrimoine 5-10 ans avant</strong> garantit sérénité financière.
               </p>
             </Card>
@@ -172,7 +172,7 @@ export default function DiasporaFrancePage() {
             <Card variant="custom" className="p-8">
               <h3 className="text-2xl font-bold text-[#0B1A3E] mb-4">👨‍👩‍👧 Soutien Famille</h3>
               <p className="text-gray-700 leading-relaxed">
-                Transferts réguliers vers famille au Togo : <strong>200-500 EUR/mois en moyenne</strong>. 
+                Transferts réguliers vers famille au Togo : <strong>200-500 EUR/mois en moyenne</strong>.
                 Optimiser ces flux + structurer entreprise familiale = autonomie durable.
               </p>
             </Card>
@@ -180,7 +180,7 @@ export default function DiasporaFrancePage() {
             <Card variant="custom" className="p-8">
               <h3 className="text-2xl font-bold text-[#0B1A3E] mb-4">📈 ROI Attractifs</h3>
               <p className="text-gray-700 leading-relaxed">
-                Immobilier Lomé : <strong>8-12% rendement/an</strong>. PME Togo : 15-25% ROE. 
+                Immobilier Lomé : <strong>8-12% rendement/an</strong>. PME Togo : 15-25% ROE.
                 Marchés africains croissance &gt;5%/an (vs &lt;2% Europe stagnation).
               </p>
             </Card>
@@ -212,7 +212,7 @@ export default function DiasporaFrancePage() {
                   viewport={{ once: true }}
                 >
                   <Link href={`/fr/diaspora/france/${intention.slug}`}>
-                    <Card 
+                    <Card
                       variant="custom"
                       className="p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group"
                     >
@@ -225,7 +225,7 @@ export default function DiasporaFrancePage() {
                           <h3 className="text-2xl font-bold text-[#0B1A3E] mb-3 group-hover:text-[#B8860B] transition-colors">
                             {intention.title}
                           </h3>
-                          
+
                           <p className="text-gray-700 mb-4 leading-relaxed">
                             {intention.description}
                           </p>
@@ -307,19 +307,19 @@ export default function DiasporaFrancePage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-[#0B1A3E] via-[#0D2554] to-[#0B1A3E] text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div {...fadeInImmediate} className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Concrétisez Votre Projet Togo Depuis la France
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Diagnostic gratuit 30 minutes (visio Zoom/WhatsApp) : faisabilité, structuration, 
+              Diagnostic gratuit 30 minutes (visio Zoom/WhatsApp) : faisabilité, structuration,
               budget prévisionnel et roadmap France-Togo.
             </p>
-            
+
             <Link href="/fr/diagnostic-ims">
-              <Button 
+              <Button
                 variant="primary"
                 className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-10 py-5 text-lg"
               >

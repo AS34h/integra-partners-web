@@ -7,7 +7,7 @@ export default function CartesCreditPaiementsPage() {
         <h1 className="text-4xl font-bold mb-6">Cartes de Crédit et Moyens de Paiement au Togo</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Contenu SEO optimisé à fournir : Visa/Mastercard entreprise, Mobile Money pro, 
+            Contenu SEO optimisé à fournir : Visa/Mastercard entreprise, Mobile Money pro,
             POS terminaux, frais transactions, solutions e-commerce, intégration API.
           </p>
           {/* Contenu détaillé à ajouter */}

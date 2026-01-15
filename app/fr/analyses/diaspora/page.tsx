@@ -28,7 +28,7 @@ export default function AnalysesDiasporaPage() {
         <h1 className="text-4xl font-bold mb-6">Analyses Diaspora</h1>
         <div className="prose max-w-none">
           <p className="text-xl text-gray-600 mb-8">
-            Catégorie analyses diaspora : articles à venir sur transferts, investissements, 
+            Catégorie analyses diaspora : articles à venir sur transferts, investissements,
             double nationalité, fiscalité internationale diaspora-Togo.
           </p>
           {/* Liste articles avec [slug] dynamique */}

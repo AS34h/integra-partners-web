@@ -59,7 +59,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   return (
     <div className="bg-gray-100">
       {/* Header */}
-      <section className="bg-navy text-white py-12 md:py-16">
+      <section className="bg-slate-700 text-white py-12 md:py-16">
         <div className="container mx-auto max-w-4xl">
           <Link
             href="/ressources"

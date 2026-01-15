@@ -104,7 +104,7 @@ export default function DomainesPage() {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl"
@@ -139,7 +139,7 @@ export default function DomainesPage() {
                   <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
                     {/* Icon & Title Column */}
                     <div className="lg:w-2/5">
-                      <div className="w-16 h-16 rounded-lg bg-navy text-white flex items-center justify-center mb-6">
+                      <div className="w-16 h-16 rounded-lg bg-slate-700 text-white flex items-center justify-center mb-6">
                         <Icon className="w-8 h-8" />
                       </div>
                       <h2 className="font-heading text-h2 text-navy mb-4">
@@ -239,7 +239,7 @@ export default function DomainesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-navy text-white py-16 md:py-24">
+      <section className="bg-slate-700 text-white py-16 md:py-24">
         <div className="container mx-auto">
           <motion.div 
             className="max-w-3xl mx-auto text-center"

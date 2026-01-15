@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/Button';
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { FAQSection } from '@/components/FAQ';
 import { HowTo } from '@/components/HowTo';
-import { 
-  FileText, 
-  CheckCircle, 
-  Clock, 
-  Euro, 
+import {
+  FileText,
+  CheckCircle,
+  Clock,
+  Euro,
   Building2,
   AlertCircle,
   ChevronRight,
@@ -49,7 +49,7 @@ export default function RCCMImmatriculationPage() {
               Entreprise, IFU & Certificat
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Guide complet pour immatriculer votre entreprise au Registre du Commerce et du Crédit Mobilier (RCCM) du Togo : 
+              Guide complet pour immatriculer votre entreprise au Registre du Commerce et du Crédit Mobilier (RCCM) du Togo :
               procédure guichet unique CFE, documents requis, délais réels, coûts détaillés et obtention du numéro IFU.
             </p>
           </div>
@@ -107,10 +107,10 @@ export default function RCCMImmatriculationPage() {
                   Qu'est-ce que le RCCM au Togo ?
                 </h2>
               </div>
-              
+
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  Le <strong>Registre du Commerce et du Crédit Mobilier (RCCM)</strong> est le registre officiel dans lequel toutes les entreprises 
+                  Le <strong>Registre du Commerce et du Crédit Mobilier (RCCM)</strong> est le registre officiel dans lequel toutes les entreprises
                   commerciales du Togo doivent obligatoirement s'immatriculer. C'est la pierre angulaire de l'existence juridique de votre entreprise.
                 </p>
               </div>
@@ -120,7 +120,7 @@ export default function RCCMImmatriculationPage() {
                   <Shield className="w-8 h-8 text-[#B8860B] mb-4" />
                   <h3 className="text-xl font-bold mb-3">Conformité OHADA</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Le RCCM togolais est conforme aux <strong>Actes Uniformes OHADA</strong>, garantissant une reconnaissance dans les 17 États membres 
+                    Le RCCM togolais est conforme aux <strong>Actes Uniformes OHADA</strong>, garantissant une reconnaissance dans les 17 États membres
                     et facilitant vos transactions transfrontalières.
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export default function RCCMImmatriculationPage() {
                   <Building2 className="w-8 h-8 text-blue-600 mb-4" />
                   <h3 className="text-xl font-bold text-[#0A1628] mb-3">Numéro IFU Automatique</h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
-                    L'immatriculation au RCCM déclenche <strong>automatiquement l'attribution de votre Identifiant Fiscal Unique (IFU)</strong>, 
+                    L'immatriculation au RCCM déclenche <strong>automatiquement l'attribution de votre Identifiant Fiscal Unique (IFU)</strong>,
                     nécessaire pour toutes vos opérations fiscales avec l'OTR.
                   </p>
                 </div>
@@ -179,7 +179,7 @@ export default function RCCMImmatriculationPage() {
                   <div>
                     <h3 className="text-lg font-bold text-green-900 mb-2">Guichet Unique depuis 2014</h3>
                     <p className="text-green-800 text-sm leading-relaxed">
-                      Depuis la réforme de 2014, le Togo dispose d'un <strong>Centre de Formalités des Entreprises (CFE)</strong> qui centralise 
+                      Depuis la réforme de 2014, le Togo dispose d'un <strong>Centre de Formalités des Entreprises (CFE)</strong> qui centralise
                       toutes les démarches : RCCM, IFU, CNSS, INAM. <strong>Un seul dépôt de dossier suffit</strong>.
                     </p>
                   </div>
@@ -188,7 +188,7 @@ export default function RCCMImmatriculationPage() {
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  Le CFE est situé à <strong>Lomé, Quartier Administratif (près de l'Assemblée Nationale)</strong>. 
+                  Le CFE est situé à <strong>Lomé, Quartier Administratif (près de l'Assemblée Nationale)</strong>.
                   Horaires : Lundi-Vendredi 7h30-12h30 et 14h-17h.
                 </p>
               </div>
@@ -205,7 +205,7 @@ export default function RCCMImmatriculationPage() {
                       Préparer le Dossier Complet
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Rassemblez tous les documents listés dans la section suivante. <strong>Un dossier incomplet sera rejeté</strong> et 
+                      Rassemblez tous les documents listés dans la section suivante. <strong>Un dossier incomplet sera rejeté</strong> et
                       entraînera un retard de 3-7 jours supplémentaires.
                     </p>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -225,14 +225,14 @@ export default function RCCMImmatriculationPage() {
                       Dépôt au CFE et Paiement des Frais
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Rendez-vous au guichet du CFE avec votre dossier. Un agent vérifiera la complétude et vous remettra un <strong>bordereau de paiement</strong> 
+                      Rendez-vous au guichet du CFE avec votre dossier. Un agent vérifiera la complétude et vous remettra un <strong>bordereau de paiement</strong>
                       pour régler les frais (environ <strong>75-100K FCFA</strong>).
                     </p>
                     <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
                       <div className="flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
                         <p className="text-sm text-yellow-800">
-                          <strong>Modes de paiement acceptés :</strong> Espèces (FCFA uniquement), virement bancaire vers le compte du CFE, 
+                          <strong>Modes de paiement acceptés :</strong> Espèces (FCFA uniquement), virement bancaire vers le compte du CFE,
                           ou Mobile Money (TMoney, Flooz) dans certains cas.
                         </p>
                       </div>
@@ -254,7 +254,7 @@ export default function RCCMImmatriculationPage() {
                       Instruction et Validation du Dossier
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Le CFE transmet votre dossier aux services compétents (RCCM, OTR, CNSS, INAM) pour instruction. 
+                      Le CFE transmet votre dossier aux services compétents (RCCM, OTR, CNSS, INAM) pour instruction.
                       <strong> Délai légal : 72 heures</strong>, mais en pratique comptez <strong>3-5 jours ouvrables</strong>.
                     </p>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -274,7 +274,7 @@ export default function RCCMImmatriculationPage() {
                       Retrait des Documents Officiels
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Une fois l'instruction terminée, vous recevez un SMS/appel du CFE. Revenez retirer vos documents officiels contre présentation 
+                      Une fois l'instruction terminée, vous recevez un SMS/appel du CFE. Revenez retirer vos documents officiels contre présentation
                       du reçu de dépôt.
                     </p>
                     <div className="bg-green-50 border-l-4 border-green-600 p-4 rounded">
@@ -355,7 +355,7 @@ export default function RCCMImmatriculationPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">2. Certificat de dépôt de capital bancaire</h3>
                       <p className="text-sm text-gray-700">
-                        Attestation de la banque certifiant le dépôt d'au moins 20% du capital social (1M FCFA minimum pour SARL). 
+                        Attestation de la banque certifiant le dépôt d'au moins 20% du capital social (1M FCFA minimum pour SARL).
                         <strong> Banque togolaise obligatoire</strong> (BOAD, Ecobank, UTB, BTCI, etc.).
                       </p>
                     </div>
@@ -373,7 +373,7 @@ export default function RCCMImmatriculationPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">3. Procès-verbal de nomination du gérant</h3>
                       <p className="text-sm text-gray-700">
-                        PV de l'Assemblée Générale Constitutive (AGC) nommant le gérant ou directeur général, avec signature de tous les associés. 
+                        PV de l'Assemblée Générale Constitutive (AGC) nommant le gérant ou directeur général, avec signature de tous les associés.
                         Peut être inclus dans les statuts ou être un document séparé.
                       </p>
                     </div>
@@ -391,7 +391,7 @@ export default function RCCMImmatriculationPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">4. Déclaration de régularité et de conformité</h3>
                       <p className="text-sm text-gray-700">
-                        Formulaire CFE déclarant que les statuts sont conformes à l'OHADA et que le capital est régulièrement déposé. 
+                        Formulaire CFE déclarant que les statuts sont conformes à l'OHADA et que le capital est régulièrement déposé.
                         Signé par le gérant et un notaire/avocat.
                       </p>
                     </div>
@@ -445,7 +445,7 @@ export default function RCCMImmatriculationPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">7. Formulaire M0 (Déclaration de création)</h3>
                       <p className="text-sm text-gray-700">
-                        Formulaire CFE pré-rempli avec les informations de l'entreprise (dénomination, capital, activité, adresse, gérant). 
+                        Formulaire CFE pré-rempli avec les informations de l'entreprise (dénomination, capital, activité, adresse, gérant).
                         <strong> Disponible au CFE ou téléchargeable</strong> sur le site du Ministère du Commerce.
                       </p>
                     </div>
@@ -463,7 +463,7 @@ export default function RCCMImmatriculationPage() {
                     <div className="flex-1">
                       <h3 className="font-bold text-[#0A1628] mb-2">8. Certificat de réservation de dénomination (optionnel mais recommandé)</h3>
                       <p className="text-sm text-gray-700">
-                        Preuve que le nom de votre société n'est pas déjà pris. Obtenu gratuitement au CFE en 1-2 jours. 
+                        Preuve que le nom de votre société n'est pas déjà pris. Obtenu gratuitement au CFE en 1-2 jours.
                         <strong> Évite les rejets pour homonymie</strong>.
                       </p>
                     </div>
@@ -554,7 +554,7 @@ export default function RCCMImmatriculationPage() {
 
               <div className="mt-6 bg-blue-50 border-l-4 border-blue-600 rounded-xl p-6">
                 <p className="text-sm text-blue-900 leading-relaxed">
-                  <strong>💡 Budget à prévoir :</strong> Comptez environ <strong>100 000 FCFA</strong> pour l'immatriculation RCCM + IFU. 
+                  <strong>💡 Budget à prévoir :</strong> Comptez environ <strong>100 000 FCFA</strong> pour l'immatriculation RCCM + IFU.
                   Ce montant n'inclut PAS les frais de notaire (30-50K) ni le dépôt de capital bancaire (200K minimum pour SARL).
                 </p>
               </div>
@@ -651,8 +651,8 @@ export default function RCCMImmatriculationPage() {
 
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                 <p>
-                  L'<strong>IFU</strong> est votre identifiant fiscal unique attribué automatiquement par l'Office Togolais des Recettes (OTR) 
-                  lors de votre immatriculation RCCM. C'est le numéro que vous utiliserez pour <strong>toutes vos déclarations fiscales</strong> 
+                  L'<strong>IFU</strong> est votre identifiant fiscal unique attribué automatiquement par l'Office Togolais des Recettes (OTR)
+                  lors de votre immatriculation RCCM. C'est le numéro que vous utiliserez pour <strong>toutes vos déclarations fiscales</strong>
                   (TVA, IS, IR, patente, etc.).
                 </p>
               </div>
@@ -667,7 +667,7 @@ export default function RCCMImmatriculationPage() {
                     <span className="text-[#0A1628] font-bold">01234567890123</span>
                   </div>
                   <p className="text-sm text-gray-700">
-                    L'IFU est un numéro à <strong>14 chiffres</strong> unique et définitif. Il ne change jamais, même en cas de modification 
+                    L'IFU est un numéro à <strong>14 chiffres</strong> unique et définitif. Il ne change jamais, même en cas de modification
                     de votre activité, adresse, ou forme juridique.
                   </p>
                 </div>
@@ -700,7 +700,7 @@ export default function RCCMImmatriculationPage() {
                   <div>
                     <h3 className="font-bold text-yellow-900 mb-2">Vérification de la validité de votre IFU</h3>
                     <p className="text-sm text-yellow-800 mb-3">
-                      Vous pouvez vérifier la validité de votre IFU sur la plateforme <strong>e-Tax OTR</strong> : 
+                      Vous pouvez vérifier la validité de votre IFU sur la plateforme <strong>e-Tax OTR</strong> :
                       <a href="https://etax.otr.tg" target="_blank" rel="noopener noreferrer" className="text-[#B8860B] hover:underline ml-1">
                         etax.otr.tg
                       </a>
@@ -850,14 +850,14 @@ export default function RCCMImmatriculationPage() {
               Besoin d'Aide pour Votre Immatriculation RCCM au Togo ?
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              INTEGRA vous accompagne de A à Z dans vos démarches d'immatriculation RCCM : 
-              <strong className="text-white"> constitution du dossier, dépôt au CFE, suivi en temps réel et retrait des documents officiels</strong>. 
+              INTEGRA vous accompagne de A à Z dans vos démarches d'immatriculation RCCM :
+              <strong className="text-white"> constitution du dossier, dépôt au CFE, suivi en temps réel et retrait des documents officiels</strong>.
               Délai garanti <strong className="text-[#B8860B]">3-5 jours</strong>.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Link href="/fr/diagnostic-ims">
-                <Button 
+                <Button
                   variant="primary"
                   className="bg-[#B8860B] hover:bg-[#9a6f09] text-white px-8 py-4 text-lg"
                 >
@@ -865,7 +865,7 @@ export default function RCCMImmatriculationPage() {
                 </Button>
               </Link>
               <Link href="/fr/togo/creer-une-entreprise/sarl-sarlu">
-                <Button 
+                <Button
                   variant="outline"
                   className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg"
                 >
@@ -875,7 +875,7 @@ export default function RCCMImmatriculationPage() {
             </div>
 
             <p className="text-sm text-gray-400">
-              Tarif forfaitaire : <span className="text-white font-semibold">150 000 FCFA TTC</span> (hors frais officiels CFE). 
+              Tarif forfaitaire : <span className="text-white font-semibold">150 000 FCFA TTC</span> (hors frais officiels CFE).
               Inclut : vérification dossier, dépôt CFE, suivi quotidien, retrait documents.
             </p>
           </div>
@@ -884,7 +884,7 @@ export default function RCCMImmatriculationPage() {
 
       <section className="bg-white py-12">
         <div className="container mx-auto max-w-4xl px-6">
-          <FAQSection 
+          <FAQSection
             title="Questions Fréquentes sur le RCCM et l'Immatriculation au Togo"
             faqs={[
               {
